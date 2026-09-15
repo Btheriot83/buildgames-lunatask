@@ -60,7 +60,7 @@ export function AiPlanCard() {
   }
 
   return (
-    <article className="desk-card ai-plan-card" data-testid="ai-plan-card">
+    <article className={`desk-card ai-plan-card ${busy ? 'is-busy' : ''}`} data-testid="ai-plan-card">
       <header className="card-head">
         <h3>AI daily plan</h3>
         <button

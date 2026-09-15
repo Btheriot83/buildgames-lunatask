@@ -812,3 +812,40 @@ button, input, select, textarea {
   .empty-harbor { grid-template-columns: 1fr; }
   .empty-harbor-media { width: 100%; height: 140px; }
 }
+
+/* Phase B density — habit week heat + quieter remove */
+.heat-week {
+  display: grid;
+  grid-template-columns: repeat(7, 8px);
+  gap: 3px;
+  margin-right: 8px;
+}
+.heat-cell {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #e2d8c8;
+}
+.heat-cell.on {
+  background: var(--seafoam);
+}
+.task-row .btn.tiny.ghost {
+  opacity: 0.35;
+}
+.task-row:hover .btn.tiny.ghost,
+.task-row:focus-within .btn.tiny.ghost {
+  opacity: 1;
+}
+.habit-card .btn.tiny.ghost {
+  opacity: 0.35;
+}
+.habit-card:hover .btn.tiny.ghost,
+.habit-card:focus-within .btn.tiny.ghost {
+  opacity: 1;
+}
+.desk-paper .panel-stage {
+  min-height: 320px;
+}
+.ai-plan-card.is-busy {
+  opacity: 0.85;
+}

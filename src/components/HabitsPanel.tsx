@@ -13,6 +13,12 @@ export function HabitsPanel() {
   const [title, setTitle] = useState('')
   const [freq, setFreq] = useState<HabitFreq>('daily')
 
+  const weekDays = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(day + 'T12:00:00')
+    d.setDate(d.getDate() - (6 - i))
+    return d.toISOString().slice(0, 10)
+  })
+
   return (
     <section className="panel habits-panel t-panel-reveal" data-state="in">
       <form
@@ -68,6 +74,12 @@ export function HabitsPanel() {
                   <span>{h.freq}</span>
                   {!due && !done && <span className="soft">not due</span>}
                 </p>
+              </div>
+
+              <div className="heat-week" aria-hidden="true">
+                {weekDays.map((d) => (
+                  <span key={d} className={`heat-cell ${h.completions.includes(d) ? 'on' : ''}`} />
+                ))}
               </div>
               <div className="habit-streak" title="Streak">
                 <span className="stat-label">Streak</span>
