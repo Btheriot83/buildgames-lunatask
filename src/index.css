@@ -3886,6 +3886,77 @@ button, input, select, textarea {
   box-shadow: 0 0 0 1px var(--coral);
 }
 
+
+/* ——— craft5: remove-ai-tells + lean chrome — blotter wins, quiet sticky pills ——— */
+.shell-chrome-lean {
+  margin-bottom: 8px !important;
+  gap: 12px !important;
+}
+.brand-bottle {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 7px !important;
+}
+.brand-title {
+  font-size: clamp(1.45rem, 2.8vw, 1.85rem) !important;
+}
+.brand-sub {
+  display: none !important; /* Things has no tagline over Today */
+}
+.eyebrow {
+  font-size: 0.7rem !important;
+  color: #b8a882 !important;
+}
+.chrome-actions .btn {
+  min-height: 30px !important;
+  padding: 4px 10px !important;
+  font-size: 0.8rem !important;
+}
+.day-strip-quiet {
+  margin-bottom: 6px !important;
+  opacity: 0.92;
+}
+.day-strip-quiet .day-chips {
+  padding-bottom: 6px !important;
+}
+.desk-paper .day-chip .dow {
+  font-size: 0.58rem !important;
+  letter-spacing: 0.06em;
+}
+.desk-paper .day-chip .dom {
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+.tabs-nav-sticky {
+  padding: 6px 14px 8px !important;
+  background: color-mix(in srgb, var(--bone-paper) 92%, #fff 8%);
+}
+.desk-paper .tabs-nav-sticky .tabs-track {
+  background: #efe6d6 !important;
+  border-color: #d4cbb8 !important;
+  padding: 3px !important;
+  gap: 3px !important;
+}
+.desk-paper .tabs-nav-sticky .tabs-glider,
+.desk-paper .tabs-nav-sticky .t-tabs-pill {
+  background: #fffaf2 !important;
+  border-color: #d4cbb8 !important;
+  box-shadow: 0 1px 0 rgba(26, 46, 54, 0.05) !important;
+  top: 3px;
+  bottom: 3px;
+}
+.desk-paper .tabs-nav-sticky .tab-btn {
+  min-height: 32px !important;
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+}
+.desk-paper .tabs-nav-sticky .tab-btn.is-active {
+  font-weight: 650 !important;
+}
+.app-frame {
+  padding-top: 12px !important;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
