@@ -97,12 +97,13 @@
     "note": "B5 flat bar held; Harbor Desk locked"
   },
   "workbench": "apps/lunatask/gauntlet/workbench-r5.md",
-  "finishedAtUtc": "2026-09-15T06:50:43Z",
-  "finishedAtPt": "2026-09-14 11:50 PM PT",
-  "pr": null,
-  "prState": null,
+  "finishedAtUtc": "2026-09-15T06:51:22Z",
+  "finishedAtPt": "2026-09-14 11:51 PM PT",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/6",
+  "prState": "OPEN",
   "deploy": {
     "url": "https://buildgames-lunatask.vercel.app",
-    "id": null
+    "id": "dpl_3N5yRqHvAi7UwXTdLbowXuMVinQ8",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/3N5yRqHvAi7UwXTdLbowXuMVinQ8"
   }
 }
