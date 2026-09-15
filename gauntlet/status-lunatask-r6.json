@@ -23,7 +23,7 @@
     "b612ab8",
     "3d510cc"
   ],
-  "shotCount": 19,
+  "shotCount": 20,
   "barShotRounds": [
     5,
     10
@@ -97,9 +97,13 @@
     "note": "B6 flat bar held; Harbor Desk locked"
   },
   "workbench": "apps/lunatask/gauntlet/workbench-r6.md",
-  "finishedAtUtc": "2026-09-15T07:14:52Z",
-  "finishedAtPt": "2026-09-15 12:14 AM PT",
-  "pr": null,
-  "prState": null,
-  "deploy": null
+  "finishedAtUtc": "2026-09-15T07:16:30Z",
+  "finishedAtPt": "2026-09-15 12:16 AM PT",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/7",
+  "prState": "OPEN",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_3bGYbxR7HtJUUtwyD37hPhiGXriY",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/3bGYbxR7HtJUUtwyD37hPhiGXriY"
+  }
 }
