@@ -1,5 +1,5 @@
 {
-  "status": "beat_original_in_progress_shipped",
+  "status": "beat_original_shipped",
   "product": "Tideglass",
   "slug": "lunatask",
   "identity": "Harbor Desk",
@@ -47,9 +47,14 @@
     "Independent critic still awards overall craft to lunatask.app marketing composition.",
     "No invented soft win."
   ],
-  "finishedAtUtc": "2026-09-15T07:46:22Z",
-  "finishedAtPt": "2026-09-15 12:46 AM PT",
+  "finishedAtUtc": "2026-09-15T07:47:03Z",
+  "finishedAtPt": "2026-09-15 12:47 AM PT",
   "branch": "beat-original-tideglass",
-  "pr": null,
-  "deploy": null
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/8",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_Fooe1GFpjhr19A8RRYbi6PZKxdoG",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/Fooe1GFpjhr19A8RRYbi6PZKxdoG"
+  },
+  "prState": "OPEN"
 }
