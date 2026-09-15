@@ -35,26 +35,15 @@ export function TodayPanel() {
           <h2 className="job-title">Tasks · Habits · Mood</h2>
           <p className="job-sub">Three things on the blotter. AI plans after you look.</p>
         </div>
-        <div className="job-meters" aria-label="Today progress">
-          <div className="job-meter">
-            <span className="stat-label">Tasks open</span>
-            <NumberPop value={dueTasks.length} />
-          </div>
-          <div className="job-meter">
-            <span className="stat-label">Habits</span>
-            <span className="job-meter-frac">
-              <NumberPop value={doneHabits} />/{dueHabits.length}
-            </span>
-          </div>
-          <div className="job-meter">
-            <span className="stat-label">Mood</span>
-            {mood ? (
-              <span className={`mood-dot lg m${mood.mood}`}>{mood.mood}</span>
-            ) : (
-              <span className="job-meter-empty">—</span>
-            )}
-          </div>
-        </div>
+        <p className="job-pulse" aria-label="Today progress">
+          <span>{dueTasks.length} open</span>
+          <span aria-hidden="true">·</span>
+          <span>
+            {doneHabits}/{dueHabits.length} habits
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>{mood ? `mood ${mood.mood}` : 'mood —'}</span>
+        </p>
         {dueHabits.length > 0 && (
           <div className="job-progress" aria-hidden="true">
             <div className="job-progress-fill" style={{ width: `${habitPct}%` }} />

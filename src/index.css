@@ -2750,3 +2750,22 @@ button, input, select, textarea {
 .desk-paper .tab-btn.is-active {
   color: var(--ink-on-paper) !important;
 }
+
+
+/* ——— beat6: cut job meter cards → one pulse line ——— */
+.job-banner {
+  grid-template-columns: 1fr !important;
+  align-items: start !important;
+}
+.job-pulse {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: #6e675b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+.job-meters { display: none !important; }
