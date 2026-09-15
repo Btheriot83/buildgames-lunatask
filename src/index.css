@@ -2334,3 +2334,33 @@ button, input, select, textarea {
 .day-strip {
   margin-bottom: 8px !important;
 }
+
+/* r5 fonts: card heads + tag/meta ladder toward product chrome bite */
+.card-head h3 {
+  font-size: 1.14rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+}
+.desk-paper .task-meta,
+.desk-paper .habit-meta,
+.desk-paper .tag,
+.desk-paper .prio {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.02em !important;
+  font-weight: 600 !important;
+}
+.desk-paper .prio {
+  text-transform: uppercase;
+  letter-spacing: 0.06em !important;
+}
+.job-eyebrow,
+.desk-paper .section-label {
+  font-size: 0.68rem !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 650 !important;
+}
+.day-strip-head h2 {
+  font-weight: 700 !important;
+  letter-spacing: -0.032em !important;
+}
