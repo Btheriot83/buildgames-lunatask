@@ -16,7 +16,7 @@ export function ShellChrome() {
         <div className="brand-mark-row">
           <img
             className="brand-bottle"
-            src="/imagine/empty-tide-desk.jpg"
+            src="/imagine/tideglass-mark.jpg"
             alt=""
             width={72}
             height={72}

@@ -2888,3 +2888,13 @@ button, input, select, textarea {
 .desk-paper .job-card {
   background: #fffaf2 !important;
 }
+
+
+/* ——— beat14: dedicated Imagine mark crop ——— */
+.brand-bottle {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 16px !important;
+  object-fit: cover !important;
+  border: 1px solid var(--brass) !important;
+}
