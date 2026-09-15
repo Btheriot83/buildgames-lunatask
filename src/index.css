@@ -2063,3 +2063,24 @@ button, input, select, textarea {
   font-weight: 550 !important;
   font-size: 0.94rem !important;
 }
+
+/* r6 bar gap: triad density + notification-badge on tasks-due meter */
+.desk-meter {
+  position: relative !important;
+}
+.desk-meter .t-badge-dot {
+  background: var(--coral) !important;
+  background-image: none !important;
+}
+.today-grid.job-triad {
+  gap: 10px !important;
+}
+.desk-card.job-card {
+  padding: 10px !important;
+}
+.task-list.compact, .habit-list.compact {
+  gap: 5px !important;
+}
+.habit-card.mini, .task-row {
+  padding: 8px 10px !important;
+}
