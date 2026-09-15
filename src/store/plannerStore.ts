@@ -252,7 +252,7 @@ export const usePlanner = create<State>((set, get) => ({
       habits: sample.habits,
       journal: sample.journal,
     })
-    get().flashToast('Sample data loaded')
+    get().flashToast('Demo day loaded')
   },
 
   resetAll: async () => {

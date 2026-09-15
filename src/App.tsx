@@ -32,7 +32,7 @@ export default function App() {
         <div className="app-frame t-texts-reveal" data-state="in">
           <ShellChrome />
           <div className="desk-paper">
-            <div className="desk-hero" aria-hidden="true">
+            <div className="desk-hero desk-hero-compact" aria-hidden="true">
               <video
                 className="desk-hero-video"
                 autoPlay
@@ -44,7 +44,7 @@ export default function App() {
                 <source src="/motion/tide-desk-drift.mp4" type="video/mp4" />
               </video>
               <div className="desk-hero-veil" />
-              <p className="desk-hero-caption">Harbor desk · local ledger</p>
+              <p className="desk-hero-caption">Harbor desk · local ledger · tasks · habits · mood</p>
             </div>
             <DayStrip />
             <TabsNav />

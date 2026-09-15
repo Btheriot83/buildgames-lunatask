@@ -2,10 +2,13 @@ import { nanoid } from 'nanoid'
 import { addDays, todayISO } from './dates'
 import type { Snapshot } from './types'
 
+/** Believable harbor-desk day — no SAMPLE / lorem / placeholder labels. */
 export function makeSample(now = new Date()): Snapshot {
   const today = todayISO(now)
   const yesterday = addDays(today, -1)
   const twoAgo = addDays(today, -2)
+  const threeAgo = addDays(today, -3)
+  const fourAgo = addDays(today, -4)
 
   return {
     version: 1,
@@ -13,10 +16,10 @@ export function makeSample(now = new Date()): Snapshot {
     tasks: [
       {
         id: nanoid(),
-        title: 'Draft Tideglass README notes',
-        notes: 'Sample task — delete anytime.',
+        title: 'Reply to marina slip renewal',
+        notes: 'Ask about winter rate before Friday.',
         area: 'work',
-        priority: 2,
+        priority: 1,
         due: today,
         done: false,
         doneAt: null,
@@ -24,10 +27,10 @@ export function makeSample(now = new Date()): Snapshot {
       },
       {
         id: nanoid(),
-        title: 'Water the ferns',
+        title: 'Pick up brass fasteners at Harbor Hardware',
         notes: '',
         area: 'home',
-        priority: 3,
+        priority: 2,
         due: today,
         done: false,
         doneAt: null,
@@ -35,24 +38,35 @@ export function makeSample(now = new Date()): Snapshot {
       },
       {
         id: nanoid(),
-        title: 'Book dentist (sample)',
-        notes: 'Low urgency sample.',
+        title: 'Pack thermos + tide chart for afternoon walk',
+        notes: '',
+        area: 'personal',
+        priority: 3,
+        due: today,
+        done: false,
+        doneAt: null,
+        createdAt: new Date(now.getTime() - 50_000_000).toISOString(),
+      },
+      {
+        id: nanoid(),
+        title: 'Schedule dental cleaning',
+        notes: 'Prefer Tuesday mornings.',
         area: 'health',
         priority: 4,
-        due: addDays(today, 3),
+        due: addDays(today, 4),
         done: false,
         doneAt: null,
         createdAt: new Date().toISOString(),
       },
       {
         id: nanoid(),
-        title: 'Evening stretch',
+        title: 'Oil the desk lamp hinge',
         notes: '',
-        area: 'personal',
+        area: 'home',
         priority: 3,
         due: yesterday,
         done: true,
-        doneAt: yesterday + 'T20:00:00.000Z',
+        doneAt: yesterday + 'T19:40:00.000Z',
         createdAt: yesterday + 'T08:00:00.000Z',
       },
     ],
@@ -62,33 +76,55 @@ export function makeSample(now = new Date()): Snapshot {
         title: 'Morning pages',
         freq: 'daily',
         color: '#3a9e94',
-        createdAt: twoAgo + 'T08:00:00.000Z',
-        completions: [twoAgo, yesterday],
+        createdAt: fourAgo + 'T08:00:00.000Z',
+        completions: [fourAgo, threeAgo, twoAgo, yesterday],
       },
       {
         id: nanoid(),
         title: 'Walk 20 min',
         freq: 'weekdays',
         color: '#a8893e',
-        createdAt: twoAgo + 'T08:00:00.000Z',
-        completions: [yesterday],
+        createdAt: fourAgo + 'T08:00:00.000Z',
+        completions: [threeAgo, yesterday],
+      },
+      {
+        id: nanoid(),
+        title: 'Stretch before bed',
+        freq: 'daily',
+        color: '#c45b4e',
+        createdAt: fourAgo + 'T08:00:00.000Z',
+        completions: [twoAgo, yesterday],
       },
       {
         id: nanoid(),
         title: 'Inbox zero pass',
         freq: 'weekly',
-        color: '#c45b4e',
-        createdAt: twoAgo + 'T08:00:00.000Z',
+        color: '#5a8f86',
+        createdAt: fourAgo + 'T08:00:00.000Z',
         completions: [],
       },
     ],
     journal: [
       {
         id: nanoid(),
-        date: yesterday,
+        date: today,
         mood: 4,
-        note: 'Sample check-in: steady tide, short walk after lunch.',
+        note: 'Clear head after coffee on the pier. Ready to clear the open slips.',
+        createdAt: today + 'T07:35:00.000Z',
+      },
+      {
+        id: nanoid(),
+        date: yesterday,
+        mood: 3,
+        note: 'Steady tide. Short walk after lunch, then desk work until dusk.',
         createdAt: yesterday + 'T21:00:00.000Z',
+      },
+      {
+        id: nanoid(),
+        date: twoAgo,
+        mood: 4,
+        note: 'Bright morning — finished the lamp repair early.',
+        createdAt: twoAgo + 'T20:10:00.000Z',
       },
     ],
   }
