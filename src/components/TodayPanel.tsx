@@ -26,9 +26,9 @@ export function TodayPanel() {
     <section className="panel today-panel t-panel-reveal" data-state="in">
       <div className="job-banner" data-testid="job-banner">
         <div className="job-banner-copy">
-          <p className="job-eyebrow">Today’s desk</p>
+          <p className="job-eyebrow">On the blotter</p>
           <h2 className="job-title">Tasks · Habits · Mood</h2>
-          <p className="job-sub">Check tasks, tick habits, log mood — then ask AI to order the rest.</p>
+          <p className="job-sub">Three things on the blotter. AI plans after you look.</p>
         </div>
         <div className="job-meters" aria-label="Today progress">
           <div className="job-meter">

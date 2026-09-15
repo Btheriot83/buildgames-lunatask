@@ -2558,3 +2558,64 @@ button, input, select, textarea {
   background: var(--seafoam-cta) !important;
   border-radius: 3px !important;
 }
+
+/* ——— beat1: CUT chrome meters + restore photo hero (Harbor Desk locked) ——— */
+.shell-chrome-lean {
+  grid-template-columns: 1fr auto !important;
+  align-items: start !important;
+  gap: 12px 20px !important;
+  margin-bottom: 18px !important;
+}
+.shell-chrome-lean .desk-meters {
+  display: none !important;
+}
+.brand-pulse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  margin: 10px 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: #b7c4c0;
+}
+.brand-pulse .number-pop {
+  font-size: 0.9rem;
+  color: var(--brass);
+}
+.ledger-menu {
+  position: relative;
+}
+.ledger-menu > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.ledger-menu > summary::-webkit-details-marker { display: none; }
+.ledger-menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 148px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--ink-2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+.desk-hero-band {
+  height: 148px !important;
+  margin-bottom: 12px !important;
+}
+.desk-hero-band .desk-hero-caption {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+.desk-hero-band .desk-hero-veil {
+  background: rgba(11, 28, 36, 0.28) !important;
+}
