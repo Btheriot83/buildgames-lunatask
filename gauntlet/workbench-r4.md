@@ -55,7 +55,7 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css
 - shot: gauntlet/shots-r4/r5-buttons-secondary.png; gauntlet/shots-r4/r5-bar.png; gauntlet/shots-r4/r5-ab-candidate.png
 - verdict: Secondary outlines clearer; bar still wins with coral solid CTA + CircularStd H1 on white.
-- commit: c703d92
+- commit: 20ea356
 
 ## r6 — bar gap
 - files: src/store/plannerStore.ts, src/components/NumberPop.tsx, src/index.css
@@ -68,7 +68,7 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css, src/store/plannerStore.ts
 - shot: gauntlet/shots-r4/r7-contrast-muted.png
 - verdict: Meta darker on bone; still softer than Lunatask dark-UI ink hierarchy / dream target punch.
-- commit: TBD
+- commit: 9e0e488
 - dream-loop: closing muted wash toward target denser desk type
 - transitions: habit tick → toast + success-check
 
@@ -76,88 +76,88 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css, src/components/TodayPanel.tsx
 - shot: gauntlet/shots-r4/r8-fonts-job-scale.png
 - verdict: Job title nearer dream target scale; still Plex not CircularStd/serif-H2 of target (identity: Fraunces mark-only).
-- commit: TBD
+- commit: 384cb82
 - dream-loop: vs target.png job hierarchy; vs bar still loses marketing H1 craft
 
 ## r9 — contrast
 - files: src/index.css
 - shot: gauntlet/shots-r4/r9-contrast-tabs.png
 - verdict: Solid seafoam active tab matches dream target; bar uses dark app tabs not marketing.
-- commit: TBD
+- commit: 26e43ad
 - dream-loop: tab affordance closed vs target
 
 ## r10 — buttons
 - files: src/index.css
 - shot: gauntlet/shots-r4/r10-buttons-habit-tick.png; gauntlet/shots-r4/r10-bar.png; gauntlet/shots-r4/r10-ab-candidate.png
 - verdict: Coral habit rings clearer vs dream; bar still wins product-depth chrome.
-- commit: TBD
+- commit: e45ac7d
 - dream-loop: habit tick control toward target
 
 ## r11 — fonts
 - files: src/index.css
 - shot: gauntlet/shots-r4/r11-fonts-meters.png
 - verdict: Meter digits stronger; bar marketing type still cleaner.
-- commit: TBD
+- commit: 0994036
 - dream-loop: header meters vs target
 
 ## r12 — contrast
 - files: src/index.css
 - shot: gauntlet/shots-r4/r12-contrast-daychip.png
 - verdict: Selected day denser; still not Lunatask calendar depth.
-- commit: TBD
+- commit: 9d75e35
 - dream-loop: day strip selection vs target
 
 ## r13 — buttons
 - files: src/index.css
 - shot: gauntlet/shots-r4/r13-buttons-check.png
 - verdict: Checkboxes punchier; Lunatask app rows still denser.
-- commit: TBD
+- commit: 97a4ba7
 - dream-loop: task check control vs target
 
 ## r14 — bar gap
 - files: src/index.css
 - shot: gauntlet/shots-r4/r14-bar-gap-density.png
 - verdict: Triad denser toward dream; bar product mock still richer.
-- commit: TBD
+- commit: 8d3304a
 - dream-loop: composition density vs target.png
 
 ## r15 — fonts
 - files: src/index.css
 - shot: gauntlet/shots-r4/r15-fonts-heads.png; gauntlet/shots-r4/r15-bar.png; gauntlet/shots-r4/r15-ab-candidate.png
 - verdict: Card heads clearer; bar CircularStd H1 still dominates marketing polish.
-- commit: TBD
+- commit: 9ef76f2
 - dream-loop: type ladder vs target
 
 ## r16 — contrast
 - files: src/index.css
 - shot: gauntlet/shots-r4/r16-contrast-mood.png
 - verdict: Mood selection clearer vs dream; bar journal charts still deeper.
-- commit: TBD
+- commit: 9be2008
 - dream-loop: mood control vs target
 
 ## r17 — buttons
 - files: src/index.css
 - shot: gauntlet/shots-r4/r17-buttons-cta.png
 - verdict: Primary CTA heavier; coral bar CTA still hotter.
-- commit: TBD
+- commit: d1dddf8
 
 ## r18 — bar gap
 - files: src/index.css
 - shot: gauntlet/shots-r4/r18-bar-gap-focus.png
 - verdict: Flat focus rings; original still wins overall product polish.
-- commit: TBD
+- commit: 54bd21b
 - dream-loop: chrome focus craft vs target
 
 ## r19 — contrast
 - files: src/index.css
 - shot: gauntlet/shots-r4/r19-contrast-progress.png
 - verdict: Progress + brass edge clearer toward dream; bar still cleaner marketing.
-- commit: TBD
+- commit: 2afbc69
 - dream-loop: materials edge vs target brass desk
 
 ## r20 — bar gap
 - files: src/index.css
 - shot: gauntlet/shots-r4/r20-final.png; gauntlet/shots-r4/r20-bar.png; gauntlet/shots-r4/r20-ab-candidate.png
 - verdict: Job triad reads ≤3s under Harbor Desk; Lunatask still wins marketing CircularStd/coral + product depth. Dream target closer on tabs/ticks/density; Fraunces kept mark-only (target over-serif’d job H2 — rejected).
-- commit: TBD
+- commit: 6e64c9b
 - dream-loop: final live vs .dream-loop/target.png + bar
