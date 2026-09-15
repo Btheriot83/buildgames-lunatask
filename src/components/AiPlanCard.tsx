@@ -63,8 +63,8 @@ export function AiPlanCard() {
     <article className={`desk-card ai-plan-card ${busy ? 'is-busy' : ''}`} data-testid="ai-plan-card">
       <header className="card-head">
         <div>
-          <p className="ai-kicker">Assist · after the triad</p>
-          <h3>AI daily plan</h3>
+          <p className="ai-kicker">After the triad</p>
+          <h3>Order the day</h3>
         </div>
         <button
           type="button"
@@ -73,12 +73,12 @@ export function AiPlanCard() {
           disabled={busy}
           onClick={() => void run()}
         >
-          {busy ? 'Planning…' : 'Plan my day'}
+          {busy ? 'Planning…' : 'Plan the tide'}
         </button>
       </header>
       {!plan && (
         <p className="empty-line">
-          Optional assist: reads today’s open tasks, due habits, and mood — returns a real plan from the server API.
+          Reads open slips, due habits, and today’s weather. Returns a do-order from the server.
         </p>
       )}
       {plan && (
@@ -103,7 +103,7 @@ export function AiPlanCard() {
           {plan.note && <p className="ai-note">{plan.note}</p>}
           <div className="ai-actions">
             <button type="button" className="btn primary" data-testid="apply-plan" onClick={apply}>
-              Add plan to Today
+              Pin plan to blotter
             </button>
             <span className="ai-meta">
               {plan.provider} · {plan.model}

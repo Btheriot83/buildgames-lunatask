@@ -65,8 +65,8 @@ export function TodayPanel() {
       {barren && (
         <EmptyHarbor
           showVideo
-          title="Quiet water"
-          body="No slips or habits due. Capture a task, start a habit, or log mood — the three things this desk is for."
+          title="Still water"
+          body="Nothing due on this tide. Capture a slip, tick a habit, or log the weather."
         />
       )}
 
