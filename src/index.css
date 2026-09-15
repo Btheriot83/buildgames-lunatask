@@ -2425,3 +2425,48 @@ button, input, select, textarea {
   border: 2px solid var(--seafoam-cta) !important;
   font-weight: 700 !important;
 }
+
+/* r8 buttons: tab active pill + check/tick hard edges (Lunatask control punch) */
+.desk-paper .tabs-track {
+  border: 1px solid #c4b79e !important;
+  border-radius: 8px !important;
+  padding: 3px !important;
+  background: #efe6d6 !important;
+  background-image: none !important;
+}
+.desk-paper .tab-btn {
+  min-height: 36px !important;
+  border-radius: 6px !important;
+  padding: 6px 14px !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.desk-paper .tabs-glider {
+  display: none !important;
+}
+.check {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 6px !important;
+  border-width: 2px !important;
+}
+.habit-tick {
+  width: 32px !important;
+  height: 32px !important;
+}
+.habit-tick .tick-ring {
+  width: 28px !important;
+  height: 28px !important;
+  border-width: 2.5px !important;
+  border-color: var(--coral) !important;
+}
+.habit-tick.is-checked .tick-ring {
+  background: var(--coral) !important;
+  border-color: var(--coral) !important;
+  background-image: none !important;
+}
