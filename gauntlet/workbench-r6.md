@@ -89,3 +89,5 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No Anshu reseed. Brandon:
 - commit: 3d510cc
 - dream-loop: final live vs .dream-loop/target.png + bar
 - flat: decorative gradients/glow killed; coral reserved for habit tick + due badge
+
+**Live after:** `shots-r6/r10-live-after.png` · PR #7 · deploy dpl_3bGYbxR7HtJUUtwyD37hPhiGXriY
