@@ -1,0 +1,46 @@
+{
+  "status": "craft_wave_shipped",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "professionalBars": [
+    "https://culturedcode.com/things/",
+    "https://structured.app/"
+  ],
+  "path": "/workspace/build-games/apps/lunatask",
+  "loopsCompleted": 8,
+  "loopsCap": 8,
+  "commitPrefix": "craftN:",
+  "shotsDir": "narrow/shots/tideglass-craft",
+  "techniquesUsed": [
+    "specify-the-look",
+    "cut-elements",
+    "remove-ai-tells",
+    "hand-rewrite-copy",
+    "make-it-alive",
+    "critic-subagents",
+    "design-system-from-assets",
+    "thinking-before-prompt",
+    "give-real-context"
+  ],
+  "criticRounds": [
+    {
+      "atLoop": 8,
+      "doc": "gauntlet/CRITIC_CRAFT8.md",
+      "score": 8.0,
+      "winner": "THINGS 3"
+    }
+  ],
+  "honestNotes": [
+    "Kept single continuous blotter + sticky sliding pills from rauno-scroll-desk.",
+    "8 craftN: loops with separate commits + narrow/shots/tideglass-craft/ shots.",
+    "Deltas: editorial seafoam grouping, Things air, Structured day spine, lean chrome, cut Today Remove/meter-hero leftovers, quieter habit rings, paper depth without glass, hand-rewritten section/walk copy.",
+    "Friend walkthrough retained and tightened.",
+    "Independent critic still awards overall craft to Things 3. No soft win."
+  ],
+  "branch": "craft-wave-tideglass",
+  "messagedBrandon": false
+}
