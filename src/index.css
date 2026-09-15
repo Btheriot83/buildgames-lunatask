@@ -2509,3 +2509,52 @@ button, input, select, textarea {
   padding-top: 14px !important;
   padding-bottom: 56px !important;
 }
+
+/* r10 bar gap / flat coherence final — hard materials, job ≤3s, Harbor Desk locked */
+.btn,
+.btn.primary,
+.btn.secondary,
+.btn.ghost,
+.btn.tiny,
+.job-banner,
+.desk-card,
+.job-progress-fill,
+.tabs-glider,
+.day-chip,
+.mood-chip,
+.ai-plan-card,
+.desk-meter,
+.job-meter,
+.t-badge-dot,
+.check,
+.habit-tick .tick-ring,
+.shell-chrome,
+.desk-paper {
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.chrome-actions .btn.primary,
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
+}
+.habit-tick.is-checked .tick-ring,
+.desk-meter .t-badge-dot {
+  background: var(--coral) !important;
+  color: #fff !important;
+}
+.brand-title {
+  font-family: var(--font-display) !important;
+}
+.job-progress {
+  height: 5px !important;
+  border-radius: 3px !important;
+  background: #d8cebc !important;
+}
+.job-progress-fill {
+  background: var(--seafoam-cta) !important;
+  border-radius: 3px !important;
+}
