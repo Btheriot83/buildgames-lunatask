@@ -2851,3 +2851,20 @@ button, input, select, textarea {
   font-weight: 600 !important;
   font-size: 0.98rem !important;
 }
+
+
+/* ——— beat12: demote AI assist chrome (after triad) ——— */
+.ai-plan-card {
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+  background: #f7f1e6 !important;
+  margin-top: 6px !important;
+}
+.ai-plan-card .card-head h3 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+.ai-kicker, .ai-plan-card .ai-kicker, .card-head .ai-kicker {
+  color: #8a8274 !important;
+  letter-spacing: 0.1em !important;
+}

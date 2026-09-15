@@ -68,7 +68,7 @@ export function AiPlanCard() {
         </div>
         <button
           type="button"
-          className="btn tiny primary"
+          className="btn tiny secondary"
           data-testid="plan-day"
           disabled={busy}
           onClick={() => void run()}
@@ -102,7 +102,7 @@ export function AiPlanCard() {
           )}
           {plan.note && <p className="ai-note">{plan.note}</p>}
           <div className="ai-actions">
-            <button type="button" className="btn primary" data-testid="apply-plan" onClick={apply}>
+            <button type="button" className="btn secondary" data-testid="apply-plan" onClick={apply}>
               Pin plan to blotter
             </button>
             <span className="ai-meta">
