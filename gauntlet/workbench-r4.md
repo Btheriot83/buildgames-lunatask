@@ -127,3 +127,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Card heads clearer; bar CircularStd H1 still dominates marketing polish.
 - commit: TBD
 - dream-loop: type ladder vs target
+
+## r16 — contrast
+- files: src/index.css
+- shot: gauntlet/shots-r4/r16-contrast-mood.png
+- verdict: Mood selection clearer vs dream; bar journal charts still deeper.
+- commit: TBD
+- dream-loop: mood control vs target

@@ -1881,3 +1881,14 @@ contrast
   border-color: #b8a888 !important;
   padding: 8px 12px !important;
 }
+
+/* r16 contrast: mood chips selected solid */
+.mood-chip.is-selected {
+  background: #cfeae4 !important;
+  border-width: 2px !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.mood-chip .mood-num {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+}
