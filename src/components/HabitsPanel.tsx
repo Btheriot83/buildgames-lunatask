@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { habitStreak, isHabitDue } from '../lib/dates'
 import type { HabitFreq } from '../lib/types'
 import { NumberPop } from './NumberPop'
+import { COPY } from '../lib/copy'
 import { usePlanner } from '../store/plannerStore'
 
 export function HabitsPanel() {
@@ -36,7 +37,7 @@ export function HabitsPanel() {
           data-testid="habit-input"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Name a habit…"
+          placeholder={COPY.habitPh}
           autoComplete="off"
         />
         <select value={freq} onChange={(e) => setFreq(e.target.value as HabitFreq)} aria-label="Frequency">

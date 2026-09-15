@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { COPY } from '../lib/copy'
 import { usePlanner } from '../store/plannerStore'
 
 export function ShellChrome() {
@@ -22,23 +23,23 @@ export function ShellChrome() {
             height={72}
           />
           <div>
-            <p className="eyebrow">Harbor desk</p>
-            <h1 className="brand-title">Tideglass</h1>
+            <p className="eyebrow">{COPY.desk}</p>
+            <h1 className="brand-title">{COPY.name}</h1>
           </div>
         </div>
-        <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
+        <p className="brand-sub">{COPY.sub}</p>
       </div>
       <div className="chrome-actions">
         {tab !== 'today' && (
           <button type="button" className="btn primary" onClick={() => setTab('today')} data-testid="go-today">
-            Open Today
+            {COPY.openToday}
           </button>
         )}
         <button type="button" className="btn secondary" onClick={exportBackup} data-testid="export-btn">
-          Export
+          {COPY.export}
         </button>
         <details className="ledger-menu">
-          <summary className="btn tiny ghost">Ledger</summary>
+          <summary className="btn tiny ghost">{COPY.ledger}</summary>
           <div className="ledger-menu-panel">
             <button type="button" className="btn tiny ghost" onClick={() => fileRef.current?.click()}>
               Import backup

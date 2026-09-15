@@ -25,7 +25,7 @@ export function TideBg() {
     window.addEventListener('resize', resize)
 
     const draw = () => {
-      t += 0.008
+      t += 0.006
       const w = window.innerWidth
       const h = window.innerHeight
       ctx.clearRect(0, 0, w, h)
@@ -34,18 +34,19 @@ export function TideBg() {
       ctx.fillStyle = '#0b1c24'
       ctx.fillRect(0, 0, w, h)
 
-      for (let i = 0; i < 5; i++) {
-        const y = h * (0.28 + i * 0.14) + Math.sin(t + i) * 14
+      for (let i = 0; i < 7; i++) {
+        const y = h * (0.18 + i * 0.12) + Math.sin(t * 0.9 + i) * 16
         ctx.beginPath()
         ctx.moveTo(0, y)
-        for (let x = 0; x <= w; x += 14) {
+        for (let x = 0; x <= w; x += 12) {
           const yy =
             y +
-            Math.sin(x * 0.008 + t * (1.1 + i * 0.12) + i) * (8 + i * 2) +
-            Math.cos(x * 0.003 - t) * 4
+            Math.sin(x * 0.007 + t * (0.9 + i * 0.1) + i) * (10 + i * 1.6) +
+            Math.cos(x * 0.0025 - t * 0.8) * 5
           ctx.lineTo(x, yy)
         }
-        ctx.strokeStyle = `rgba(58, 158, 148, ${0.08 + i * 0.03})`
+        const foam = 0.09 + i * 0.025
+        ctx.strokeStyle = i % 3 === 1 ? `rgba(168, 137, 62, ${foam * 0.7})` : `rgba(58, 158, 148, ${foam})`
         ctx.lineWidth = 1
         ctx.stroke()
       }

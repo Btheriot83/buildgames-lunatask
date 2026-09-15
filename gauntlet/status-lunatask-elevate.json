@@ -1,0 +1,67 @@
+{
+  "status": "elevate_pro_bars_shipped",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "cloneOriginal": "https://lunatask.app/",
+  "professionalBars": [
+    "https://culturedcode.com/things/",
+    "https://structured.app/"
+  ],
+  "path": "/workspace/build-games/apps/lunatask",
+  "loopsCompleted": 12,
+  "loopsCap": 12,
+  "commitPrefix": "elevateN:",
+  "shotsDir": "apps/lunatask/shots-elevate",
+  "techniquesUsed": [
+    "specify-the-look",
+    "critic-subagents",
+    "cut-elements",
+    "remove-ai-tells",
+    "hand-rewrite-copy",
+    "make-it-alive",
+    "design-system-from-assets",
+    "thinking-before-prompt",
+    "give-real-context"
+  ],
+  "catalogSource": "https://design-catalog-three.vercel.app/data/prompts.json",
+  "criticRounds": [
+    {
+      "atLoop": 10,
+      "doc": "gauntlet/CRITIC_ELEVATE10.md",
+      "score": 7.2,
+      "winner": "THINGS 3"
+    },
+    {
+      "atLoop": 12,
+      "doc": "gauntlet/CRITIC_ELEVATE12.md",
+      "score": 7.6,
+      "winner": "THINGS 3"
+    }
+  ],
+  "honestNotes": [
+    "Harbor Desk locked; Fraunces mark-only; flat no-gradient bar held.",
+    "12 elevateN: loops with separate commits + shots-elevate/ screenshots.",
+    "Steal landed: Today is the job; This tide / Later / This evening; Now rail; meters/hero/AI chrome cut.",
+    "Previous beat vs lunatask.app marketing was an honest LOSS. This wave bars Things 3 / Structured product UI.",
+    "Independent critic still awards overall craft to Things 3. Structured still wins continuous hour-block timeline.",
+    "Candidate is much closer on Today-as-list. No invented soft win."
+  ],
+  "tests": {
+    "unit": "pass",
+    "build": "pass",
+    "e2e": "pass"
+  },
+  "finishedAtUtc": "2026-09-15T13:50:20Z",
+  "finishedAtPt": "2026-09-15 6:50 AM PT",
+  "branch": "elevate-pro-bars",
+  "pr": null,
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app"
+  },
+  "prState": "PENDING",
+  "messagedBrandon": false
+}

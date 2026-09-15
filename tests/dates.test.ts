@@ -23,3 +23,28 @@ describe('dates', () => {
     expect(isHabitDue('weekdays', '2026-09-14', [])).toBe(true)
   })
 })
+
+import { bucketForHabit, bucketForTask, groupToday } from '../src/lib/todayGroups'
+import { makeSample } from '../src/lib/sample'
+
+describe('today grouping', () => {
+  it('puts P1 and overdue in This tide', () => {
+    expect(bucketForTask({ priority: 1, due: '2026-09-15' } as never, '2026-09-15')).toBe('tide')
+    expect(bucketForTask({ priority: 3, due: '2026-09-14' } as never, '2026-09-15')).toBe('tide')
+    expect(bucketForTask({ priority: 2, due: '2026-09-15' } as never, '2026-09-15')).toBe('later')
+    expect(bucketForTask({ priority: 3, due: '2026-09-15' } as never, '2026-09-15')).toBe('evening')
+  })
+
+  it('slots habits by title rhythm', () => {
+    expect(bucketForHabit({ title: 'Morning pages' } as never)).toBe('tide')
+    expect(bucketForHabit({ title: 'Stretch before bed' } as never)).toBe('evening')
+    expect(bucketForHabit({ title: 'Inbox zero pass' } as never)).toBe('later')
+  })
+
+  it('groups a sample day into three editorial buckets', () => {
+    const s = makeSample(new Date('2026-09-15T12:00:00'))
+    const g = groupToday(s.tasks, s.habits, '2026-09-15')
+    expect(g.map((x) => x.id)).toEqual(['tide', 'later', 'evening'])
+    expect(g.every((x) => x.tasks.length + x.habits.length > 0)).toBe(true)
+  })
+})

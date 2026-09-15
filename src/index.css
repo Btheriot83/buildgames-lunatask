@@ -3011,3 +3011,452 @@ button, input, select, textarea {
 .panel-stage {
   min-height: 380px !important;
 }
+
+/* ——— elevate1: specify-the-look — Today is a list, not a triad (Things grouping on Harbor Desk) ——— */
+.today-ledger {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 8px 12px;
+}
+.today-mast {
+  margin: 4px 0 22px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid #d4cbb8;
+}
+.today-kicker {
+  margin: 0 0 2px;
+  font-family: var(--font-sans) !important;
+  font-size: 0.92rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: var(--seafoam-cta) !important;
+}
+.today-date {
+  margin: 0;
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(2rem, 4vw, 2.6rem) !important;
+  letter-spacing: -0.045em !important;
+  line-height: 1.05 !important;
+  color: var(--ink-on-paper) !important;
+}
+.today-weather {
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: baseline;
+  color: #4a453c !important;
+  font-size: 0.95rem !important;
+  line-height: 1.4;
+  max-width: 38rem;
+}
+.today-clock {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: #7a7264;
+}
+.today-empty {
+  font-size: 1.05rem !important;
+  padding: 24px 0 !important;
+}
+.today-group {
+  margin: 0 0 22px;
+}
+.today-group-label {
+  margin: 0 0 4px;
+  font-family: var(--font-sans) !important;
+  font-size: 0.82rem !important;
+  font-weight: 650 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #5c564c !important;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d4cbb8;
+}
+.today-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 2px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #efe6d6 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.today-list .habit-line {
+  align-items: center;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-size: 1.05rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.015em !important;
+}
+.today-list .habit-tick {
+  margin-top: 0;
+}
+.job-banner,
+.today-grid.job-triad,
+.ai-plan-card {
+  display: none !important;
+}
+
+/* ——— elevate2: cut-elements — kill leftover meters/hero/AI chrome, duplicate date, extra labels ——— */
+.day-strip-head { display: none !important; }
+.day-strip-quiet {
+  margin-bottom: 10px !important;
+}
+.day-strip-quiet .day-chips {
+  gap: 4px !important;
+}
+.desk-paper .day-chip {
+  padding: 6px 2px !important;
+  border-radius: 8px !important;
+}
+.desk-paper .day-chip .dom {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+.desk-paper .day-chip .dow {
+  font-size: 0.62rem !important;
+}
+.brand-sub {
+  max-width: 16rem !important;
+  font-size: 0.85rem !important;
+  color: #8a948e !important;
+}
+.job-banner,
+.job-meters,
+.job-progress,
+.desk-meters,
+.desk-hero,
+.desk-hero-band,
+.desk-hero-compact,
+.empty-harbor,
+.ai-plan-card,
+.stat-pills {
+  display: none !important;
+}
+.today-group-label {
+  border-bottom: 0 !important;
+  padding-bottom: 2px !important;
+  margin-bottom: 0 !important;
+}
+.today-list .task-row:first-child,
+.today-list .habit-line:first-child {
+  border-top: 1px solid #d4cbb8 !important;
+}
+.jump-today {
+  margin-top: 8px;
+}
+
+/* ——— elevate3: Things quiet grouping — air, This evening, heat off the blotter ——— */
+.today-group {
+  margin: 0 0 32px !important;
+}
+.today-group-label {
+  font-size: 0.95rem !important;
+  font-weight: 650 !important;
+  color: #3a3530 !important;
+  letter-spacing: -0.01em !important;
+  padding: 0 0 10px !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  padding: 14px 2px !important;
+}
+.today-list .heat-week,
+.today-list .habit-meta {
+  display: none !important;
+}
+.today-list .habit-title {
+  margin: 0 !important;
+  padding-top: 6px;
+}
+.today-mast {
+  margin-bottom: 28px !important;
+}
+.group-evening .today-group-label {
+  color: #6a5a3a !important;
+}
+
+/* ——— elevate4: Structured one-day timeline — hour rail + now marker ——— */
+.day-timeline {
+  position: relative;
+}
+.today-group {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  margin: 0 0 8px !important;
+  align-items: start;
+}
+.group-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 2px;
+  gap: 4px;
+}
+.group-time {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: #7a7264;
+  font-variant-numeric: tabular-nums;
+}
+.now-flag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral);
+  font-weight: 700;
+}
+.now-hairline {
+  height: 2px;
+  background: var(--coral);
+  margin: 0 0 6px;
+  border-radius: 0;
+}
+.today-group.is-now .group-time {
+  color: var(--coral);
+  font-weight: 700;
+}
+.today-group.is-now .today-group-label {
+  color: var(--ink-on-paper) !important;
+}
+
+/* ——— elevate5: design-system-from-assets — compact chrome so the blotter is the product ——— */
+.brand-bottle {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  border: 1px solid #3a5560 !important;
+}
+.brand-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.15rem) !important;
+  line-height: 0.95 !important;
+}
+.eyebrow {
+  font-size: 0.62rem !important;
+  letter-spacing: 0.14em !important;
+}
+.brand-sub {
+  margin-top: 2px !important;
+  font-size: 0.78rem !important;
+}
+.shell-chrome-lean {
+  margin-bottom: 10px !important;
+  align-items: center !important;
+}
+.app-frame {
+  padding: 14px 20px 56px !important;
+  max-width: 920px !important;
+}
+.desk-paper {
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+}
+.desk-paper .tabs-track {
+  padding: 2px !important;
+  border-radius: 8px !important;
+}
+.desk-paper .tab-btn {
+  min-height: 32px !important;
+  padding: 4px 10px !important;
+  font-size: 0.86rem !important;
+}
+.tabs-nav {
+  margin-bottom: 10px !important;
+}
+.today-ledger {
+  max-width: 680px;
+}
+
+/* ——— elevate6: remove-ai-tells — kill pill tabs, all-caps chrome, leftover shadow cheese ——— */
+.eyebrow {
+  text-transform: none !important;
+  letter-spacing: 0.04em !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+  color: #c9b896 !important;
+  font-size: 0.78rem !important;
+}
+.desk-paper {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22) !important;
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+}
+.desk-paper .tabs-track {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #d4cbb8 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+.desk-paper .tabs-glider {
+  display: none !important;
+}
+.desk-paper .tab-btn {
+  border-radius: 0 !important;
+  min-height: 36px !important;
+  color: #6e675b !important;
+  font-weight: 500 !important;
+  background: transparent !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-current="page"],
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  color: var(--ink-on-paper) !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  box-shadow: inset 0 -2px 0 var(--ink-on-paper) !important;
+}
+.today-kicker {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+.now-flag {
+  letter-spacing: 0.06em;
+}
+
+/* ——— elevate8: quieter week — Things has no card strip; dates as type ——— */
+.day-strip-quiet .day-chips {
+  display: flex !important;
+  gap: 0 !important;
+  justify-content: space-between;
+  border-bottom: 1px solid #d4cbb8;
+  padding: 0 4px 8px;
+  margin-bottom: 2px;
+}
+.desk-paper .day-chip {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 4px 8px !important;
+  min-width: 0;
+  flex: 1;
+}
+.desk-paper .day-chip.is-today {
+  border: 0 !important;
+}
+.desk-paper .day-chip.is-selected {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: inset 0 -2px 0 var(--ink-on-paper) !important;
+  color: var(--ink-on-paper) !important;
+}
+.desk-paper .day-chip.is-selected .dow,
+.desk-paper .day-chip.is-selected .dom {
+  color: var(--ink-on-paper) !important;
+}
+.desk-paper .day-chip .dom {
+  font-size: 0.92rem !important;
+  font-weight: 500 !important;
+}
+.desk-paper .day-chip.is-selected .dom {
+  font-weight: 700 !important;
+}
+
+/* ——— elevate9: make-it-alive — live Now + capture on the blotter ——— */
+.today-add {
+  margin: 8px 0 0 64px;
+}
+.today-add input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d4cbb8;
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 2px;
+  color: var(--ink-on-paper);
+  outline: none;
+}
+.today-add input:focus {
+  border-bottom-color: var(--ink-on-paper);
+}
+.today-add input::placeholder {
+  color: #8a8274;
+}
+.habit-line.is-done .habit-title,
+.task-row.is-done .task-title {
+  text-decoration: line-through;
+  color: #8a8274 !important;
+}
+
+/* ——— elevate10: critic — Today is the heading (Things), Now rail one column ——— */
+.today-kicker { display: none !important; }
+.today-date {
+  font-size: clamp(2.15rem, 4.2vw, 2.85rem) !important;
+  letter-spacing: -0.05em !important;
+}
+.today-weather {
+  margin-top: 6px !important;
+  font-size: 0.92rem !important;
+}
+.today-group {
+  grid-template-columns: 64px 1fr !important;
+}
+.group-rail {
+  align-items: flex-end;
+  min-height: 28px;
+}
+.now-flag {
+  position: static;
+  line-height: 1;
+}
+.today-add {
+  margin-left: 76px;
+}
+
+/* ——— elevate11: critic — thinner Things checks, Now on one line ——— */
+.today-list .check {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  border-width: 1.5px !important;
+  margin-top: 2px;
+}
+.today-list .check-mark {
+  width: 9px;
+  height: 5px;
+}
+.today-list .habit-tick {
+  width: 22px !important;
+  height: 22px !important;
+  flex-basis: 22px !important;
+}
+.today-list .habit-tick .tick-ring {
+  width: 20px !important;
+  height: 20px !important;
+  border-width: 1.5px !important;
+}
+.today-list .habit-title {
+  padding-top: 2px !important;
+}
+.group-time.is-now {
+  color: var(--coral) !important;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.now-hairline {
+  height: 1.5px;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-weight: 450 !important;
+  font-size: 1.02rem !important;
+}
