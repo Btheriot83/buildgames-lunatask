@@ -154,3 +154,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Progress + brass edge clearer toward dream; bar still cleaner marketing.
 - commit: TBD
 - dream-loop: materials edge vs target brass desk
+
+## r20 — bar gap
+- files: src/index.css
+- shot: gauntlet/shots-r4/r20-final.png; gauntlet/shots-r4/r20-bar.png; gauntlet/shots-r4/r20-ab-candidate.png
+- verdict: Job triad reads ≤3s under Harbor Desk; Lunatask still wins marketing CircularStd/coral + product depth. Dream target closer on tabs/ticks/density; Fraunces kept mark-only (target over-serif’d job H2 — rejected).
+- commit: TBD
+- dream-loop: final live vs .dream-loop/target.png + bar

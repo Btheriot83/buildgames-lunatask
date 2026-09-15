@@ -1930,3 +1930,16 @@ contrast
   border-width: 2px !important;
   border-color: #c4a35a !important;
 }
+
+/* r20 bar gap: above-fold coherence — quieter hero, job first */
+.desk-hero-compact {
+  max-height: 56px !important;
+  margin-bottom: 10px !important;
+}
+.desk-hero-caption {
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+}
+.app-frame {
+  padding-top: 22px !important;
+}
