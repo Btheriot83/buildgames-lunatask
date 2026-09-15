@@ -2106,3 +2106,46 @@ button, input, select, textarea {
 .mood-lead-sub {
   color: #3f3a34 !important;
 }
+
+/* r8 buttons: check/tick punch + quieter Remove; streak digits on habit meta */
+.check {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 5px !important;
+  border-width: 2px !important;
+  border-color: #9a8f7a !important;
+  background: #fffaf2 !important;
+}
+.check.is-checked {
+  border-color: var(--seafoam-cta) !important;
+  background: var(--seafoam-cta) !important;
+}
+.habit-tick {
+  width: 30px !important;
+  height: 30px !important;
+}
+.habit-tick .tick-ring {
+  width: 26px !important;
+  height: 26px !important;
+  border-width: 2.5px !important;
+}
+.task-row .btn.tiny.ghost,
+.habit-card .btn.tiny.ghost {
+  opacity: 0.72 !important;
+  font-size: 0.78rem !important;
+  padding: 4px 8px !important;
+  min-height: 26px !important;
+  color: #6a6358 !important;
+  border-color: transparent !important;
+  background: transparent !important;
+}
+.task-row .btn.tiny.ghost:hover,
+.habit-card .btn.tiny.ghost:hover {
+  opacity: 1 !important;
+  color: var(--coral) !important;
+}
+.desk-paper .habit-meta .number-pop,
+.habit-streak .number-pop {
+  color: var(--coral) !important;
+  font-weight: 700 !important;
+}
