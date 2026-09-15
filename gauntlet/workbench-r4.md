@@ -15,4 +15,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css
 - shot: gauntlet/shots-r4/r1-fonts-job.png
 - verdict: Job H2 larger/tighter; still softer than Lunatask CircularStd marketing H1.
-- commit: 99c115f
+- commit: 3e2a5d2
+
+## r2 — fonts
+- files: src/index.css
+- shot: gauntlet/shots-r4/r2-fonts-ui.png
+- verdict: Tab/card tracking tighter; still not CircularStd geometric bite.
+- commit: TBD
