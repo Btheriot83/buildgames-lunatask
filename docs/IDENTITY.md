@@ -50,3 +50,6 @@ Harbor / tide metaphors used sparingly and concretely. Hand-written. No “super
 - Aesthetic name / feel / palette family / type pairing
 - Local-first IndexedDB (no fake sync/E2EE claims)
 - Seed string (stays out of UI forever)
+
+## Visible amplification (still locked)
+Billboard Fraunces mark, Imagine mark chip, desk-hero video band, brass-bordered paper desk — execution amplify only.
