@@ -3160,3 +3160,33 @@ button, input, select, textarea {
 .jump-today {
   margin-top: 8px;
 }
+
+/* ——— elevate3: Things quiet grouping — air, This evening, heat off the blotter ——— */
+.today-group {
+  margin: 0 0 32px !important;
+}
+.today-group-label {
+  font-size: 0.95rem !important;
+  font-weight: 650 !important;
+  color: #3a3530 !important;
+  letter-spacing: -0.01em !important;
+  padding: 0 0 10px !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  padding: 14px 2px !important;
+}
+.today-list .heat-week,
+.today-list .habit-meta {
+  display: none !important;
+}
+.today-list .habit-title {
+  margin: 0 !important;
+  padding-top: 6px;
+}
+.today-mast {
+  margin-bottom: 28px !important;
+}
+.group-evening .today-group-label {
+  color: #6a5a3a !important;
+}

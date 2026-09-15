@@ -6,7 +6,7 @@ export type TodayBucket = 'tide' | 'later' | 'evening'
 export const TODAY_GROUPS: { id: TodayBucket; label: string }[] = [
   { id: 'tide', label: 'This tide' },
   { id: 'later', label: 'Later' },
-  { id: 'evening', label: 'Evening' },
+  { id: 'evening', label: 'This evening' },
 ]
 
 export function bucketForTask(task: Task, day: string): TodayBucket {
