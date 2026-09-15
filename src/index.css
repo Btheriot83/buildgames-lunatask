@@ -1734,3 +1734,17 @@ contrast
   padding: 12px 22px !important;
   letter-spacing: 0.01em !important;
 }
+
+/* r5 buttons/bar: secondary outline weight vs coral primary hierarchy */
+.btn.secondary {
+  border-width: 1.5px !important;
+  padding: 11px 18px !important;
+}
+.chrome-actions .btn.secondary {
+  color: #efe8dc !important;
+  border-color: #5a7380 !important;
+}
+.chrome-actions .btn.secondary:hover {
+  border-color: #c4b8a6 !important;
+  background: #153039 !important;
+}

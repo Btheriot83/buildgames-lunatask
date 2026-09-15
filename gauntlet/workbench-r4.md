@@ -47,4 +47,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css
 - shot: gauntlet/shots-r4/r4-buttons-radius.png
 - verdict: CTA 5px + taller pad closer to Lunatask coral rect; seafoam still quieter than coral #F04037.
-- commit: TBD
+- commit: c703d92
+
+## r5 — buttons
+- files: src/index.css
+- shot: gauntlet/shots-r4/r5-buttons-secondary.png; gauntlet/shots-r4/r5-bar.png; gauntlet/shots-r4/r5-ab-candidate.png
+- verdict: Secondary outlines clearer; bar still wins with coral solid CTA + CircularStd H1 on white.
+- commit: c703d92
