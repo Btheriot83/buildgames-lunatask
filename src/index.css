@@ -1991,3 +1991,26 @@ button, input, select, textarea {
 .stat-label {
   color: #ddcba0 !important;
 }
+
+/* r3 buttons: Lunatask coral-CTA proportions — taller solid primary, 5px, no glow */
+.btn.primary,
+.chrome-actions .btn.primary,
+.desk-paper .btn.primary {
+  min-height: 44px !important;
+  padding: 12px 24px !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.005em !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.chrome-actions .btn.primary {
+  min-width: 9rem !important;
+}
+.btn.secondary {
+  min-height: 44px !important;
+  border-radius: 5px !important;
+}
+.btn.tiny {
+  min-height: 30px !important;
+}
