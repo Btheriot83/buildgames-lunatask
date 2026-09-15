@@ -1706,7 +1706,6 @@ button, input, select, textarea {
   letter-spacing: -0.02em !important;
   font-size: 1.08rem !important;
 }
-contrast
 
 /* r3 contrast: deeper ink on paper */
 :root {
@@ -1942,4 +1941,29 @@ contrast
 }
 .app-frame {
   padding-top: 22px !important;
+}
+
+/* ——— Phase B5 INTEGRITY r5 — Harbor Desk LOCKED; 10 craft rounds vs lunatask.app ——— */
+
+/* r1 fonts: brand optical punch + mark row (CircularStd-like tracking, Fraunces mark-only) */
+.brand-mark-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-title {
+  font-size: clamp(2.55rem, 5.8vw, 3.85rem) !important;
+  letter-spacing: -0.038em !important;
+  line-height: 0.92 !important;
+}
+.eyebrow {
+  letter-spacing: 0.16em !important;
+  font-size: 0.7rem !important;
+}
+.brand-bottle {
+  width: 68px !important;
+  height: 68px !important;
+  border-radius: 10px !important;
+  object-fit: cover;
+  border: 1px solid #3a5560;
 }
