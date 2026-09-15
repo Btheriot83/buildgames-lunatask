@@ -9,3 +9,7 @@ playwright-report
 !.env.example
 .vercel
 .env*
+
+.dream-loop/
+tg-shot.mjs
+tg-shot-server.mjs

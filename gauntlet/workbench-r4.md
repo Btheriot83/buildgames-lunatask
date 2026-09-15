@@ -10,6 +10,20 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 
 **Before:** `shots-r4/r4-before.png` · **Bar home:** `shots-r4/bar-lunatask-home.png`
 
+## transitions.dev recipe → action
+| Recipe | Fires on |
+|--------|----------|
+| success-check | mood save, export backup (`flashSuccess`) |
+| toast | add/fail task, habit, mood, import/export, demo/clear |
+| error-state-shake | empty task title submit |
+| checkbox-check | task complete toggle |
+| tabs-sliding | Today/Tasks/Habits/Mood tab change |
+| number-pop-in | meter digit render |
+| panel-reveal | panel mount (`data-state=in`) |
+| skeleton-reveal | boot loading shell |
+| texts-reveal | app frame enter |
+
+
 
 ## r1 — fonts
 - files: src/index.css
@@ -27,4 +41,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css
 - shot: gauntlet/shots-r4/r3-contrast.png
 - verdict: Ink-on-paper deepened; triad text holds vs washed bone, still shy of Lunatask dark-app ink punch.
+- commit: 84efd0b
+
+## r4 — buttons
+- files: src/index.css
+- shot: gauntlet/shots-r4/r4-buttons-radius.png
+- verdict: CTA 5px + taller pad closer to Lunatask coral rect; seafoam still quieter than coral #F04037.
 - commit: TBD

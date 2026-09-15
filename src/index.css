@@ -1719,3 +1719,18 @@ contrast
 .day-strip-head h2 {
   color: #0e1a20 !important;
 }
+
+/* r4 buttons: Lunatask-like 5px radius + generous pad */
+:root { --btn-radius: 5px; }
+.btn {
+  border-radius: 5px !important;
+  padding: 12px 20px !important;
+}
+.btn.tiny {
+  padding: 6px 12px !important;
+  border-radius: 5px !important;
+}
+.chrome-actions .btn.primary {
+  padding: 12px 22px !important;
+  letter-spacing: 0.01em !important;
+}
