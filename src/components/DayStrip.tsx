@@ -1,4 +1,4 @@
-import { formatDayLabel, todayISO, weekStrip } from '../lib/dates'
+import { todayISO, weekStrip } from '../lib/dates'
 import { usePlanner } from '../store/plannerStore'
 
 export function DayStrip() {
@@ -7,15 +7,7 @@ export function DayStrip() {
   const days = weekStrip(todayISO())
 
   return (
-    <section className="day-strip" aria-label="Day picker">
-      <div className="day-strip-head">
-        <h2>{formatDayLabel(day)}</h2>
-        {day !== todayISO() && (
-          <button type="button" className="btn tiny" onClick={() => setDay(todayISO())}>
-            Jump to today
-          </button>
-        )}
-      </div>
+    <section className="day-strip day-strip-quiet" aria-label="Day picker">
       <div className="day-chips" role="listbox" aria-label="Week">
         {days.map((d) => {
           const [y, m, dd] = d.split('-').map(Number)
@@ -37,6 +29,11 @@ export function DayStrip() {
           )
         })}
       </div>
+      {day !== todayISO() && (
+        <button type="button" className="btn tiny jump-today" onClick={() => setDay(todayISO())}>
+          Jump to today
+        </button>
+      )}
     </section>
   )
 }

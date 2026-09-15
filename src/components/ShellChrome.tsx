@@ -26,7 +26,7 @@ export function ShellChrome() {
             <h1 className="brand-title">Tideglass</h1>
           </div>
         </div>
-        <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
+        <p className="brand-sub">Stays on this device.</p>
       </div>
       <div className="chrome-actions">
         {tab !== 'today' && (

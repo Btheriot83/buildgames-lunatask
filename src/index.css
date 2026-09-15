@@ -3111,3 +3111,52 @@ button, input, select, textarea {
 .ai-plan-card {
   display: none !important;
 }
+
+/* ——— elevate2: cut-elements — kill leftover meters/hero/AI chrome, duplicate date, extra labels ——— */
+.day-strip-head { display: none !important; }
+.day-strip-quiet {
+  margin-bottom: 10px !important;
+}
+.day-strip-quiet .day-chips {
+  gap: 4px !important;
+}
+.desk-paper .day-chip {
+  padding: 6px 2px !important;
+  border-radius: 8px !important;
+}
+.desk-paper .day-chip .dom {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+.desk-paper .day-chip .dow {
+  font-size: 0.62rem !important;
+}
+.brand-sub {
+  max-width: 16rem !important;
+  font-size: 0.85rem !important;
+  color: #8a948e !important;
+}
+.job-banner,
+.job-meters,
+.job-progress,
+.desk-meters,
+.desk-hero,
+.desk-hero-band,
+.desk-hero-compact,
+.empty-harbor,
+.ai-plan-card,
+.stat-pills {
+  display: none !important;
+}
+.today-group-label {
+  border-bottom: 0 !important;
+  padding-bottom: 2px !important;
+  margin-bottom: 0 !important;
+}
+.today-list .task-row:first-child,
+.today-list .habit-line:first-child {
+  border-top: 1px solid #d4cbb8 !important;
+}
+.jump-today {
+  margin-top: 8px;
+}
