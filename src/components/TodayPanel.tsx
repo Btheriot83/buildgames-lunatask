@@ -59,8 +59,10 @@ export function TodayPanel() {
               data-testid={`group-${g.id}`}
             >
               <div className="group-rail" aria-hidden="true">
-                <span className="group-time">{GROUP_CLOCK[g.id]}</span>
-                {isNow && <span className="now-flag">{COPY.now}</span>}
+                <span className={'group-time' + (isNow ? ' is-now' : '')}>
+                  {GROUP_CLOCK[g.id]}
+                  {isNow ? ` ${COPY.now}` : ''}
+                </span>
               </div>
               <div className="group-body">
                 <h3 className="today-group-label">{g.label}</h3>

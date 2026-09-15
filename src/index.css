@@ -3421,3 +3421,42 @@ button, input, select, textarea {
 .today-add {
   margin-left: 76px;
 }
+
+/* ——— elevate11: critic — thinner Things checks, Now on one line ——— */
+.today-list .check {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  border-width: 1.5px !important;
+  margin-top: 2px;
+}
+.today-list .check-mark {
+  width: 9px;
+  height: 5px;
+}
+.today-list .habit-tick {
+  width: 22px !important;
+  height: 22px !important;
+  flex-basis: 22px !important;
+}
+.today-list .habit-tick .tick-ring {
+  width: 20px !important;
+  height: 20px !important;
+  border-width: 1.5px !important;
+}
+.today-list .habit-title {
+  padding-top: 2px !important;
+}
+.group-time.is-now {
+  color: var(--coral) !important;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.now-hairline {
+  height: 1.5px;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-weight: 450 !important;
+  font-size: 1.02rem !important;
+}
