@@ -147,3 +147,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Flat focus rings; original still wins overall product polish.
 - commit: TBD
 - dream-loop: chrome focus craft vs target
+
+## r19 — contrast
+- files: src/index.css
+- shot: gauntlet/shots-r4/r19-contrast-progress.png
+- verdict: Progress + brass edge clearer toward dream; bar still cleaner marketing.
+- commit: TBD
+- dream-loop: materials edge vs target brass desk

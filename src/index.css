@@ -1917,3 +1917,16 @@ contrast
   border-width: 1.5px !important;
   border-color: #2f7f78 !important;
 }
+
+/* r19 contrast: progress fill + desk edge */
+.job-progress {
+  height: 6px !important;
+  background: #d8cebc !important;
+}
+.job-progress-fill {
+  background: var(--seafoam-cta) !important;
+}
+.desk-paper {
+  border-width: 2px !important;
+  border-color: #c4a35a !important;
+}
