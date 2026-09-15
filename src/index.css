@@ -2014,3 +2014,31 @@ button, input, select, textarea {
 .btn.tiny {
   min-height: 30px !important;
 }
+
+/* r4 bar gap: denser chrome meters + actions like Lunatask product mock density */
+.shell-chrome {
+  gap: 12px 18px !important;
+  margin-bottom: 16px !important;
+  align-items: center !important;
+}
+.desk-meters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+.desk-meter {
+  min-width: 78px !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+}
+.chrome-actions {
+  gap: 6px !important;
+}
+.brand-sub {
+  max-width: 34rem;
+  margin-top: 4px !important;
+}
+.app-frame {
+  padding-top: 18px !important;
+  padding-bottom: 64px !important;
+}
