@@ -38,7 +38,7 @@ function providers(): Provider[] {
     (shared?.startsWith('xai-') ? shared : undefined)
   const openai =
     process.env.OPENAI_API_KEY?.trim() ||
-    (shared && !shared.startsWith('xai-') ? shared : undefined)
+    (shared && shared.startsWith('sk-') ? shared : undefined)
   const out: Provider[] = []
   const seen = new Set<string>()
   const push = (p: Provider) => {
@@ -163,6 +163,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           headers: {
             'content-type': 'application/json',
             'x-api-key': p.key,
+            authorization: `Bearer ${p.key}`,
             'anthropic-version': '2023-06-01',
           },
           body: JSON.stringify({
@@ -178,7 +179,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           content?: { type: string; text?: string }[]
         }
         if (!r.ok) {
-          lastErr = data.error?.message || `upstream ${r.status}`
+          lastErr = `${p.name}: ${data.error?.message || 'upstream '+r.status}`
           continue
         }
         const plan = parsePlan(extractAnthropicText(data), p.name, data.model || p.model)
@@ -211,7 +212,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         choices?: { message?: { content?: string } }[]
       }
       if (!r.ok) {
-        lastErr = data.error?.message || `upstream ${r.status}`
+        lastErr = `${p.name}: ${data.error?.message || 'upstream '+r.status}`
         continue
       }
       const plan = parsePlan(data.choices?.[0]?.message?.content || '', p.name, data.model || p.model)
