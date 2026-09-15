@@ -2991,3 +2991,23 @@ button, input, select, textarea {
   color: #b9c2bc !important;
   font-size: 0.95rem !important;
 }
+
+/* ——— beat20: breathing room — denser desk loses to editorial bar ——— */
+.app-frame {
+  max-width: 1080px !important;
+  padding: 28px 24px 72px !important;
+}
+.desk-paper {
+  padding-bottom: 28px !important;
+}
+.today-grid.job-triad {
+  gap: 16px !important;
+  margin-top: 6px !important;
+}
+.job-banner {
+  margin-bottom: 16px !important;
+  padding-bottom: 14px !important;
+}
+.panel-stage {
+  min-height: 380px !important;
+}
