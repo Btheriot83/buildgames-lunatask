@@ -106,3 +106,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Selected day denser; still not Lunatask calendar depth.
 - commit: TBD
 - dream-loop: day strip selection vs target
+
+## r13 — buttons
+- files: src/index.css
+- shot: gauntlet/shots-r4/r13-buttons-check.png
+- verdict: Checkboxes punchier; Lunatask app rows still denser.
+- commit: TBD
+- dream-loop: task check control vs target

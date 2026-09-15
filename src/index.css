@@ -1839,3 +1839,14 @@ contrast
   font-weight: 700 !important;
   color: #0e1a20 !important;
 }
+
+/* r13 buttons: task checkbox square clearer */
+.check {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 5px !important;
+  border-width: 2px !important;
+}
+.check.is-checked {
+  background: var(--seafoam-cta) !important;
+}
