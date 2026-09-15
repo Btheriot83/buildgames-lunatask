@@ -1,9 +1,10 @@
-import { habitStreak, isHabitDue } from '../lib/dates'
-import { AiPlanCard } from './AiPlanCard'
-import { EmptyHarbor } from './EmptyHarbor'
-import { NumberPop } from './NumberPop'
+import { habitStreak } from '../lib/dates'
+import { clockLabel, formatDayParts, groupToday } from '../lib/todayGroups'
 import { TaskRow } from './TaskRow'
+import { NumberPop } from './NumberPop'
 import { usePlanner } from '../store/plannerStore'
+
+const WEATHER = ['', 'Rough', 'Low', 'Okay', 'Good', 'Bright']
 
 export function TodayPanel() {
   const day = usePlanner((s) => s.day)
@@ -11,16 +12,11 @@ export function TodayPanel() {
   const habits = usePlanner((s) => s.habits)
   const journal = usePlanner((s) => s.journal)
   const toggleHabitToday = usePlanner((s) => s.toggleHabitToday)
-  const setTab = usePlanner((s) => s.setTab)
 
-  const dueTasks = tasks
-    .filter((t) => !t.done && (t.due === day || (t.due && t.due < day)))
-    .sort((a, b) => a.priority - b.priority)
-  const dueHabits = habits.filter((h) => isHabitDue(h.freq, day, h.completions))
+  const groups = groupToday(tasks, habits, day)
   const mood = journal.find((j) => j.date === day)
-  const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
-  const barren = dueTasks.length === 0 && dueHabits.length === 0 && !mood
-  const habitPct = dueHabits.length ? Math.round((doneHabits / dueHabits.length) * 100) : 0
+  const parts = formatDayParts(day)
+  const barren = groups.every((g) => g.tasks.length === 0 && g.habits.length === 0)
   const weekDays = Array.from({ length: 7 }, (_, i) => {
     const d = new Date(day + 'T12:00:00')
     d.setDate(d.getDate() - (6 - i))
@@ -28,138 +24,75 @@ export function TodayPanel() {
   })
 
   return (
-    <section className="panel today-panel t-panel-reveal" data-state="in">
-      <div className="job-banner" data-testid="job-banner">
-        <div className="job-banner-copy">
-          <p className="job-eyebrow">On the blotter</p>
-          <h2 className="job-title">Tasks · Habits · Mood</h2>
-          <p className="job-sub">Three things on the blotter. Look first.</p>
-        </div>
-        <p className="job-pulse" aria-label="Today progress">
-          <span>{dueTasks.length} open</span>
-          <span aria-hidden="true">·</span>
-          <span>
-            {doneHabits}/{dueHabits.length} habits
-          </span>
-          <span aria-hidden="true">·</span>
-          <span>{mood ? `mood ${mood.mood}` : 'mood —'}</span>
-        </p>
-        {dueHabits.length > 0 && (
-          <div className="job-progress" aria-hidden="true">
-            <div className="job-progress-fill" style={{ width: `${habitPct}%` }} />
-          </div>
-        )}
-      </div>
-
-      {barren && (
-        <EmptyHarbor
-          showVideo
-          title="Still water"
-          body="Nothing due on this tide. Capture a slip, tick a habit, or log the weather."
-        />
-      )}
-
-      <div className="today-grid job-triad" data-testid="job-triad">
-        <article className="desk-card job-card">
-          <header className="card-head">
-            <h3>Tasks</h3>
-            <button type="button" className="btn tiny ghost" onClick={() => setTab('tasks')}>
-              All tasks
-            </button>
-          </header>
-          <ul className="task-list compact">
-            {dueTasks.length === 0 && (
-              <li className="empty-line">No tasks due. Capture one on the Tasks tab.</li>
-            )}
-            {dueTasks.slice(0, 8).map((t) => (
-              <TaskRow key={t.id} task={t} />
-            ))}
-          </ul>
-        </article>
-
-        <article className="desk-card job-card">
-          <header className="card-head">
-            <h3>Habits</h3>
-            <span className="inline-stat">
-              <NumberPop value={doneHabits} /> / {dueHabits.length}
-            </span>
-          </header>
-          <ul className="habit-list compact">
-            {dueHabits.length === 0 && <li className="empty-line">No habits due on this tide.</li>}
-            {dueHabits.map((h) => {
-              const done = h.completions.includes(day)
-              const streak = habitStreak(h.completions, day)
-              return (
-                <li key={h.id} className={`habit-card mini ${done ? 'is-done' : ''}`}>
-                  <button
-                    type="button"
-                    className={`habit-tick ${done ? 'is-checked' : ''}`}
-                    style={{ ['--habit' as string]: h.color }}
-                    aria-pressed={done}
-                    onClick={() => toggleHabitToday(h.id)}
-                    data-testid="today-habit-check"
-                  >
-                    <span className="tick-ring" />
-                    {done && <span className="tick-mark" />}
-                  </button>
-                  <div className="habit-body">
-                    <p className="habit-title">{h.title}</p>
-                    <div className="habit-meta-row">
-                      <div className="heat-week heat-week-lg" aria-hidden="true">
-                        {weekDays.map((d) => (
-                          <span
-                            key={d}
-                            className={`heat-cell ${h.completions.includes(d) ? 'on' : ''} ${d === day && h.completions.includes(d) ? 'is-today' : ''}`}
-                          />
-                        ))}
-                      </div>
-                      <p className="habit-meta">
-                        streak <NumberPop value={streak} />
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-        </article>
-
-        <article className="desk-card mood-glance job-card">
-          <header className="card-head">
-            <h3>Mood</h3>
-            <button type="button" className="btn tiny ghost" onClick={() => setTab('mood')}>
-              Check in
-            </button>
-          </header>
+    <section className="today-ledger t-panel-reveal" data-state="in" data-testid="today-ledger">
+      <header className="today-mast">
+        <p className="today-kicker">Today</p>
+        <h2 className="today-date">
+          {parts.weekday} {parts.dayNum}
+        </h2>
+        <p className="today-weather">
           {mood ? (
-            <div className="mood-glance-body">
-              <span className={`mood-dot lg m${mood.mood}`}>{mood.mood}</span>
-              <div>
-                <p className="mood-glance-label">
-                  {['', 'Rough', 'Low', 'Okay', 'Good', 'Bright'][mood.mood]}
-                </p>
-                <p>{mood.note || 'Logged without a note.'}</p>
-                <div className="mood-week" aria-hidden="true">
-                  {weekDays.map((d) => {
-                    const entry = journal.find((j) => j.date === d)
-                    return (
-                      <span
-                        key={d}
-                        className={`mood-week-cell ${entry ? `m${entry.mood}` : ''}`}
-                        title={entry ? String(entry.mood) : ''}
-                      />
-                    )
-                  })}
-                </div>
-              </div>
-            </div>
+            <>
+              {WEATHER[mood.mood]}
+              {mood.note ? ` · ${mood.note}` : ''}
+            </>
           ) : (
-            <p className="empty-line">No weather logged for this day yet. Tap Check in.</p>
+            'No weather yet.'
           )}
-        </article>
-      </div>
+          <span className="today-clock">{clockLabel()}</span>
+        </p>
+      </header>
 
-      <AiPlanCard />
+      {barren && <p className="empty-line today-empty">Still water.</p>}
+
+      {groups.map((g) => {
+        if (g.tasks.length === 0 && g.habits.length === 0) return null
+        return (
+          <section key={g.id} className={`today-group group-${g.id}`} data-testid={`group-${g.id}`}>
+            <h3 className="today-group-label">{g.label}</h3>
+            <ul className="today-list">
+              {g.tasks.map((t) => (
+                <TaskRow key={t.id} task={t} quiet />
+              ))}
+              {g.habits.map((h) => {
+                const done = h.completions.includes(day)
+                const streak = habitStreak(h.completions, day)
+                return (
+                  <li key={h.id} className={`habit-line ${done ? 'is-done' : ''}`}>
+                    <button
+                      type="button"
+                      className={`habit-tick ${done ? 'is-checked' : ''}`}
+                      style={{ ['--habit' as string]: h.color }}
+                      aria-pressed={done}
+                      onClick={() => toggleHabitToday(h.id)}
+                      data-testid="today-habit-check"
+                    >
+                      <span className="tick-ring" />
+                      {done && <span className="tick-mark" />}
+                    </button>
+                    <div className="habit-body">
+                      <p className="habit-title">{h.title}</p>
+                      <div className="habit-meta-row">
+                        <div className="heat-week heat-week-lg" aria-hidden="true">
+                          {weekDays.map((d) => (
+                            <span
+                              key={d}
+                              className={`heat-cell ${h.completions.includes(d) ? 'on' : ''} ${d === day && h.completions.includes(d) ? 'is-today' : ''}`}
+                            />
+                          ))}
+                        </div>
+                        <p className="habit-meta">
+                          streak <NumberPop value={streak} />
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+          </section>
+        )
+      })}
     </section>
   )
 }

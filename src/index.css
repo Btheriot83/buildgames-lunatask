@@ -3011,3 +3011,103 @@ button, input, select, textarea {
 .panel-stage {
   min-height: 380px !important;
 }
+
+/* ——— elevate1: specify-the-look — Today is a list, not a triad (Things grouping on Harbor Desk) ——— */
+.today-ledger {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 8px 12px;
+}
+.today-mast {
+  margin: 4px 0 22px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid #d4cbb8;
+}
+.today-kicker {
+  margin: 0 0 2px;
+  font-family: var(--font-sans) !important;
+  font-size: 0.92rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: var(--seafoam-cta) !important;
+}
+.today-date {
+  margin: 0;
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(2rem, 4vw, 2.6rem) !important;
+  letter-spacing: -0.045em !important;
+  line-height: 1.05 !important;
+  color: var(--ink-on-paper) !important;
+}
+.today-weather {
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: baseline;
+  color: #4a453c !important;
+  font-size: 0.95rem !important;
+  line-height: 1.4;
+  max-width: 38rem;
+}
+.today-clock {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: #7a7264;
+}
+.today-empty {
+  font-size: 1.05rem !important;
+  padding: 24px 0 !important;
+}
+.today-group {
+  margin: 0 0 22px;
+}
+.today-group-label {
+  margin: 0 0 4px;
+  font-family: var(--font-sans) !important;
+  font-size: 0.82rem !important;
+  font-weight: 650 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #5c564c !important;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d4cbb8;
+}
+.today-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 2px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #efe6d6 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.today-list .habit-line {
+  align-items: center;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-size: 1.05rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.015em !important;
+}
+.today-list .habit-tick {
+  margin-top: 0;
+}
+.job-banner,
+.today-grid.job-triad,
+.ai-plan-card {
+  display: none !important;
+}

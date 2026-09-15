@@ -8,7 +8,7 @@ const AREA: Record<Task['area'], string> = {
   health: 'Health',
 }
 
-export function TaskRow({ task }: { task: Task }) {
+export function TaskRow({ task, quiet = false }: { task: Task; quiet?: boolean }) {
   const toggleTask = usePlanner((s) => s.toggleTask)
   const removeTask = usePlanner((s) => s.removeTask)
 
@@ -26,11 +26,13 @@ export function TaskRow({ task }: { task: Task }) {
       </button>
       <div className="task-body">
         <p className="task-title">{task.title}</p>
-        <p className="task-meta">
-          <span className={`prio p${task.priority}`}>P{task.priority}</span>
-          <span>{AREA[task.area]}</span>
-          {task.due && <span className="due">{task.due}</span>}
-        </p>
+        {!quiet && (
+          <p className="task-meta">
+            <span className={`prio p${task.priority}`}>P{task.priority}</span>
+            <span>{AREA[task.area]}</span>
+            {task.due && <span className="due">{task.due}</span>}
+          </p>
+        )}
       </div>
       <button type="button" className="btn tiny ghost" onClick={() => removeTask(task.id)} aria-label="Delete task">
         Remove
