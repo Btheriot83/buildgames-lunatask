@@ -2181,3 +2181,39 @@ button, input, select, textarea {
 .day-strip {
   margin-bottom: 10px !important;
 }
+
+/* r10 bar gap / contrast coherence: flat hard bar + above-fold job first */
+.btn,
+.btn.primary,
+.btn.secondary,
+.btn.ghost,
+.job-banner,
+.desk-card,
+.job-progress-fill,
+.tabs-glider,
+.day-chip,
+.mood-chip,
+.ai-plan-card,
+.desk-meter,
+.job-meter,
+.t-badge-dot,
+.check,
+.habit-tick .tick-ring {
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+.desk-hero-compact {
+  max-height: 48px !important;
+  margin-bottom: 8px !important;
+}
+.job-title {
+  font-size: clamp(1.85rem, 3.4vw, 2.4rem) !important;
+}
+.tabs-track {
+  margin-bottom: 12px !important;
+}
+.chrome-actions .btn.primary {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
+}
