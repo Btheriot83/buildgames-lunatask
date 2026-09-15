@@ -44,7 +44,9 @@
       "job_clarity",
       "real_daily_data",
       "visibility"
-    ]
+    ],
+    "flatMaterialsPass": true,
+    "flatShot": "gauntlet/screens/r2-flat-no-gradient.png"
   },
   "ai": {
     "endpoint": "/api/daily-plan",
@@ -57,15 +59,27 @@
     "no_vibe_purple",
     "paper_desk_not_perma_grey_body",
     "hand_copy",
-    "no_sample_lorem"
+    "no_sample_lorem",
+    "no_decorative_gradients",
+    "no_glass_blur",
+    "no_colored_glow",
+    "flat_paper_ink"
   ],
-  "finishedAtUtc": "2026-09-15T04:18:56Z",
-  "finishedAtPt": "2026-09-14 9:18 PM PT",
+  "finishedAtUtc": "2026-09-15T04:22:13Z",
+  "finishedAtPt": "2026-09-14 9:22 PM PT",
   "notes": "Phase B2 10 rounds under locked Harbor Desk. Fixed MileCue-contaminated before-shot. Job triad (tasks/habits/mood) above fold; real daily data; AI assist demoted.",
   "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/2",
   "prState": "MERGED",
   "deploy": {
     "url": "https://buildgames-lunatask.vercel.app",
     "id": "dpl_35z3TiTrZgTR5NEWZNWQjPjuYkFu"
+  },
+  "flatMaterials": {
+    "gradients": 0,
+    "backdropFilter": false,
+    "glowRings": false,
+    "blurTokens": 0,
+    "proof": "gauntlet/screens/r2-flat-no-gradient.png",
+    "note": "Brandon Inkwell hard bar applied; Harbor Desk locked"
   }
 }

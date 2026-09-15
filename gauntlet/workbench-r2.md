@@ -32,3 +32,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 5. Demo day tiny; Open Today primary; meters show due/habits/mood.
 
 Baseline ~6.5 → B2 ~7.2 honest vs lunatask.app (original still wins marketing depth; we win job clarity on Today).
+
+## Brandon hard bar (Inkwell) — flat materials pass
+Applied mid/post R2 to Tideglass chrome (Harbor Desk locked, no reseed):
+- Stripped decorative `linear-gradient` / `radial-gradient` from desk paper, job banner, hero veil, progress fill, skeleton shimmer, vignette
+- TideBg: flat `#0b1c24` fill + line strokes only (no canvas gradients / moon glow disc)
+- Killed glass-ish translucent fills → opaque bone/ink; no glow rings; toast/motion blur tokens → 0; shimmer gradient-clip disabled
+- Proof: `gauntlet/screens/r2-flat-no-gradient.png` (computed `backgroundImage: none` on desk/job/veil/progress)

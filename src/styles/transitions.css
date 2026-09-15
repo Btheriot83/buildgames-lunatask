@@ -10,7 +10,7 @@
   --check-bob-dur: 500ms;
   --check-y-amount: 40px;
   --check-blur-dur: 500ms;
-  --check-blur-from: 10px;
+  --check-blur-from: 0px;
   --check-path-dur: 500ms;
   --check-path-delay: 80ms;
   --check-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -78,7 +78,7 @@
   --toast-open: 350ms;
   --toast-close: 250ms;
   --toast-distance: 16px;
-  --toast-blur: 2px;
+  --toast-blur: 0px;
   --toast-scale: 0.97;
   --toast-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -115,7 +115,7 @@
   --digit-dur: 500ms;
   --digit-distance: 8px;
   --digit-stagger: 70ms;
-  --digit-blur: 2px;
+  --digit-blur: 0px;
   --digit-ease: cubic-bezier(0.34, 1.45, 0.64, 1);
   --digit-dir-x: 0;
   --digit-dir-y: 1;
@@ -234,7 +234,7 @@
   --pulse-count: 1;
   --pulse-min: 0.5;
   --reveal-dur: 400ms;
-  --reveal-blur: 2px;
+  --reveal-blur: 0px;
   --reveal-ease: ease-in-out;
 }
 
@@ -307,7 +307,7 @@
   --stagger-dur: 500ms;
   --stagger-distance: 12px;
   --stagger-stagger: 40ms;
-  --stagger-blur: 3px;
+  --stagger-blur: 0px;
   --stagger-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -359,7 +359,7 @@
   --panel-open-dur: 400ms;
   --panel-close-dur: 350ms;
   --panel-translate-y: 100px;
-  --panel-blur: 2px;
+  --panel-blur: 0px;
   --panel-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -562,14 +562,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(
-    90deg,
-    transparent          0%,
-    transparent         40%,
-    var(--shimmer-highlight) 50%,
-    transparent         60%,
-    transparent        100%
-  );
+  background-image: none; /* Brandon hard bar: no gradient-clipped text */
   background-size: var(--shimmer-band) 100%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -632,7 +625,7 @@
   from {
     opacity: 0;
     transform: translateY(calc(var(--digit-distance, 8px) * var(--digit-dir-y, 1)));
-    filter: blur(var(--digit-blur, 2px));
+    filter: none;
   }
   to { opacity: 1; transform: none; filter: none; }
 }
@@ -653,7 +646,7 @@
   animation: tg-texts-in 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 @keyframes tg-texts-in {
-  from { opacity: 0; transform: translateY(14px); filter: blur(4px); }
+  from { opacity: 0; transform: translateY(14px); filter: none; }
   to { opacity: 1; transform: none; filter: none; }
 }
 
