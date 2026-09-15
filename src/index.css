@@ -5,11 +5,14 @@
   --ink-3: #1a3540;
   --bone: #efe8dc;
   --bone-dim: #c4b8a6;
+  --bone-paper: #f4efe6;
+  --ink-on-paper: #1a2e36;
+  --line-paper: #d4cbb8;
   --foam: #d8efe8;
-  --seafoam: #5bd5c8;
-  --seafoam-dim: #3a9e94;
-  --coral: #e06b5b;
-  --brass: #c4a35a;
+  --seafoam: #3a9e94;
+  --seafoam-dim: #2f7f78;
+  --coral: #c45b4e;
+  --brass: #a8893e;
   --line: #2a4550;
   --danger: #d4656a;
   --ok: #5bd5c8;
@@ -189,7 +192,6 @@ button, input, select, textarea {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: rgba(18, 40, 50, 0.72);
-  backdrop-filter: blur(8px);
   min-width: 96px;
 }
 .stat-pill.accent {
@@ -203,9 +205,10 @@ button, input, select, textarea {
   color: var(--bone-dim);
 }
 .number-pop {
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  color: var(--seafoam);
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--brass);
   line-height: 1;
 }
 .chrome-actions {
@@ -230,7 +233,7 @@ button, input, select, textarea {
 .btn:active { transform: translateY(1px); }
 .btn.primary {
   background: var(--seafoam);
-  color: #062028;
+  color: #f4efe6;
   border-color: transparent;
   font-weight: 600;
 }
@@ -254,8 +257,8 @@ button, input, select, textarea {
 }
 .day-strip-head h2 {
   margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .day-chips {
@@ -378,7 +381,6 @@ button, input, select, textarea {
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: rgba(18, 40, 50, 0.62);
-  backdrop-filter: blur(10px);
 }
 .task-row.is-done { opacity: 0.55; }
 .task-row.is-done .task-title { text-decoration: line-through; }
@@ -474,11 +476,10 @@ button, input, select, textarea {
   grid-template-columns: 1.2fr 1fr;
   gap: 14px;
 }
-.glass-card {
+.desk-card {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(14, 34, 42, 0.72);
-  backdrop-filter: blur(12px);
   padding: 14px;
   box-shadow: var(--shadow);
 }
@@ -491,8 +492,10 @@ button, input, select, textarea {
 }
 .card-head h3 {
   margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink-on-paper);
 }
 .inline-stat {
   font-family: var(--font-mono);
@@ -659,4 +662,153 @@ button, input, select, textarea {
   .composer input { grid-column: 1 / -1; }
   .today-grid { grid-template-columns: 1fr; }
   .mood-glance { grid-column: auto; }
+}
+
+
+/* Phase A Harbor Desk — paper work surface (anti-glass) */
+.desk-paper {
+  background: var(--bone-paper);
+  color: var(--ink-on-paper);
+  border: 1px solid var(--line-paper);
+  border-radius: 18px;
+  padding: 16px 16px 22px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+.desk-paper .section-label { color: var(--seafoam-dim); }
+.desk-paper .section-label.muted { color: #7a7264; }
+.desk-paper .empty-line { color: #6e675b; }
+.desk-paper .btn.ghost { color: var(--ink-on-paper); border-color: var(--line-paper); background: transparent; }
+.desk-paper .btn.primary {
+  background: var(--seafoam);
+  color: #f4efe6;
+  border-color: transparent;
+}
+.desk-paper .composer input,
+.desk-paper .composer select,
+.desk-paper .composer textarea,
+.desk-paper .mood-panel textarea {
+  background: #fffaf2;
+  border-color: var(--line-paper);
+  color: var(--ink-on-paper);
+}
+.desk-paper .tabs-track {
+  background: #e8e0d2;
+  border-color: var(--line-paper);
+}
+.desk-paper .tabs-glider {
+  background: rgba(58, 158, 148, 0.18);
+  border-color: rgba(58, 158, 148, 0.4);
+}
+.desk-paper .tab-btn { color: #6e675b; }
+.desk-paper .tab-btn.is-active { color: var(--ink-on-paper); }
+.desk-paper .day-chip {
+  background: #fffaf2;
+  border-color: var(--line-paper);
+  color: var(--ink-on-paper);
+}
+.desk-paper .day-chip .dow { color: #7a7264; }
+.desk-paper .day-chip.is-selected {
+  background: rgba(58, 158, 148, 0.12);
+  border-color: var(--seafoam);
+}
+.desk-card {
+  border: 1px solid var(--line-paper);
+  border-radius: 14px;
+  background: #fffaf2;
+  padding: 14px;
+  box-shadow: none;
+}
+.desk-meters {
+  display: flex;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+.desk-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(18, 40, 50, 0.55);
+  min-width: 88px;
+}
+.task-row, .habit-card, .journal-row {
+  background: #fffaf2;
+  border-color: var(--line-paper);
+  color: var(--ink-on-paper);
+}
+.desk-paper .task-meta, .desk-paper .habit-meta, .desk-paper .j-date { color: #7a7264; }
+.desk-paper .task-title, .desk-paper .habit-title { color: var(--ink-on-paper); }
+.mood-panel .lead {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink-on-paper);
+}
+.empty-harbor {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 1px solid var(--line-paper);
+  border-radius: 14px;
+  background: #fffaf2;
+}
+.empty-harbor-media {
+  width: 140px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line-paper);
+}
+.empty-harbor-img, .empty-harbor-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.empty-harbor-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+}
+.empty-harbor-body {
+  margin: 0;
+  color: #6e675b;
+  font-size: 0.92rem;
+}
+.ai-plan-card { margin-bottom: 14px; }
+.ai-focus {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: var(--ink-on-paper);
+}
+.ai-list {
+  margin: 0 0 10px;
+  padding-left: 1.2rem;
+  color: var(--ink-on-paper);
+}
+.ai-list.plain { list-style: disc; }
+.ai-note {
+  margin: 0 0 12px;
+  color: #6e675b;
+  font-size: 0.92rem;
+}
+.ai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.ai-meta {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #7a7264;
+}
+@media (max-width: 780px) {
+  .empty-harbor { grid-template-columns: 1fr; }
+  .empty-harbor-media { width: 100%; height: 140px; }
 }

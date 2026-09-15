@@ -32,7 +32,7 @@ export function TasksPanel() {
           data-testid="task-input"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Capture a task…"
+          placeholder="Write a slip…"
           autoComplete="off"
         />
         <select value={area} onChange={(e) => setArea(e.target.value as AreaId)} aria-label="Area">
@@ -58,7 +58,7 @@ export function TasksPanel() {
 
       <h3 className="section-label">Open</h3>
       <ul className="task-list">
-        {open.length === 0 && <li className="empty-line">Nothing open — add one above.</li>}
+        {open.length === 0 && <li className="empty-line">No open slips — add one above.</li>}
         {open
           .slice()
           .sort((a, b) => a.priority - b.priority)

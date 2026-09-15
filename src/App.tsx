@@ -31,14 +31,16 @@ export default function App() {
       {ready && (
         <div className="app-frame t-texts-reveal" data-state="in">
           <ShellChrome />
-          <DayStrip />
-          <TabsNav />
-          <main className="panel-stage" aria-live="polite">
-            {tab === 'today' && <TodayPanel />}
-            {tab === 'tasks' && <TasksPanel />}
-            {tab === 'habits' && <HabitsPanel />}
-            {tab === 'mood' && <MoodPanel />}
-          </main>
+          <div className="desk-paper">
+            <DayStrip />
+            <TabsNav />
+            <main className="panel-stage" aria-live="polite">
+              {tab === 'today' && <TodayPanel />}
+              {tab === 'tasks' && <TasksPanel />}
+              {tab === 'habits' && <HabitsPanel />}
+              {tab === 'mood' && <MoodPanel />}
+            </main>
+          </div>
         </div>
       )}
       <Toast />

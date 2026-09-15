@@ -158,7 +158,7 @@ export const usePlanner = create<State>((set, get) => ({
       get().flashToast('Habit needs a name', 'err')
       return false
     }
-    const colors = ['#5bd5c8', '#c4a35a', '#e06b5b', '#7eb8a8', '#d4a574']
+    const colors = ['#3a9e94', '#a8893e', '#c45b4e', '#5a8f86', '#b08968']
     const habit: Habit = {
       id: nanoid(),
       title: t,

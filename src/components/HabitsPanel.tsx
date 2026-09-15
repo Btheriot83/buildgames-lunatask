@@ -30,7 +30,7 @@ export function HabitsPanel() {
           data-testid="habit-input"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Start a habit…"
+          placeholder="Name a habit…"
           autoComplete="off"
         />
         <select value={freq} onChange={(e) => setFreq(e.target.value as HabitFreq)} aria-label="Frequency">
@@ -44,7 +44,7 @@ export function HabitsPanel() {
       </form>
 
       <ul className="habit-list">
-        {habits.length === 0 && <li className="empty-line">No habits yet — pick something small.</li>}
+        {habits.length === 0 && <li className="empty-line">No habits yet — start with something small enough to keep.</li>}
         {habits.map((h) => {
           const done = h.completions.includes(day)
           const due = isHabitDue(h.freq, day, h.completions)

@@ -1,4 +1,6 @@
 import { habitStreak, isHabitDue } from '../lib/dates'
+import { AiPlanCard } from './AiPlanCard'
+import { EmptyHarbor } from './EmptyHarbor'
 import { NumberPop } from './NumberPop'
 import { TaskRow } from './TaskRow'
 import { usePlanner } from '../store/plannerStore'
@@ -17,11 +19,20 @@ export function TodayPanel() {
   const dueHabits = habits.filter((h) => isHabitDue(h.freq, day, h.completions))
   const mood = journal.find((j) => j.date === day)
   const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
+  const barren = dueTasks.length === 0 && dueHabits.length === 0 && !mood
 
   return (
     <section className="panel today-panel t-panel-reveal" data-state="in">
+      <AiPlanCard />
+      {barren && (
+        <EmptyHarbor
+          showVideo
+          title="Quiet water"
+          body="No slips or habits due. Plan the day, or capture one task below the tide line."
+        />
+      )}
       <div className="today-grid">
-        <article className="glass-card">
+        <article className="desk-card">
           <header className="card-head">
             <h3>Focus</h3>
             <button type="button" className="btn tiny ghost" onClick={() => setTab('tasks')}>
@@ -30,7 +41,7 @@ export function TodayPanel() {
           </header>
           <ul className="task-list compact">
             {dueTasks.length === 0 && (
-              <li className="empty-line">Clear water — no open tasks due this day.</li>
+              <li className="empty-line">No slips due. Capture one, or pull an AI plan.</li>
             )}
             {dueTasks.slice(0, 6).map((t) => (
               <TaskRow key={t.id} task={t} />
@@ -38,7 +49,7 @@ export function TodayPanel() {
           </ul>
         </article>
 
-        <article className="glass-card">
+        <article className="desk-card">
           <header className="card-head">
             <h3>Habits</h3>
             <span className="inline-stat">
@@ -46,7 +57,7 @@ export function TodayPanel() {
             </span>
           </header>
           <ul className="habit-list compact">
-            {dueHabits.length === 0 && <li className="empty-line">Nothing due on this day.</li>}
+            {dueHabits.length === 0 && <li className="empty-line">No habits due on this tide.</li>}
             {dueHabits.map((h) => {
               const done = h.completions.includes(day)
               const streak = habitStreak(h.completions, day)
@@ -75,9 +86,9 @@ export function TodayPanel() {
           </ul>
         </article>
 
-        <article className="glass-card mood-glance">
+        <article className="desk-card mood-glance">
           <header className="card-head">
-            <h3>Mood</h3>
+            <h3>Weather</h3>
             <button type="button" className="btn tiny ghost" onClick={() => setTab('mood')}>
               Check in
             </button>
@@ -88,7 +99,7 @@ export function TodayPanel() {
               <p>{mood.note || 'Logged without a note.'}</p>
             </div>
           ) : (
-            <p className="empty-line">No check-in for this day yet.</p>
+            <p className="empty-line">No weather logged for this day yet.</p>
           )}
         </article>
       </div>

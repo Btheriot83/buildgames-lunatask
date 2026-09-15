@@ -18,16 +18,16 @@ export function ShellChrome() {
   return (
     <header className="shell-chrome">
       <div className="brand-block">
-        <p className="eyebrow">Local ledger</p>
+        <p className="eyebrow">Harbor desk</p>
         <h1 className="brand-title">Tideglass</h1>
-        <p className="brand-sub">Tasks · habits · mood — stays on this device</p>
+        <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
       </div>
-      <div className="stat-pills" aria-label="Quick stats">
-        <div className="stat-pill">
+      <div className="desk-meters" aria-label="Day meters">
+        <div className="desk-meter">
           <span className="stat-label">Open</span>
           <NumberPop value={openTasks} label="open tasks" />
         </div>
-        <div className="stat-pill accent">
+        <div className="desk-meter">
           <span className="stat-label">Best streak</span>
           <NumberPop value={bestStreak} label="best streak" />
         </div>

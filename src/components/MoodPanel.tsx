@@ -20,7 +20,7 @@ export function MoodPanel() {
 
   return (
     <section className="panel mood-panel t-panel-reveal" data-state="in">
-      <p className="lead">How is the tide today?</p>
+      <p className="lead">Name the weather in one line.</p>
       <div className="mood-row" role="radiogroup" aria-label="Mood">
         {MOODS.map((m) => (
           <button
@@ -46,7 +46,7 @@ export function MoodPanel() {
         rows={4}
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="Optional — one honest sentence."
+        placeholder="One honest sentence is enough."
       />
       <button
         type="button"
@@ -54,7 +54,7 @@ export function MoodPanel() {
         data-testid="save-mood"
         onClick={() => saveMood(mood, note)}
       >
-        Log check-in
+        Save today’s weather
       </button>
 
       <h3 className="section-label">Recent</h3>
