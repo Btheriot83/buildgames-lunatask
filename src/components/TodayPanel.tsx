@@ -21,35 +21,29 @@ export function TodayPanel() {
   const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
   const barren = dueTasks.length === 0 && dueHabits.length === 0 && !mood
   const habitPct = dueHabits.length ? Math.round((doneHabits / dueHabits.length) * 100) : 0
+  const weekDays = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(day + 'T12:00:00')
+    d.setDate(d.getDate() - (6 - i))
+    return d.toISOString().slice(0, 10)
+  })
 
   return (
     <section className="panel today-panel t-panel-reveal" data-state="in">
       <div className="job-banner" data-testid="job-banner">
         <div className="job-banner-copy">
-          <p className="job-eyebrow">Today’s desk</p>
+          <p className="job-eyebrow">On the blotter</p>
           <h2 className="job-title">Tasks · Habits · Mood</h2>
-          <p className="job-sub">Check tasks, tick habits, log mood — then ask AI to order the rest.</p>
+          <p className="job-sub">Three things on the blotter. Look first.</p>
         </div>
-        <div className="job-meters" aria-label="Today progress">
-          <div className="job-meter">
-            <span className="stat-label">Tasks open</span>
-            <NumberPop value={dueTasks.length} />
-          </div>
-          <div className="job-meter">
-            <span className="stat-label">Habits</span>
-            <span className="job-meter-frac">
-              <NumberPop value={doneHabits} />/{dueHabits.length}
-            </span>
-          </div>
-          <div className="job-meter">
-            <span className="stat-label">Mood</span>
-            {mood ? (
-              <span className={`mood-dot lg m${mood.mood}`}>{mood.mood}</span>
-            ) : (
-              <span className="job-meter-empty">—</span>
-            )}
-          </div>
-        </div>
+        <p className="job-pulse" aria-label="Today progress">
+          <span>{dueTasks.length} open</span>
+          <span aria-hidden="true">·</span>
+          <span>
+            {doneHabits}/{dueHabits.length} habits
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>{mood ? `mood ${mood.mood}` : 'mood —'}</span>
+        </p>
         {dueHabits.length > 0 && (
           <div className="job-progress" aria-hidden="true">
             <div className="job-progress-fill" style={{ width: `${habitPct}%` }} />
@@ -60,8 +54,8 @@ export function TodayPanel() {
       {barren && (
         <EmptyHarbor
           showVideo
-          title="Quiet water"
-          body="No slips or habits due. Capture a task, start a habit, or log mood — the three things this desk is for."
+          title="Still water"
+          body="Nothing due on this tide. Capture a slip, tick a habit, or log the weather."
         />
       )}
 
@@ -110,9 +104,19 @@ export function TodayPanel() {
                   </button>
                   <div className="habit-body">
                     <p className="habit-title">{h.title}</p>
-                    <p className="habit-meta">
-                      streak <NumberPop value={streak} />
-                    </p>
+                    <div className="habit-meta-row">
+                      <div className="heat-week heat-week-lg" aria-hidden="true">
+                        {weekDays.map((d) => (
+                          <span
+                            key={d}
+                            className={`heat-cell ${h.completions.includes(d) ? 'on' : ''} ${d === day && h.completions.includes(d) ? 'is-today' : ''}`}
+                          />
+                        ))}
+                      </div>
+                      <p className="habit-meta">
+                        streak <NumberPop value={streak} />
+                      </p>
+                    </div>
                   </div>
                 </li>
               )
@@ -135,10 +139,22 @@ export function TodayPanel() {
                   {['', 'Rough', 'Low', 'Okay', 'Good', 'Bright'][mood.mood]}
                 </p>
                 <p>{mood.note || 'Logged without a note.'}</p>
+                <div className="mood-week" aria-hidden="true">
+                  {weekDays.map((d) => {
+                    const entry = journal.find((j) => j.date === d)
+                    return (
+                      <span
+                        key={d}
+                        className={`mood-week-cell ${entry ? `m${entry.mood}` : ''}`}
+                        title={entry ? String(entry.mood) : ''}
+                      />
+                    )
+                  })}
+                </div>
               </div>
             </div>
           ) : (
-            <p className="empty-line">No mood logged for this day yet. Tap Check in.</p>
+            <p className="empty-line">No weather logged for this day yet. Tap Check in.</p>
           )}
         </article>
       </div>

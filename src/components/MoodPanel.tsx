@@ -20,8 +20,8 @@ export function MoodPanel() {
 
   return (
     <section className="panel mood-panel t-panel-reveal" data-state="in">
-      <p className="lead">How’s the day feel?</p>
-      <p className="mood-lead-sub">One tap, one short note — mood is the third leg of Today.</p>
+      <p className="lead">Name the weather in one line.</p>
+      <p className="mood-lead-sub">Rough to bright. Keep the note short enough to reread tomorrow.</p>
       <div className="mood-row" role="radiogroup" aria-label="Mood">
         {MOODS.map((m) => (
           <button
@@ -47,7 +47,7 @@ export function MoodPanel() {
         rows={4}
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="One honest sentence is enough."
+        placeholder="Coffee on the pier. Squall. Fine."
       />
       <button
         type="button"
@@ -55,12 +55,12 @@ export function MoodPanel() {
         data-testid="save-mood"
         onClick={() => saveMood(mood, note)}
       >
-        Save today’s mood
+        Save today’s weather
       </button>
 
       <h3 className="section-label">Recent moods</h3>
       <ul className="journal-list">
-        {journal.length === 0 && <li className="empty-line">No check-ins yet.</li>}
+        {journal.length === 0 && <li className="empty-line">No weather logged yet.</li>}
         {journal.slice(0, 8).map((j) => (
           <li key={j.id} className="journal-row">
             <span className={`mood-dot m${j.mood}`}>{j.mood}</span>

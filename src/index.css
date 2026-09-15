@@ -2558,3 +2558,456 @@ button, input, select, textarea {
   background: var(--seafoam-cta) !important;
   border-radius: 3px !important;
 }
+
+/* ——— beat1: CUT chrome meters + restore photo hero (Harbor Desk locked) ——— */
+.shell-chrome-lean {
+  grid-template-columns: 1fr auto !important;
+  align-items: start !important;
+  gap: 12px 20px !important;
+  margin-bottom: 18px !important;
+}
+.shell-chrome-lean .desk-meters {
+  display: none !important;
+}
+.brand-pulse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  margin: 10px 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: #b7c4c0;
+}
+.brand-pulse .number-pop {
+  font-size: 0.9rem;
+  color: var(--brass);
+}
+.ledger-menu {
+  position: relative;
+}
+.ledger-menu > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.ledger-menu > summary::-webkit-details-marker { display: none; }
+.ledger-menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 148px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--ink-2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+.desk-hero-band {
+  height: 148px !important;
+  margin-bottom: 12px !important;
+}
+.desk-hero-band .desk-hero-caption {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+.desk-hero-band .desk-hero-veil {
+  background: rgba(11, 28, 36, 0.28) !important;
+}
+
+
+/* ——— beat2: habit heat readable at a glance ——— */
+.heat-week-lg {
+  grid-template-columns: repeat(7, 12px) !important;
+  gap: 4px !important;
+}
+.heat-week-lg .heat-cell {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 3px !important;
+  border: 1px solid #cfc3ae;
+  background: #efe6d6 !important;
+}
+.heat-week-lg .heat-cell.on {
+  background: var(--seafoam) !important;
+  border-color: var(--seafoam-dim);
+}
+.heat-week-lg .heat-cell.on.is-today {
+  background: var(--coral) !important;
+  border-color: #a3483d;
+}
+.heat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  margin-right: 8px;
+}
+.heat-caption {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8274;
+}
+.habit-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.habit-card.mini .heat-week-lg {
+  margin: 0;
+}
+
+/* ——— beat3: remove-ai-tells kill-list scrub (Harbor Desk) ——— */
+.brand-title {
+  text-shadow: none !important;
+}
+.brand-bottle {
+  box-shadow: none !important;
+  border-width: 1px !important;
+}
+.desk-paper {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22) !important;
+  border-width: 1px !important;
+}
+.desk-hero,
+.desk-hero-band {
+  border-bottom-width: 1px !important;
+  border-bottom-color: var(--brass) !important;
+}
+.job-banner {
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+  box-shadow: none !important;
+}
+.desk-card,
+.job-card,
+.ai-plan-card,
+.empty-harbor {
+  box-shadow: none !important;
+}
+.ai-plan-card {
+  border-color: #9bb8b2 !important;
+  background: #f3f7f5 !important;
+}
+.ledger-menu-panel {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28) !important;
+}
+
+
+/* ——— beat5: editorial day hierarchy (Harbor Desk) ——— */
+.desk-paper .day-strip-head h2 {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(1.55rem, 3vw, 2.05rem) !important;
+  letter-spacing: -0.03em !important;
+  color: var(--ink-on-paper) !important;
+}
+.desk-paper .day-chips {
+  gap: 6px !important;
+}
+.desk-paper .day-chip {
+  border-radius: 10px !important;
+  padding: 12px 4px !important;
+  border-width: 1px !important;
+  background: #fffaf2 !important;
+}
+.desk-paper .day-chip .dom {
+  font-size: 1.28rem !important;
+  font-weight: 600 !important;
+}
+.desk-paper .day-chip.is-selected {
+  background: var(--ink-on-paper) !important;
+  border-color: var(--ink-on-paper) !important;
+  color: #f4efe6 !important;
+}
+.desk-paper .day-chip.is-selected .dow {
+  color: #c9d6d2 !important;
+}
+.desk-paper .tabs-track {
+  background: #efe6d6 !important;
+  border-radius: 12px !important;
+  padding: 3px !important;
+}
+.desk-paper .tabs-glider {
+  background: #fffaf2 !important;
+  border: 1px solid #c4b79e !important;
+  border-radius: 10px !important;
+}
+.desk-paper .tab-btn {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: var(--ink-on-paper) !important;
+}
+
+
+/* ——— beat6: cut job meter cards → one pulse line ——— */
+.job-banner {
+  grid-template-columns: 1fr !important;
+  align-items: start !important;
+}
+.job-pulse {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: #6e675b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+.job-meters { display: none !important; }
+
+
+/* ——— beat7: blotter tabs (ink selected) + triad rules ——— */
+.desk-paper .tabs-glider {
+  background: var(--ink-on-paper) !important;
+  border-color: var(--ink-on-paper) !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: #f4efe6 !important;
+}
+.desk-paper .tab-btn {
+  color: #6e675b !important;
+}
+.today-grid.job-triad > .job-card {
+  border-top: 3px solid var(--brass) !important;
+  border-radius: 12px !important;
+}
+.job-banner .job-pulse {
+  margin-top: 8px !important;
+}
+.brand-pulse {
+  opacity: 0.85;
+}
+
+
+/* ——— beat8: cut hero band — triad owns the fold ——— */
+.desk-paper {
+  padding-top: 14px !important;
+}
+.desk-paper > .day-strip {
+  padding-top: 2px;
+}
+
+
+/* ——— beat9: paper grain material (flat, no gradient chrome) ——— */
+.desk-paper {
+  position: relative !important;
+  background-color: var(--bone-paper) !important;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E") !important;
+}
+.desk-paper > * { position: relative; z-index: 1; }
+
+
+/* ——— beat10: 7-day mood tide on glance card ——— */
+.mood-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+  max-width: 140px;
+}
+.mood-week-cell {
+  height: 10px;
+  border-radius: 2px;
+  background: #e2d8c8;
+  border: 1px solid #cfc3ae;
+}
+.mood-week-cell.m1 { background: #c45b4e; border-color: #a3483d; }
+.mood-week-cell.m2 { background: #c47d4e; border-color: #a3663d; }
+.mood-week-cell.m3 { background: #a8893e; border-color: #8a7032; }
+.mood-week-cell.m4 { background: #3a9e94; border-color: #2f7f78; }
+.mood-week-cell.m5 { background: #5bd5c8; border-color: #3a9e94; }
+
+
+/* ——— beat11: habit tick punch ——— */
+.habit-tick {
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 34px !important;
+}
+.habit-tick .tick-ring {
+  border-width: 2px !important;
+}
+.habit-card.mini .habit-tick {
+  width: 30px !important;
+  height: 30px !important;
+  flex-basis: 30px !important;
+}
+.habit-list.compact .habit-title {
+  font-weight: 600 !important;
+  font-size: 0.98rem !important;
+}
+
+
+/* ——— beat12: demote AI assist chrome (after triad) ——— */
+.ai-plan-card {
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+  background: #f7f1e6 !important;
+  margin-top: 6px !important;
+}
+.ai-plan-card .card-head h3 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+.ai-kicker, .ai-plan-card .ai-kicker, .card-head .ai-kicker {
+  color: #8a8274 !important;
+  letter-spacing: 0.1em !important;
+}
+
+
+/* ——— beat13: task rows as blotter lines ——— */
+.desk-paper .task-list.compact .task-row,
+.desk-paper .task-list .task-row {
+  border-radius: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid #d4cbb8 !important;
+  background: transparent !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+.desk-paper .job-card .task-list {
+  gap: 0 !important;
+}
+.desk-paper .job-card {
+  background: #fffaf2 !important;
+}
+
+
+/* ——— beat14: dedicated Imagine mark crop ——— */
+.brand-bottle {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 16px !important;
+  object-fit: cover !important;
+  border: 1px solid var(--brass) !important;
+}
+
+
+/* ——— beat15: flat integrity hard bar ——— */
+.app-shell, .shell-chrome, .desk-paper, .job-banner, .desk-card, .btn, .tabs-track, .tabs-glider {
+  background-image: none !important;
+}
+.desk-paper {
+  /* grain svg is texture not chrome gradient — keep via background-image on desk-paper only */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E") !important;
+}
+.btn.primary, .desk-paper .btn.primary {
+  background-image: none !important;
+}
+
+
+/* ——— beat16: quieter blotter banner, louder card titles ——— */
+.job-banner {
+  border: 0 !important;
+  border-bottom: 1px solid #d4cbb8 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 10px !important;
+}
+.job-title {
+  font-size: clamp(1.5rem, 3vw, 1.95rem) !important;
+}
+.job-card .card-head h3 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+/* ——— beat17: ink selected tabs actually win cascade ——— */
+.desk-paper .tabs-glider {
+  display: block !important;
+  background: var(--ink-on-paper) !important;
+  border: 1px solid var(--ink-on-paper) !important;
+  height: auto !important;
+  border-radius: 10px !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"],
+.desk-paper .tabs-track .tab-btn[aria-current="page"] {
+  background: transparent !important;
+  color: #f4efe6 !important;
+  font-weight: 700 !important;
+  background-image: none !important;
+}
+.desk-paper .tab-btn {
+  background: transparent !important;
+  color: #6e675b !important;
+}
+
+/* ——— beat18: quieter remove + sans job title lock ——— */
+.job-title {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+}
+.task-row .btn.tiny.ghost {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.task-row:hover .btn.tiny.ghost,
+.task-row:focus-within .btn.tiny.ghost {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+.habit-card .btn.tiny.ghost {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.habit-card:hover .btn.tiny.ghost,
+.habit-card:focus-within .btn.tiny.ghost {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+
+
+
+/* ——— beat19: Fraunces mark-only hard lock + brand sub quieter ——— */
+.brand-title {
+  font-family: var(--font-display) !important;
+}
+.job-title, .job-eyebrow, .day-strip-head h2, .card-head h3, .habit-title, .task-title, .lead, .mood-panel .lead {
+  font-family: var(--font-sans) !important;
+}
+.brand-sub {
+  max-width: 28rem !important;
+  color: #b9c2bc !important;
+  font-size: 0.95rem !important;
+}
+
+/* ——— beat20: breathing room — denser desk loses to editorial bar ——— */
+.app-frame {
+  max-width: 1080px !important;
+  padding: 28px 24px 72px !important;
+}
+.desk-paper {
+  padding-bottom: 28px !important;
+}
+.today-grid.job-triad {
+  gap: 16px !important;
+  margin-top: 6px !important;
+}
+.job-banner {
+  margin-bottom: 16px !important;
+  padding-bottom: 14px !important;
+}
+.panel-stage {
+  min-height: 380px !important;
+}
