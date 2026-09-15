@@ -2810,3 +2810,24 @@ button, input, select, textarea {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E") !important;
 }
 .desk-paper > * { position: relative; z-index: 1; }
+
+
+/* ——— beat10: 7-day mood tide on glance card ——— */
+.mood-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 10px;
+  max-width: 140px;
+}
+.mood-week-cell {
+  height: 10px;
+  border-radius: 2px;
+  background: #e2d8c8;
+  border: 1px solid #cfc3ae;
+}
+.mood-week-cell.m1 { background: #c45b4e; border-color: #a3483d; }
+.mood-week-cell.m2 { background: #c47d4e; border-color: #a3663d; }
+.mood-week-cell.m3 { background: #a8893e; border-color: #8a7032; }
+.mood-week-cell.m4 { background: #3a9e94; border-color: #2f7f78; }
+.mood-week-cell.m5 { background: #5bd5c8; border-color: #3a9e94; }

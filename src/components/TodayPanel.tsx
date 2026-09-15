@@ -139,10 +139,22 @@ export function TodayPanel() {
                   {['', 'Rough', 'Low', 'Okay', 'Good', 'Bright'][mood.mood]}
                 </p>
                 <p>{mood.note || 'Logged without a note.'}</p>
+                <div className="mood-week" aria-hidden="true">
+                  {weekDays.map((d) => {
+                    const entry = journal.find((j) => j.date === d)
+                    return (
+                      <span
+                        key={d}
+                        className={`mood-week-cell ${entry ? `m${entry.mood}` : ''}`}
+                        title={entry ? String(entry.mood) : ''}
+                      />
+                    )
+                  })}
+                </div>
               </div>
             </div>
           ) : (
-            <p className="empty-line">No mood logged for this day yet. Tap Check in.</p>
+            <p className="empty-line">No weather logged for this day yet. Tap Check in.</p>
           )}
         </article>
       </div>
