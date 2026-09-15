@@ -69,10 +69,10 @@ export function ShellChrome() {
         <button type="button" className="btn primary" onClick={() => setTab('today')} data-testid="go-today">
           Open Today
         </button>
-        <button type="button" className="btn ghost" onClick={exportBackup} data-testid="export-btn">
+        <button type="button" className="btn secondary" onClick={exportBackup} data-testid="export-btn">
           Export
         </button>
-        <button type="button" className="btn ghost" onClick={() => fileRef.current?.click()}>
+        <button type="button" className="btn secondary" onClick={() => fileRef.current?.click()}>
           Import
         </button>
         <button type="button" className="btn tiny ghost" onClick={() => void loadSample()} title="Load a believable demo day">

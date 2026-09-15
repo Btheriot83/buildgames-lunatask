@@ -1,0 +1,93 @@
+{
+  "status": "phase_b3_complete",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "phase": "B3",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "baselineScore": 7.2,
+  "currentScore": 7.8,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "bar": "https://lunatask.app/",
+  "path": "/workspace/build-games/apps/lunatask",
+  "job": "Today tasks + habits + mood (\u22643s)",
+  "phaseA": {
+    "done": true,
+    "techniquesDone": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "identityPath": "docs/IDENTITY.md"
+  },
+  "phaseB": {
+    "roundsCompleted": 5,
+    "roundsTarget": 5,
+    "workbench": "gauntlet/workbench.md"
+  },
+  "phaseB2": {
+    "roundsCompleted": 10,
+    "roundsTarget": 10,
+    "workbench": "gauntlet/workbench-r2.md"
+  },
+  "phaseB3": {
+    "roundsCompleted": 20,
+    "roundsTarget": 20,
+    "workbench": "gauntlet/workbench-r3.md",
+    "focus": [
+      "fonts",
+      "contrast",
+      "buttons",
+      "ab_vs_lunatask",
+      "flat_no_gradient"
+    ],
+    "beforeShot": "gauntlet/screens/r3-before-demo.png",
+    "afterShot": "gauntlet/screens/r3-r20-final.png",
+    "barShot": "gauntlet/screens/r3-bar-lunatask-home.png",
+    "flatShot": "gauntlet/screens/r3-flat-no-gradient.png",
+    "primaryContrast": "4.74:1 white on #2f7f78 (was 2.82 bone on seafoam)",
+    "btnRadius": "6px (was 999px pills; bar ~5px)",
+    "frauncesOffenders": 0,
+    "gradients": 0,
+    "workbenchRootAlias": "gauntlet/workbench-lunatask-r3.md"
+  },
+  "ai": {
+    "endpoint": "/api/daily-plan",
+    "job": "AI daily plan / habit suggestions (secondary assist after triad)",
+    "clientSecrets": false
+  },
+  "antiSlop": [
+    "no_glass",
+    "fraunces_mark_only",
+    "no_vibe_purple",
+    "paper_desk_not_perma_grey_body",
+    "hand_copy",
+    "no_sample_lorem",
+    "no_decorative_gradients",
+    "no_glass_blur",
+    "no_colored_glow",
+    "flat_paper_ink",
+    "no_pill_cta",
+    "primary_contrast_aa"
+  ],
+  "finishedAtUtc": "2026-09-15T04:38:11Z",
+  "finishedAtPt": "2026-09-14 9:38 PM PT",
+  "notes": "Phase B3 20 rounds under locked Harbor Desk. Fonts: Fraunces mark-only, Plex 700 job. Contrast: primary 4.74:1. Buttons: 6px radius, secondary outline. Flat: 0 gradients. Close A/B vs lunatask.app CircularStd/coral 5px CTA craft.",
+  "pr": null,
+  "prState": "pending",
+  "deploy": null,
+  "flatMaterials": {
+    "gradients": 0,
+    "backdropFilter": false,
+    "glowRings": false,
+    "blurTokens": 0,
+    "proof": "gauntlet/screens/r3-flat-no-gradient.png",
+    "note": "B3 flat bar held; Harbor Desk locked"
+  }
+}
