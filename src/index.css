@@ -2364,3 +2364,35 @@ button, input, select, textarea {
   font-weight: 700 !important;
   letter-spacing: -0.032em !important;
 }
+
+/* r6 bar gap: Lunatask-like due badge + denser triad toward dream target */
+.desk-meter .t-badge {
+  top: -7px !important;
+  right: -7px !important;
+}
+.desk-meter .t-badge-dot {
+  min-width: 20px !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  border-radius: 10px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  background: var(--coral) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.today-grid.job-triad {
+  gap: 8px !important;
+}
+.desk-card.job-card {
+  padding: 8px 9px !important;
+}
+.task-list.compact .task-row,
+.habit-list.compact .habit-card.mini {
+  padding: 7px 8px !important;
+  gap: 8px !important;
+}
+.inline-stat {
+  font-family: var(--font-mono) !important;
+  font-size: 0.85rem !important;
+}

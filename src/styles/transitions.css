@@ -710,16 +710,16 @@
 }
 .t-badge-dot {
   display: block;
-  min-width: 18px;
-  height: 18px;
+  min-width: 20px;
+  height: 20px;
   padding: 0 5px;
-  border-radius: 9px;
+  border-radius: 10px;
   background: var(--coral, #c45b4e);
   color: #fff;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.68rem;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 20px;
   text-align: center;
   transform-origin: center;
   transform: scale(1);
