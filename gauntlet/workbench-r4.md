@@ -140,3 +140,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - shot: gauntlet/shots-r4/r17-buttons-cta.png
 - verdict: Primary CTA heavier; coral bar CTA still hotter.
 - commit: TBD
+
+## r18 — bar gap
+- files: src/index.css
+- shot: gauntlet/shots-r4/r18-bar-gap-focus.png
+- verdict: Flat focus rings; original still wins overall product polish.
+- commit: TBD
+- dream-loop: chrome focus craft vs target
