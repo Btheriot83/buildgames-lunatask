@@ -1967,3 +1967,27 @@ button, input, select, textarea {
   object-fit: cover;
   border: 1px solid #3a5560;
 }
+
+/* r2 contrast: chrome field bone + meter edges punchier vs washed B4 */
+.brand-sub {
+  color: #ebe3d4 !important;
+}
+.chrome-actions .btn.secondary {
+  color: #f2ebe0 !important;
+  border-color: #6a8490 !important;
+}
+.chrome-actions .btn.tiny.ghost {
+  color: #c9bfae !important;
+  opacity: 1 !important;
+}
+.desk-meter {
+  border-color: #4a6a76 !important;
+  background: #0f2430 !important;
+}
+.desk-meter .number-pop,
+.desk-meter-frac {
+  color: #e0c46a !important;
+}
+.stat-label {
+  color: #ddcba0 !important;
+}
