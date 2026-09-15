@@ -23,7 +23,7 @@
     "a8ef5e2",
     "ebfc6ee"
   ],
-  "shotCount": 19,
+  "shotCount": 20,
   "barShotRounds": [
     5,
     10
@@ -97,7 +97,7 @@
     "note": "B5 flat bar held; Harbor Desk locked"
   },
   "workbench": "apps/lunatask/gauntlet/workbench-r5.md",
-  "finishedAtUtc": "2026-09-15T06:51:22Z",
+  "finishedAtUtc": "2026-09-15T06:51:55Z",
   "finishedAtPt": "2026-09-14 11:51 PM PT",
   "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/6",
   "prState": "OPEN",
