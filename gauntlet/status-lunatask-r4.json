@@ -1,0 +1,115 @@
+{
+  "status": "phase_b4_integrity_complete",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "phase": "B4",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "bar": "https://lunatask.app/",
+  "path": "/workspace/build-games/apps/lunatask",
+  "roundsCounted": 20,
+  "roundShas": [
+    "3e2a5d2",
+    "aab15da",
+    "84efd0b",
+    "c703d92",
+    "20ea356",
+    "c74c959",
+    "9e0e488",
+    "384cb82",
+    "26e43ad",
+    "e45ac7d",
+    "0994036",
+    "9d75e35",
+    "97a4ba7",
+    "8d3304a",
+    "9ef76f2",
+    "9be2008",
+    "d1dddf8",
+    "54bd21b",
+    "2afbc69",
+    "6e64c9b"
+  ],
+  "shotCount": 34,
+  "barShotRounds": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "honestNotes": [
+    "Lunatask still wins marketing CircularStd + coral CTA + product depth.",
+    "Dream-loop closed tabs/ticks/density/job scale toward target.png; rejected target Fraunces-on-job (identity: mark-only).",
+    "transitions.dev wired on real actions: success-check/toast on mood/export/task-done/habit-tick; shake on empty add; checkbox/tabs/number-pop/panel/skeleton/texts-reveal.",
+    "No invented critic scores."
+  ],
+  "dreamLoop": {
+    "baseline": ".dream-loop/baseline.png",
+    "target": ".dream-loop/target.png",
+    "targetShotCopy": "gauntlet/shots-r4/dream-target.png",
+    "roundsTowardTarget": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      20
+    ]
+  },
+  "transitions": {
+    "success-check": [
+      "mood save",
+      "export",
+      "task done",
+      "habit tick"
+    ],
+    "toast": [
+      "add/fail task",
+      "habit",
+      "mood",
+      "import/export",
+      "demo/clear",
+      "task done/reopen",
+      "habit tick"
+    ],
+    "error-state-shake": [
+      "empty task title"
+    ],
+    "checkbox-check": [
+      "task toggle"
+    ],
+    "tabs-sliding": [
+      "tab change"
+    ],
+    "number-pop-in": [
+      "meter digits remount"
+    ],
+    "panel-reveal": [
+      "panel mount"
+    ],
+    "skeleton-reveal": [
+      "boot"
+    ],
+    "texts-reveal": [
+      "app frame"
+    ]
+  },
+  "workbench": "apps/lunatask/gauntlet/workbench-r4.md",
+  "finishedAtUtc": "2026-09-15T05:14:38Z",
+  "finishedAtPt": "2026-09-14 10:14 PM PT",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/5",
+  "prState": "OPEN",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_Fmmc2frbcefSETD1CfVuVmkEdbyG",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/Fmmc2frbcefSETD1CfVuVmkEdbyG"
+  }
+}

@@ -1674,3 +1674,272 @@ button, input, select, textarea {
 .job-progress-fill {
   border-radius: 4px !important;
 }
+
+/* ——— Phase B4 INTEGRITY — Harbor Desk locked; fonts/contrast/buttons/bar gap ——— */
+
+/* r1 fonts: job title optical punch (CircularStd-like weight/tracking, still Plex) */
+.job-title {
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.05 !important;
+}
+.job-eyebrow {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--seafoam-cta) !important;
+  font-weight: 500 !important;
+}
+
+/* r2 fonts: denser UI tracking like CircularStd product chrome */
+.brand-sub {
+  letter-spacing: -0.01em !important;
+  line-height: 1.4 !important;
+}
+.desk-paper .tab-btn {
+  font-size: 0.92rem !important;
+  letter-spacing: -0.01em !important;
+}
+.card-head h3 {
+  letter-spacing: -0.02em !important;
+  font-size: 1.08rem !important;
+}
+contrast
+
+/* r3 contrast: deeper ink on paper */
+:root {
+  --ink-on-paper: #0e1a20;
+}
+.desk-paper .task-title,
+.desk-paper .habit-title,
+.job-title,
+.card-head h3,
+.day-strip-head h2 {
+  color: #0e1a20 !important;
+}
+
+/* r4 buttons: Lunatask-like 5px radius + generous pad */
+:root { --btn-radius: 5px; }
+.btn {
+  border-radius: 5px !important;
+  padding: 12px 20px !important;
+}
+.btn.tiny {
+  padding: 6px 12px !important;
+  border-radius: 5px !important;
+}
+.chrome-actions .btn.primary {
+  padding: 12px 22px !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* r5 buttons/bar: secondary outline weight vs coral primary hierarchy */
+.btn.secondary {
+  border-width: 1.5px !important;
+  padding: 11px 18px !important;
+}
+.chrome-actions .btn.secondary {
+  color: #efe8dc !important;
+  border-color: #5a7380 !important;
+}
+.chrome-actions .btn.secondary:hover {
+  border-color: #c4b8a6 !important;
+  background: #153039 !important;
+}
+
+/* r6 bar gap: denser task/habit rows + ensure checkbox recipe reads */
+.task-row, .habit-card, .journal-row {
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  gap: 10px !important;
+}
+.t-checkbox-check.check.is-checked .check-mark {
+  border-left-color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
+
+/* r7 contrast: muted meta darker for denser desk (dream-loop) */
+:root {
+  --muted-paper: #3a3530;
+  --muted-paper-soft: #4e4840;
+}
+.desk-paper .task-meta,
+.desk-paper .habit-meta,
+.job-sub,
+.mood-lead-sub,
+.ai-note {
+  color: #3a3530 !important;
+}
+.desk-paper .section-label {
+  color: #276e68 !important;
+  font-weight: 600 !important;
+}
+
+/* r8 fonts dream-loop: job title scale toward target (Plex 700, mark stays Fraunces) */
+.job-title {
+  font-size: clamp(1.95rem, 3.6vw, 2.55rem) !important;
+  letter-spacing: -0.04em !important;
+  line-height: 1.02 !important;
+}
+.job-banner {
+  padding: 14px 16px !important;
+  gap: 12px !important;
+}
+
+/* r9 contrast: solid active tab (dream target) */
+.desk-paper .tabs-glider {
+  background: var(--seafoam-cta) !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.desk-paper .tab-btn:not(.is-active) {
+  color: #3a3530 !important;
+}
+
+/* r10 buttons: habit tick ring + coral affordance (dream/bar gap) */
+.habit-tick .tick-ring {
+  border-width: 2.5px !important;
+  border-color: var(--coral) !important;
+}
+.habit-tick:not(.is-checked) .tick-ring {
+  background: transparent !important;
+}
+.habit-card.mini {
+  padding: 8px 10px !important;
+}
+
+/* r11 fonts: meter labels + brass digits like dream stats */
+.stat-label {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em !important;
+  color: #d2c09a !important;
+}
+.desk-meter .number-pop {
+  font-size: 1.45rem !important;
+  font-weight: 600 !important;
+}
+.job-meter .number-pop,
+.job-meter-frac {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+/* r12 contrast: selected day chip solid seafoam wash */
+.desk-paper .day-chip.is-selected {
+  background: #d7efe9 !important;
+  border-width: 2px !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.desk-paper .day-chip.is-selected .dom {
+  font-weight: 700 !important;
+  color: #0e1a20 !important;
+}
+
+/* r13 buttons: task checkbox square clearer */
+.check {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 5px !important;
+  border-width: 2px !important;
+}
+.check.is-checked {
+  background: var(--seafoam-cta) !important;
+}
+
+/* r14 bar gap: triad grid denser like dream */
+.today-grid.job-triad {
+  gap: 12px !important;
+}
+.desk-card.job-card {
+  padding: 12px !important;
+}
+.habit-list.compact, .task-list.compact {
+  gap: 6px !important;
+}
+.desk-hero-compact {
+  max-height: 72px !important;
+}
+
+/* r15 fonts: card heads + brand sub sharpen */
+.card-head h3 {
+  font-size: 1.12rem !important;
+  font-weight: 700 !important;
+}
+.brand-sub {
+  font-size: 1.02rem !important;
+  color: #e4dccb !important;
+}
+
+/* r11b fonts: job meter border weight (counted r11 commit repair) */
+.job-meter {
+  border-width: 1.5px !important;
+  border-color: #b8a888 !important;
+  padding: 8px 12px !important;
+}
+
+/* r16 contrast: mood chips selected solid */
+.mood-chip.is-selected {
+  background: #cfeae4 !important;
+  border-width: 2px !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.mood-chip .mood-num {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+}
+
+/* r17 buttons: primary CTA weight like dream Open Today */
+.chrome-actions .btn.primary {
+  min-width: 8.5rem !important;
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+}
+.desk-paper .btn.primary {
+  font-weight: 700 !important;
+}
+
+/* r18 bar gap: flat focus + AI card edge */
+.btn:focus-visible,
+.check:focus-visible,
+.tab-btn:focus-visible,
+.day-chip:focus-visible,
+.habit-tick:focus-visible {
+  outline: 2px solid var(--seafoam-cta) !important;
+  outline-offset: 2px !important;
+  box-shadow: none !important;
+}
+.ai-plan-card {
+  border-width: 1.5px !important;
+  border-color: #2f7f78 !important;
+}
+
+/* r19 contrast: progress fill + desk edge */
+.job-progress {
+  height: 6px !important;
+  background: #d8cebc !important;
+}
+.job-progress-fill {
+  background: var(--seafoam-cta) !important;
+}
+.desk-paper {
+  border-width: 2px !important;
+  border-color: #c4a35a !important;
+}
+
+/* r20 bar gap: above-fold coherence — quieter hero, job first */
+.desk-hero-compact {
+  max-height: 56px !important;
+  margin-bottom: 10px !important;
+}
+.desk-hero-caption {
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+}
+.app-frame {
+  padding-top: 22px !important;
+}
