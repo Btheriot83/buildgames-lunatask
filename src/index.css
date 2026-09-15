@@ -3749,6 +3749,66 @@ button, input, select, textarea {
   color: #1a2e36 !important;
 }
 
+
+/* ——— craft2: cut-elements — kill Today row chrome + meter/hero leftovers ——— */
+.today-list .task-row .btn.tiny.ghost,
+.today-list .habit-line .btn.tiny.ghost {
+  display: none !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  padding: 13px 4px 13px 2px !important;
+}
+.job-banner,
+.job-meters,
+.job-progress,
+.desk-meters,
+.desk-hero,
+.desk-hero-band,
+.desk-hero-compact,
+.desk-hero-veil,
+.desk-hero-caption,
+.ai-plan-card,
+.stat-pills,
+.today-grid.job-triad,
+.empty-harbor {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+}
+.today-group.is-now .today-group-label {
+  color: var(--ink-on-paper) !important;
+}
+.today-group.is-now .group-time {
+  color: var(--coral) !important;
+  font-weight: 600 !important;
+}
+.now-hairline {
+  height: 1px !important;
+  background: var(--coral) !important;
+  opacity: 0.85;
+  margin: 2px 0 8px !important;
+}
+.today-list .habit-tick {
+  width: 20px !important;
+  height: 20px !important;
+  flex-basis: 20px !important;
+}
+.today-list .habit-tick .tick-ring {
+  width: 18px !important;
+  height: 18px !important;
+  border-width: 1.5px !important;
+  opacity: 0.9;
+}
+.today-list .check {
+  width: 20px !important;
+  height: 20px !important;
+  border-width: 1.5px !important;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;

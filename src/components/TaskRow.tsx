@@ -34,9 +34,11 @@ export function TaskRow({ task, quiet = false }: { task: Task; quiet?: boolean }
           </p>
         )}
       </div>
-      <button type="button" className="btn tiny ghost" onClick={() => removeTask(task.id)} aria-label="Delete task">
-        Remove
-      </button>
+      {!quiet && (
+        <button type="button" className="btn tiny ghost" onClick={() => removeTask(task.id)} aria-label="Delete task">
+          Remove
+        </button>
+      )}
     </li>
   )
 }
