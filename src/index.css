@@ -2792,3 +2792,12 @@ button, input, select, textarea {
 .brand-pulse {
   opacity: 0.85;
 }
+
+
+/* ——— beat8: cut hero band — triad owns the fold ——— */
+.desk-paper {
+  padding-top: 14px !important;
+}
+.desk-paper > .day-strip {
+  padding-top: 2px;
+}
