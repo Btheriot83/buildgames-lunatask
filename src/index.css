@@ -3190,3 +3190,50 @@ button, input, select, textarea {
 .group-evening .today-group-label {
   color: #6a5a3a !important;
 }
+
+/* ——— elevate4: Structured one-day timeline — hour rail + now marker ——— */
+.day-timeline {
+  position: relative;
+}
+.today-group {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  margin: 0 0 8px !important;
+  align-items: start;
+}
+.group-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 2px;
+  gap: 4px;
+}
+.group-time {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: #7a7264;
+  font-variant-numeric: tabular-nums;
+}
+.now-flag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral);
+  font-weight: 700;
+}
+.now-hairline {
+  height: 2px;
+  background: var(--coral);
+  margin: 0 0 6px;
+  border-radius: 0;
+}
+.today-group.is-now .group-time {
+  color: var(--coral);
+  font-weight: 700;
+}
+.today-group.is-now .today-group-label {
+  color: var(--ink-on-paper) !important;
+}

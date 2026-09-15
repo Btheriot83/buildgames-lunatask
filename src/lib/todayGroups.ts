@@ -23,6 +23,20 @@ export function bucketForHabit(habit: Habit): TodayBucket {
   return 'tide'
 }
 
+
+export const GROUP_CLOCK: Record<TodayBucket, string> = {
+  tide: '7:00',
+  later: '1:00',
+  evening: '7:00',
+}
+
+export function nowBucket(now = new Date()): TodayBucket {
+  const h = now.getHours() + now.getMinutes() / 60
+  if (h < 12) return 'tide'
+  if (h < 17) return 'later'
+  return 'evening'
+}
+
 export function formatDayParts(iso: string) {
   const [y, m, d] = iso.split('-').map(Number)
   const dt = new Date(y, m - 1, d)
