@@ -42,5 +42,19 @@
     "Independent critic still awards overall craft to Things 3. No soft win."
   ],
   "branch": "craft-wave-tideglass",
-  "messagedBrandon": false
+  "messagedBrandon": false,
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/11",
+  "prState": "MERGED",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_FwAqFwwWvR5pb72Z9koXJ3DN9nXn",
+    "sha": "2d49076"
+  },
+  "tests": {
+    "unit": "pass",
+    "build": "pass",
+    "e2e": "pass"
+  },
+  "finishedAtUtc": "2026-09-15T19:33:00Z",
+  "finishedAtPt": "2026-09-15 12:33 PM PT"
 }
