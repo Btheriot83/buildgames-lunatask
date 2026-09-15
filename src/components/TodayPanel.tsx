@@ -33,7 +33,7 @@ export function TodayPanel() {
         <div className="job-banner-copy">
           <p className="job-eyebrow">On the blotter</p>
           <h2 className="job-title">Tasks · Habits · Mood</h2>
-          <p className="job-sub">Three things on the blotter. AI plans after you look.</p>
+          <p className="job-sub">Three things on the blotter. Look first.</p>
         </div>
         <p className="job-pulse" aria-label="Today progress">
           <span>{dueTasks.length} open</span>
