@@ -2084,3 +2084,25 @@ button, input, select, textarea {
 .habit-card.mini, .task-row {
   padding: 8px 10px !important;
 }
+
+/* r7 contrast: habit streak coral heat + muted hierarchy (dream/bar gap) */
+.habit-meta .streak,
+.habit-card .streak,
+.inline-stat {
+  color: var(--coral) !important;
+  font-weight: 700 !important;
+}
+.desk-paper .habit-meta {
+  color: #3f3a34 !important;
+}
+.desk-paper .section-label {
+  color: #1f5f5a !important;
+  letter-spacing: 0.08em !important;
+}
+.job-meter-empty {
+  color: #5a544a !important;
+  font-weight: 600 !important;
+}
+.mood-lead-sub {
+  color: #3f3a34 !important;
+}
