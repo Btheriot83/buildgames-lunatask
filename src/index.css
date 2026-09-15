@@ -1800,3 +1800,15 @@ contrast
 .desk-paper .tab-btn:not(.is-active) {
   color: #3a3530 !important;
 }
+
+/* r10 buttons: habit tick ring + coral affordance (dream/bar gap) */
+.habit-tick .tick-ring {
+  border-width: 2.5px !important;
+  border-color: var(--coral) !important;
+}
+.habit-tick:not(.is-checked) .tick-ring {
+  background: transparent !important;
+}
+.habit-card.mini {
+  padding: 8px 10px !important;
+}

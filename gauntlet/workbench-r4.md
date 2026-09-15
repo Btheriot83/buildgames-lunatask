@@ -85,3 +85,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Solid seafoam active tab matches dream target; bar uses dark app tabs not marketing.
 - commit: TBD
 - dream-loop: tab affordance closed vs target
+
+## r10 — buttons
+- files: src/index.css
+- shot: gauntlet/shots-r4/r10-buttons-habit-tick.png; gauntlet/shots-r4/r10-bar.png; gauntlet/shots-r4/r10-ab-candidate.png
+- verdict: Coral habit rings clearer vs dream; bar still wins product-depth chrome.
+- commit: TBD
+- dream-loop: habit tick control toward target
