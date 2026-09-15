@@ -18,8 +18,19 @@ export function ShellChrome() {
   return (
     <header className="shell-chrome">
       <div className="brand-block">
-        <p className="eyebrow">Harbor desk</p>
-        <h1 className="brand-title">Tideglass</h1>
+        <div className="brand-mark-row">
+          <img
+            className="brand-bottle"
+            src="/imagine/empty-tide-desk.jpg"
+            alt=""
+            width={72}
+            height={72}
+          />
+          <div>
+            <p className="eyebrow">Harbor desk</p>
+            <h1 className="brand-title">Tideglass</h1>
+          </div>
+        </div>
         <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
       </div>
       <div className="desk-meters" aria-label="Day meters">
