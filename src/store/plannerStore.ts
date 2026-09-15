@@ -133,6 +133,8 @@ export const usePlanner = create<State>((set, get) => ({
   },
 
   toggleTask: (id) => {
+    const prev = get().tasks.find((t) => t.id === id)
+    const becomingDone = prev ? !prev.done : false
     set((s) => ({
       tasks: s.tasks.map((t) =>
         t.id === id
@@ -145,6 +147,12 @@ export const usePlanner = create<State>((set, get) => ({
       ),
     }))
     void get().persist()
+    if (becomingDone) {
+      get().flashToast('Task done')
+      get().flashSuccess()
+    } else {
+      get().flashToast('Task reopened')
+    }
   },
 
   removeTask: (id) => {

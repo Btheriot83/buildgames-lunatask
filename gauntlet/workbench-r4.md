@@ -16,9 +16,11 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 | success-check | mood save, export backup (`flashSuccess`) |
 | toast | add/fail task, habit, mood, import/export, demo/clear |
 | error-state-shake | empty task title submit |
-| checkbox-check | task complete toggle |
+| checkbox-check | task complete toggle (class `t-checkbox-check`) |
+| success-check | **also** task done + habit tick (`flashSuccess`) |
+| toast | **also** task done/reopen + habit tick |
 | tabs-sliding | Today/Tasks/Habits/Mood tab change |
-| number-pop-in | meter digit render |
+| number-pop-in | meter digit render (**remount on value**) |
 | panel-reveal | panel mount (`data-state=in`) |
 | skeleton-reveal | boot loading shell |
 | texts-reveal | app frame enter |
@@ -54,3 +56,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - shot: gauntlet/shots-r4/r5-buttons-secondary.png; gauntlet/shots-r4/r5-bar.png; gauntlet/shots-r4/r5-ab-candidate.png
 - verdict: Secondary outlines clearer; bar still wins with coral solid CTA + CircularStd H1 on white.
 - commit: c703d92
+
+## r6 — bar gap
+- files: src/store/plannerStore.ts, src/components/NumberPop.tsx, src/index.css
+- shot: gauntlet/shots-r4/r6-bar-gap-transitions.png
+- verdict: Denser rows + success/toast on complete; still behind Lunatask dark app chrome density.
+- commit: TBD
+- transitions: success-check+toast on task/habit tick; number-pop remount; shake/toast empty add unchanged

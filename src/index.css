@@ -1748,3 +1748,14 @@ contrast
   border-color: #c4b8a6 !important;
   background: #153039 !important;
 }
+
+/* r6 bar gap: denser task/habit rows + ensure checkbox recipe reads */
+.task-row, .habit-card, .journal-row {
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  gap: 10px !important;
+}
+.t-checkbox-check.check.is-checked .check-mark {
+  border-left-color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
