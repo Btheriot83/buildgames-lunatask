@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { COPY } from '../lib/copy'
 import { usePlanner } from '../store/plannerStore'
+import { scrollToSection } from './TabsNav'
 
 export function ShellChrome() {
   const exportBackup = usePlanner((s) => s.exportBackup)
@@ -31,7 +32,15 @@ export function ShellChrome() {
       </div>
       <div className="chrome-actions">
         {tab !== 'today' && (
-          <button type="button" className="btn primary" onClick={() => setTab('today')} data-testid="go-today">
+          <button
+            type="button"
+            className="btn primary"
+            onClick={() => {
+              setTab('today')
+              scrollToSection('today')
+            }}
+            data-testid="go-today"
+          >
             {COPY.openToday}
           </button>
         )}
