@@ -22,7 +22,7 @@ export function ShellChrome() {
             height={72}
           />
           <div>
-            <p className="eyebrow">Harbor desk</p>
+            <p className="eyebrow">Harbor Desk</p>
             <h1 className="brand-title">Tideglass</h1>
           </div>
         </div>

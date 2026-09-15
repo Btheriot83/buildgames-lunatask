@@ -3284,3 +3284,51 @@ button, input, select, textarea {
 .today-ledger {
   max-width: 680px;
 }
+
+/* ——— elevate6: remove-ai-tells — kill pill tabs, all-caps chrome, leftover shadow cheese ——— */
+.eyebrow {
+  text-transform: none !important;
+  letter-spacing: 0.04em !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+  color: #c9b896 !important;
+  font-size: 0.78rem !important;
+}
+.desk-paper {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22) !important;
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+}
+.desk-paper .tabs-track {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #d4cbb8 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+.desk-paper .tabs-glider {
+  display: none !important;
+}
+.desk-paper .tab-btn {
+  border-radius: 0 !important;
+  min-height: 36px !important;
+  color: #6e675b !important;
+  font-weight: 500 !important;
+  background: transparent !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-current="page"],
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  color: var(--ink-on-paper) !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  box-shadow: inset 0 -2px 0 var(--ink-on-paper) !important;
+}
+.today-kicker {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+.now-flag {
+  letter-spacing: 0.06em;
+}
