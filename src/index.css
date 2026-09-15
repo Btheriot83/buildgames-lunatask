@@ -3712,6 +3712,43 @@ button, input, select, textarea {
   }
 }
 
+
+
+/* ——— craft1: specify-the-look — Things quiet editorial type on Harbor Desk ——— */
+.today-date {
+  font-family: var(--font-sans) !important;
+  font-size: clamp(2.35rem, 4.6vw, 3.05rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.055em !important;
+  line-height: 0.98 !important;
+}
+.today-weather {
+  margin-top: 8px !important;
+  font-size: 0.9rem !important;
+  color: #5c564c !important;
+}
+.today-clock {
+  font-size: 0.74rem !important;
+  color: #8a8274 !important;
+}
+.today-group-label {
+  font-size: 0.88rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.015em !important;
+  color: var(--seafoam-cta) !important;
+}
+.group-evening .today-group-label {
+  color: #8a7350 !important;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-size: 1.06rem !important;
+  font-weight: 450 !important;
+  letter-spacing: -0.018em !important;
+  line-height: 1.35 !important;
+  color: #1a2e36 !important;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
