@@ -2702,3 +2702,51 @@ button, input, select, textarea {
 .ledger-menu-panel {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28) !important;
 }
+
+
+/* ——— beat5: editorial day hierarchy (Harbor Desk) ——— */
+.desk-paper .day-strip-head h2 {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(1.55rem, 3vw, 2.05rem) !important;
+  letter-spacing: -0.03em !important;
+  color: var(--ink-on-paper) !important;
+}
+.desk-paper .day-chips {
+  gap: 6px !important;
+}
+.desk-paper .day-chip {
+  border-radius: 10px !important;
+  padding: 12px 4px !important;
+  border-width: 1px !important;
+  background: #fffaf2 !important;
+}
+.desk-paper .day-chip .dom {
+  font-size: 1.28rem !important;
+  font-weight: 600 !important;
+}
+.desk-paper .day-chip.is-selected {
+  background: var(--ink-on-paper) !important;
+  border-color: var(--ink-on-paper) !important;
+  color: #f4efe6 !important;
+}
+.desk-paper .day-chip.is-selected .dow {
+  color: #c9d6d2 !important;
+}
+.desk-paper .tabs-track {
+  background: #efe6d6 !important;
+  border-radius: 12px !important;
+  padding: 3px !important;
+}
+.desk-paper .tabs-glider {
+  background: #fffaf2 !important;
+  border: 1px solid #c4b79e !important;
+  border-radius: 10px !important;
+}
+.desk-paper .tab-btn {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: var(--ink-on-paper) !important;
+}
