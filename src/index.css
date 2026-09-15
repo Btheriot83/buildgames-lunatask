@@ -1674,3 +1674,21 @@ button, input, select, textarea {
 .job-progress-fill {
   border-radius: 4px !important;
 }
+
+/* ——— Phase B4 INTEGRITY — Harbor Desk locked; fonts/contrast/buttons/bar gap ——— */
+
+/* r1 fonts: job title optical punch (CircularStd-like weight/tracking, still Plex) */
+.job-title {
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.05 !important;
+}
+.job-eyebrow {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--seafoam-cta) !important;
+  font-weight: 500 !important;
+}
