@@ -1787,3 +1787,16 @@ contrast
   padding: 14px 16px !important;
   gap: 12px !important;
 }
+
+/* r9 contrast: solid active tab (dream target) */
+.desk-paper .tabs-glider {
+  background: var(--seafoam-cta) !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.desk-paper .tab-btn:not(.is-active) {
+  color: #3a3530 !important;
+}

@@ -78,3 +78,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Job title nearer dream target scale; still Plex not CircularStd/serif-H2 of target (identity: Fraunces mark-only).
 - commit: TBD
 - dream-loop: vs target.png job hierarchy; vs bar still loses marketing H1 craft
+
+## r9 — contrast
+- files: src/index.css
+- shot: gauntlet/shots-r4/r9-contrast-tabs.png
+- verdict: Solid seafoam active tab matches dream target; bar uses dark app tabs not marketing.
+- commit: TBD
+- dream-loop: tab affordance closed vs target
