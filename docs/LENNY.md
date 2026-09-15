@@ -19,3 +19,4 @@
 - Cut: sync, E2EE cloud, calendar OAuth, relationships, notes notebooks, Zapier (paid advantages).
 - transitions.dev free recipes in real UX: success-check, toast, skeleton-reveal, texts-reveal, tabs-sliding, number-pop-in, checkbox-check, error-state-shake, panel-reveal.
 - Anti-slop: no vibe-purple, no Inter, no 3-card marketing hero, no fake stats banner, no emoji nav.
+- Live demo: https://buildgames-lunatask.vercel.app (App Desk smoke 2026-09-14 PT: habit complete + add task + mood + JSON export OK, HTTP 200).
