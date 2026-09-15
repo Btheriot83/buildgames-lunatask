@@ -61,5 +61,11 @@
   ],
   "finishedAtUtc": "2026-09-15T04:18:56Z",
   "finishedAtPt": "2026-09-14 9:18 PM PT",
-  "notes": "Phase B2 10 rounds under locked Harbor Desk. Fixed MileCue-contaminated before-shot. Job triad (tasks/habits/mood) above fold; real daily data; AI assist demoted."
+  "notes": "Phase B2 10 rounds under locked Harbor Desk. Fixed MileCue-contaminated before-shot. Job triad (tasks/habits/mood) above fold; real daily data; AI assist demoted.",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/2",
+  "prState": "MERGED",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_35z3TiTrZgTR5NEWZNWQjPjuYkFu"
+  }
 }
