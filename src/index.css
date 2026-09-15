@@ -1776,3 +1776,14 @@ contrast
   color: #276e68 !important;
   font-weight: 600 !important;
 }
+
+/* r8 fonts dream-loop: job title scale toward target (Plex 700, mark stays Fraunces) */
+.job-title {
+  font-size: clamp(1.95rem, 3.6vw, 2.55rem) !important;
+  letter-spacing: -0.04em !important;
+  line-height: 1.02 !important;
+}
+.job-banner {
+  padding: 14px 16px !important;
+  gap: 12px !important;
+}

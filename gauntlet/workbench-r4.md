@@ -71,3 +71,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - commit: TBD
 - dream-loop: closing muted wash toward target denser desk type
 - transitions: habit tick → toast + success-check
+
+## r8 — fonts
+- files: src/index.css, src/components/TodayPanel.tsx
+- shot: gauntlet/shots-r4/r8-fonts-job-scale.png
+- verdict: Job title nearer dream target scale; still Plex not CircularStd/serif-H2 of target (identity: Fraunces mark-only).
+- commit: TBD
+- dream-loop: vs target.png job hierarchy; vs bar still loses marketing H1 craft

@@ -77,7 +77,7 @@ export function TodayPanel() {
             {dueTasks.length === 0 && (
               <li className="empty-line">No tasks due. Capture one on the Tasks tab.</li>
             )}
-            {dueTasks.slice(0, 6).map((t) => (
+            {dueTasks.slice(0, 8).map((t) => (
               <TaskRow key={t.id} task={t} />
             ))}
           </ul>
