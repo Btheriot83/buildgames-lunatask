@@ -3848,6 +3848,44 @@ button, input, select, textarea {
   font-size: 1.02rem;
 }
 
+
+/* ——— craft4: Structured day spine — continuous hour rail, no meters ——— */
+.day-timeline {
+  position: relative;
+}
+.day-timeline::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  top: 6px;
+  bottom: 18px;
+  width: 1px;
+  background: #e0d6c4;
+  pointer-events: none;
+}
+.group-rail {
+  position: relative;
+  z-index: 1;
+  padding-top: 4px !important;
+}
+.group-time {
+  background: var(--bone-paper);
+  padding: 0 0 0 4px;
+  font-size: 0.7rem !important;
+}
+.today-group.is-now .group-rail::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+  border: 2px solid var(--bone-paper);
+  box-shadow: 0 0 0 1px var(--coral);
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
