@@ -36,12 +36,12 @@ export function TodayPanel() {
   return (
     <section className="today-ledger t-panel-reveal" data-state="in" data-testid="today-ledger">
       <header className="today-mast">
-        <p className="today-kicker">{COPY.today}</p>
-        <h2 className="today-date">
-          {parts.weekday} {parts.dayNum}
-        </h2>
+        <h2 className="today-date">{COPY.today}</h2>
         <p className="today-weather">
-          {mood ? WEATHER[mood.mood] : COPY.weatherEmpty}
+          <span>
+            {parts.weekday} {parts.dayNum}
+            {mood ? ` · ${WEATHER[mood.mood]}` : ''}
+          </span>
           <span className="today-clock">{clockLabel(now)}</span>
         </p>
       </header>

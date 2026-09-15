@@ -3396,3 +3396,28 @@ button, input, select, textarea {
   text-decoration: line-through;
   color: #8a8274 !important;
 }
+
+/* ——— elevate10: critic — Today is the heading (Things), Now rail one column ——— */
+.today-kicker { display: none !important; }
+.today-date {
+  font-size: clamp(2.15rem, 4.2vw, 2.85rem) !important;
+  letter-spacing: -0.05em !important;
+}
+.today-weather {
+  margin-top: 6px !important;
+  font-size: 0.92rem !important;
+}
+.today-group {
+  grid-template-columns: 64px 1fr !important;
+}
+.group-rail {
+  align-items: flex-end;
+  min-height: 28px;
+}
+.now-flag {
+  position: static;
+  line-height: 1;
+}
+.today-add {
+  margin-left: 76px;
+}
