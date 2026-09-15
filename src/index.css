@@ -3237,3 +3237,50 @@ button, input, select, textarea {
 .today-group.is-now .today-group-label {
   color: var(--ink-on-paper) !important;
 }
+
+/* ——— elevate5: design-system-from-assets — compact chrome so the blotter is the product ——— */
+.brand-bottle {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  border: 1px solid #3a5560 !important;
+}
+.brand-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.15rem) !important;
+  line-height: 0.95 !important;
+}
+.eyebrow {
+  font-size: 0.62rem !important;
+  letter-spacing: 0.14em !important;
+}
+.brand-sub {
+  margin-top: 2px !important;
+  font-size: 0.78rem !important;
+}
+.shell-chrome-lean {
+  margin-bottom: 10px !important;
+  align-items: center !important;
+}
+.app-frame {
+  padding: 14px 20px 56px !important;
+  max-width: 920px !important;
+}
+.desk-paper {
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+}
+.desk-paper .tabs-track {
+  padding: 2px !important;
+  border-radius: 8px !important;
+}
+.desk-paper .tab-btn {
+  min-height: 32px !important;
+  padding: 4px 10px !important;
+  font-size: 0.86rem !important;
+}
+.tabs-nav {
+  margin-bottom: 10px !important;
+}
+.today-ledger {
+  max-width: 680px;
+}
