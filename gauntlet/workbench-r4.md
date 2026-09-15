@@ -92,3 +92,17 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Coral habit rings clearer vs dream; bar still wins product-depth chrome.
 - commit: TBD
 - dream-loop: habit tick control toward target
+
+## r11 — fonts
+- files: src/index.css
+- shot: gauntlet/shots-r4/r11-fonts-meters.png
+- verdict: Meter digits stronger; bar marketing type still cleaner.
+- commit: TBD
+- dream-loop: header meters vs target
+
+## r12 — contrast
+- files: src/index.css
+- shot: gauntlet/shots-r4/r12-contrast-daychip.png
+- verdict: Selected day denser; still not Lunatask calendar depth.
+- commit: TBD
+- dream-loop: day strip selection vs target

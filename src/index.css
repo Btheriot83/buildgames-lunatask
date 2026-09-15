@@ -1812,3 +1812,30 @@ contrast
 .habit-card.mini {
   padding: 8px 10px !important;
 }
+
+/* r11 fonts: meter labels + brass digits like dream stats */
+.stat-label {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em !important;
+  color: #d2c09a !important;
+}
+.desk-meter .number-pop {
+  font-size: 1.45rem !important;
+  font-weight: 600 !important;
+}
+.job-meter .number-pop,
+.job-meter-frac {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+/* r12 contrast: selected day chip solid seafoam wash */
+.desk-paper .day-chip.is-selected {
+  background: #d7efe9 !important;
+  border-width: 2px !important;
+  border-color: var(--seafoam-cta) !important;
+}
+.desk-paper .day-chip.is-selected .dom {
+  font-weight: 700 !important;
+  color: #0e1a20 !important;
+}
