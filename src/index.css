@@ -3809,6 +3809,45 @@ button, input, select, textarea {
   border-width: 1.5px !important;
 }
 
+
+/* ——— craft3: Things grouping air — editorial gaps, quiet lists ——— */
+.today-mast {
+  margin: 2px 0 26px !important;
+  padding-bottom: 14px !important;
+}
+.day-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.today-group {
+  margin: 0 !important;
+  gap: 14px !important;
+}
+.today-group-label {
+  padding: 0 0 6px !important;
+  margin: 0 !important;
+}
+.today-list .task-row:first-child,
+.today-list .habit-line:first-child {
+  border-top: 0 !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  border-bottom-color: #ebe3d4 !important;
+}
+.today-list .task-row:last-child,
+.today-list .habit-line:last-child {
+  border-bottom-color: transparent !important;
+}
+.today-add {
+  margin: 18px 0 0 78px !important;
+}
+.today-add input {
+  padding: 14px 2px !important;
+  font-size: 1.02rem;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
