@@ -1,6 +1,4 @@
 import { useRef } from 'react'
-import { NumberPop } from './NumberPop'
-import { habitStreak, isHabitDue, todayISO } from '../lib/dates'
 import { usePlanner } from '../store/plannerStore'
 
 export function ShellChrome() {
@@ -8,17 +6,9 @@ export function ShellChrome() {
   const importBackup = usePlanner((s) => s.importBackup)
   const loadSample = usePlanner((s) => s.loadSample)
   const resetAll = usePlanner((s) => s.resetAll)
-  const habits = usePlanner((s) => s.habits)
-  const tasks = usePlanner((s) => s.tasks)
-  const day = usePlanner((s) => s.day)
   const tab = usePlanner((s) => s.tab)
   const setTab = usePlanner((s) => s.setTab)
   const fileRef = useRef<HTMLInputElement>(null)
-
-  const dueToday = tasks.filter((t) => !t.done && (t.due === day || (t.due && t.due < day))).length
-  const dueHabits = habits.filter((h) => isHabitDue(h.freq, day, h.completions))
-  const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
-  const bestStreak = Math.max(0, ...habits.map((h) => habitStreak(h.completions, todayISO())))
 
   return (
     <header className="shell-chrome shell-chrome-lean">
@@ -37,17 +27,6 @@ export function ShellChrome() {
           </div>
         </div>
         <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
-        <p className="brand-pulse" aria-label="Day pulse">
-          <span>{dueToday} due</span>
-          <span aria-hidden="true">·</span>
-          <span>
-            {doneHabits}/{dueHabits.length} habits
-          </span>
-          <span aria-hidden="true">·</span>
-          <span>
-            streak <NumberPop value={bestStreak} label="best streak" />
-          </span>
-        </p>
       </div>
       <div className="chrome-actions">
         {tab !== 'today' && (

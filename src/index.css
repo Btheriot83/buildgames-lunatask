@@ -2769,3 +2769,26 @@ button, input, select, textarea {
   align-items: baseline;
 }
 .job-meters { display: none !important; }
+
+
+/* ——— beat7: blotter tabs (ink selected) + triad rules ——— */
+.desk-paper .tabs-glider {
+  background: var(--ink-on-paper) !important;
+  border-color: var(--ink-on-paper) !important;
+}
+.desk-paper .tab-btn.is-active {
+  color: #f4efe6 !important;
+}
+.desk-paper .tab-btn {
+  color: #6e675b !important;
+}
+.today-grid.job-triad > .job-card {
+  border-top: 3px solid var(--brass) !important;
+  border-radius: 12px !important;
+}
+.job-banner .job-pulse {
+  margin-top: 8px !important;
+}
+.brand-pulse {
+  opacity: 0.85;
+}
