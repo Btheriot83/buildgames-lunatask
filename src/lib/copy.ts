@@ -21,6 +21,12 @@ export const COPY = {
   add: 'Add',
   addToday: 'Add to today…',
   errorTask: 'Task needs a title',
+  sectionTasks: 'Tasks',
+  sectionTasksSub: 'On the blotter.',
+  sectionHabits: 'Habits',
+  sectionHabitsSub: 'Keep the tide.',
+  sectionMood: 'Mood',
+  sectionMoodSub: 'Weather for the day.',
 } as const
 
 export const WEATHER = ['', 'Rough', 'Low', 'Okay', 'Good', 'Bright'] as const

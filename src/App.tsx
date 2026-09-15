@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { COPY } from './lib/copy'
 import { DayStrip } from './components/DayStrip'
 import { FriendWalkthrough } from './components/FriendWalkthrough'
 import { HabitsPanel } from './components/HabitsPanel'
@@ -50,8 +51,8 @@ export default function App() {
                 style={{ ['--stagger' as string]: 1 }}
               >
                 <header className="desk-section-head">
-                  <h2 className="desk-section-title">Tasks</h2>
-                  <p className="desk-section-sub">Everything on the blotter.</p>
+                  <h2 className="desk-section-title">{COPY.sectionTasks}</h2>
+                  <p className="desk-section-sub">{COPY.sectionTasksSub}</p>
                 </header>
                 <TasksPanel />
               </div>
@@ -62,8 +63,8 @@ export default function App() {
                 style={{ ['--stagger' as string]: 2 }}
               >
                 <header className="desk-section-head">
-                  <h2 className="desk-section-title">Habits</h2>
-                  <p className="desk-section-sub">Keep the tide.</p>
+                  <h2 className="desk-section-title">{COPY.sectionHabits}</h2>
+                  <p className="desk-section-sub">{COPY.sectionHabitsSub}</p>
                 </header>
                 <HabitsPanel />
               </div>
@@ -74,8 +75,8 @@ export default function App() {
                 style={{ ['--stagger' as string]: 3 }}
               >
                 <header className="desk-section-head">
-                  <h2 className="desk-section-title">Mood</h2>
-                  <p className="desk-section-sub">Weather for the day.</p>
+                  <h2 className="desk-section-title">{COPY.sectionMood}</h2>
+                  <p className="desk-section-sub">{COPY.sectionMoodSub}</p>
                 </header>
                 <MoodPanel />
               </div>

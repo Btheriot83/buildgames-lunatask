@@ -3712,6 +3712,381 @@ button, input, select, textarea {
   }
 }
 
+
+
+/* ——— craft1: specify-the-look — Things quiet editorial type on Harbor Desk ——— */
+.today-date {
+  font-family: var(--font-sans) !important;
+  font-size: clamp(2.35rem, 4.6vw, 3.05rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.055em !important;
+  line-height: 0.98 !important;
+}
+.today-weather {
+  margin-top: 8px !important;
+  font-size: 0.9rem !important;
+  color: #5c564c !important;
+}
+.today-clock {
+  font-size: 0.74rem !important;
+  color: #8a8274 !important;
+}
+.today-group-label {
+  font-size: 0.88rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.015em !important;
+  color: var(--seafoam-cta) !important;
+}
+.group-evening .today-group-label {
+  color: #8a7350 !important;
+}
+.today-list .task-title,
+.today-list .habit-title {
+  font-size: 1.06rem !important;
+  font-weight: 450 !important;
+  letter-spacing: -0.018em !important;
+  line-height: 1.35 !important;
+  color: #1a2e36 !important;
+}
+
+
+/* ——— craft2: cut-elements — kill Today row chrome + meter/hero leftovers ——— */
+.today-list .task-row .btn.tiny.ghost,
+.today-list .habit-line .btn.tiny.ghost {
+  display: none !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  padding: 13px 4px 13px 2px !important;
+}
+.job-banner,
+.job-meters,
+.job-progress,
+.desk-meters,
+.desk-hero,
+.desk-hero-band,
+.desk-hero-compact,
+.desk-hero-veil,
+.desk-hero-caption,
+.ai-plan-card,
+.stat-pills,
+.today-grid.job-triad,
+.empty-harbor {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+}
+.today-group.is-now .today-group-label {
+  color: var(--ink-on-paper) !important;
+}
+.today-group.is-now .group-time {
+  color: var(--coral) !important;
+  font-weight: 600 !important;
+}
+.now-hairline {
+  height: 1px !important;
+  background: var(--coral) !important;
+  opacity: 0.85;
+  margin: 2px 0 8px !important;
+}
+.today-list .habit-tick {
+  width: 20px !important;
+  height: 20px !important;
+  flex-basis: 20px !important;
+}
+.today-list .habit-tick .tick-ring {
+  width: 18px !important;
+  height: 18px !important;
+  border-width: 1.5px !important;
+  opacity: 0.9;
+}
+.today-list .check {
+  width: 20px !important;
+  height: 20px !important;
+  border-width: 1.5px !important;
+}
+
+
+/* ——— craft3: Things grouping air — editorial gaps, quiet lists ——— */
+.today-mast {
+  margin: 2px 0 26px !important;
+  padding-bottom: 14px !important;
+}
+.day-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.today-group {
+  margin: 0 !important;
+  gap: 14px !important;
+}
+.today-group-label {
+  padding: 0 0 6px !important;
+  margin: 0 !important;
+}
+.today-list .task-row:first-child,
+.today-list .habit-line:first-child {
+  border-top: 0 !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  border-bottom-color: #ebe3d4 !important;
+}
+.today-list .task-row:last-child,
+.today-list .habit-line:last-child {
+  border-bottom-color: transparent !important;
+}
+.today-add {
+  margin: 18px 0 0 78px !important;
+}
+.today-add input {
+  padding: 14px 2px !important;
+  font-size: 1.02rem;
+}
+
+
+/* ——— craft4: Structured day spine — continuous hour rail, no meters ——— */
+.day-timeline {
+  position: relative;
+}
+.day-timeline::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  top: 6px;
+  bottom: 18px;
+  width: 1px;
+  background: #e0d6c4;
+  pointer-events: none;
+}
+.group-rail {
+  position: relative;
+  z-index: 1;
+  padding-top: 4px !important;
+}
+.group-time {
+  background: var(--bone-paper);
+  padding: 0 0 0 4px;
+  font-size: 0.7rem !important;
+}
+.today-group.is-now .group-rail::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+  border: 2px solid var(--bone-paper);
+  box-shadow: 0 0 0 1px var(--coral);
+}
+
+
+/* ——— craft5: remove-ai-tells + lean chrome — blotter wins, quiet sticky pills ——— */
+.shell-chrome-lean {
+  margin-bottom: 8px !important;
+  gap: 12px !important;
+}
+.brand-bottle {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 7px !important;
+}
+.brand-title {
+  font-size: clamp(1.45rem, 2.8vw, 1.85rem) !important;
+}
+.brand-sub {
+  display: none !important; /* Things has no tagline over Today */
+}
+.eyebrow {
+  font-size: 0.7rem !important;
+  color: #b8a882 !important;
+}
+.chrome-actions .btn {
+  min-height: 30px !important;
+  padding: 4px 10px !important;
+  font-size: 0.8rem !important;
+}
+.day-strip-quiet {
+  margin-bottom: 6px !important;
+  opacity: 0.92;
+}
+.day-strip-quiet .day-chips {
+  padding-bottom: 6px !important;
+}
+.desk-paper .day-chip .dow {
+  font-size: 0.58rem !important;
+  letter-spacing: 0.06em;
+}
+.desk-paper .day-chip .dom {
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+.tabs-nav-sticky {
+  padding: 6px 14px 8px !important;
+  background: color-mix(in srgb, var(--bone-paper) 92%, #fff 8%);
+}
+.desk-paper .tabs-nav-sticky .tabs-track {
+  background: #efe6d6 !important;
+  border-color: #d4cbb8 !important;
+  padding: 3px !important;
+  gap: 3px !important;
+}
+.desk-paper .tabs-nav-sticky .tabs-glider,
+.desk-paper .tabs-nav-sticky .t-tabs-pill {
+  background: #fffaf2 !important;
+  border-color: #d4cbb8 !important;
+  box-shadow: 0 1px 0 rgba(26, 46, 54, 0.05) !important;
+  top: 3px;
+  bottom: 3px;
+}
+.desk-paper .tabs-nav-sticky .tab-btn {
+  min-height: 32px !important;
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+}
+.desk-paper .tabs-nav-sticky .tab-btn.is-active {
+  font-weight: 650 !important;
+}
+.app-frame {
+  padding-top: 12px !important;
+}
+
+
+/* ——— craft6: hand-rewrite-copy + quieter section heads (Today still wins) ——— */
+.desk-section-head {
+  margin: 2px 0 12px !important;
+}
+.desk-section-title {
+  font-size: 1.2rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.025em !important;
+}
+.desk-section-sub {
+  font-size: 0.84rem !important;
+  color: #8a8274 !important;
+}
+.friend-walk-card {
+  border-radius: 14px !important;
+  padding: 16px 16px 12px !important;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 10px 24px rgba(0, 0, 0, 0.24) !important;
+}
+.friend-walk-title {
+  font-size: 1.05rem !important;
+  letter-spacing: -0.02em !important;
+}
+.friend-walk-body {
+  font-size: 0.9rem !important;
+  color: #5c564c !important;
+}
+
+
+/* ——— craft7: make-it-alive depth — paper layers, no glass ——— */
+.desk-paper {
+  box-shadow:
+    0 1px 0 rgba(255, 250, 242, 0.35) inset,
+    0 10px 28px rgba(0, 0, 0, 0.28),
+    0 2px 0 rgba(0, 0, 0, 0.04) !important;
+  border-color: #c9bea6 !important;
+}
+.today-list .task-row,
+.today-list .habit-line {
+  transition: background 140ms ease, padding-left 140ms ease !important;
+  border-radius: 6px !important;
+  margin: 0 -4px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+.today-list .task-row:hover,
+.today-list .habit-line:hover {
+  background: #f7f1e6 !important;
+}
+.today-list .task-row:active,
+.today-list .habit-line:active {
+  background: #efe6d6 !important;
+}
+.tabs-nav-sticky {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: 0 1px 0 #d4cbb8;
+}
+.day-timeline::before {
+  left: 56px;
+  background: #d9cfbc;
+}
+.today-group.is-now .group-rail::after {
+  box-shadow: none;
+  border-width: 1.5px;
+  width: 6px;
+  height: 6px;
+  right: -7px;
+}
+.check:focus-visible,
+.habit-tick:focus-visible {
+  outline: 2px solid var(--seafoam-cta) !important;
+  outline-offset: 2px !important;
+}
+
+
+/* ——— craft8: critic polish — quieter Now, habit rings, sticky/week stack ——— */
+.today-date,
+.today-group-label,
+.today-list .task-title,
+.today-list .habit-title,
+.desk-section-title {
+  font-family: var(--font-sans) !important;
+}
+.today-list .habit-tick:not(.is-checked) .tick-ring {
+  border-color: #9a9080 !important;
+  opacity: 0.75;
+}
+.today-list .habit-tick.is-checked .tick-ring {
+  background: var(--coral) !important;
+  border-color: var(--coral) !important;
+  opacity: 1;
+}
+.group-time.is-now {
+  font-size: 0.68rem !important;
+  letter-spacing: 0.01em;
+}
+.now-hairline {
+  opacity: 0.7;
+  max-width: 100%;
+}
+.tabs-nav-sticky {
+  background: var(--bone-paper) !important; /* kill color-mix tell */
+}
+.day-strip-quiet {
+  opacity: 0.88;
+}
+.day-timeline::before {
+  left: 58px;
+  top: 10px;
+  bottom: 10px;
+  background: #ddd3c0;
+}
+.today-group.is-now .group-rail::after {
+  background: var(--coral);
+  border-color: var(--bone-paper);
+}
+.today-mast {
+  border-bottom-color: #e0d6c4 !important;
+}
+.desk-paper .tabs-nav-sticky .tabs-track {
+  box-shadow: none !important;
+}
+/* Keep Harbor Desk identity: Fraunces mark-only hard lock */
+.brand-title {
+  font-family: var(--font-display) !important;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
