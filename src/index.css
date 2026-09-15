@@ -2868,3 +2868,23 @@ button, input, select, textarea {
   color: #8a8274 !important;
   letter-spacing: 0.1em !important;
 }
+
+
+/* ——— beat13: task rows as blotter lines ——— */
+.desk-paper .task-list.compact .task-row,
+.desk-paper .task-list .task-row {
+  border-radius: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid #d4cbb8 !important;
+  background: transparent !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+.desk-paper .job-card .task-list {
+  gap: 0 !important;
+}
+.desk-paper .job-card {
+  background: #fffaf2 !important;
+}
