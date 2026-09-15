@@ -7,19 +7,19 @@ const KEY = 'tideglass-walk-done'
 const CARDS = [
   {
     title: 'Today is the desk',
-    body: 'Scroll the blotter for Tasks, Habits, and Mood — one continuous page.',
+    body: 'One blotter. Scroll for Tasks, Habits, Mood.',
     cta: 'Got it',
     action: () => scrollToSection('today'),
   },
   {
     title: 'Check something off',
-    body: 'Start with a habit on Today. One tap. Done.',
+    body: 'Tap a habit on Today. That is enough.',
     cta: 'Show me Today',
     action: () => scrollToSection('today'),
   },
   {
     title: 'Add one thing',
-    body: 'Type under Today, or jump to Tasks when you want the full list.',
+    body: 'Type under Today. Tasks holds the rest.',
     cta: 'Open Tasks',
     action: () => scrollToSection('tasks'),
   },

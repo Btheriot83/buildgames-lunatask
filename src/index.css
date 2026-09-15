@@ -3957,6 +3957,36 @@ button, input, select, textarea {
   padding-top: 12px !important;
 }
 
+
+/* ——— craft6: hand-rewrite-copy + quieter section heads (Today still wins) ——— */
+.desk-section-head {
+  margin: 2px 0 12px !important;
+}
+.desk-section-title {
+  font-size: 1.2rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.025em !important;
+}
+.desk-section-sub {
+  font-size: 0.84rem !important;
+  color: #8a8274 !important;
+}
+.friend-walk-card {
+  border-radius: 14px !important;
+  padding: 16px 16px 12px !important;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 10px 24px rgba(0, 0, 0, 0.24) !important;
+}
+.friend-walk-title {
+  font-size: 1.05rem !important;
+  letter-spacing: -0.02em !important;
+}
+.friend-walk-body {
+  font-size: 0.9rem !important;
+  color: #5c564c !important;
+}
+
 /* Sticky needs a non-clipping ancestor — was overflow:hidden on desk-paper */
 .desk-paper {
   overflow: visible !important;
