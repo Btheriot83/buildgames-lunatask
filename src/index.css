@@ -3370,3 +3370,29 @@ button, input, select, textarea {
 .desk-paper .day-chip.is-selected .dom {
   font-weight: 700 !important;
 }
+
+/* ——— elevate9: make-it-alive — live Now + capture on the blotter ——— */
+.today-add {
+  margin: 8px 0 0 64px;
+}
+.today-add input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d4cbb8;
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 2px;
+  color: var(--ink-on-paper);
+  outline: none;
+}
+.today-add input:focus {
+  border-bottom-color: var(--ink-on-paper);
+}
+.today-add input::placeholder {
+  color: #8a8274;
+}
+.habit-line.is-done .habit-title,
+.task-row.is-done .task-title {
+  text-decoration: line-through;
+  color: #8a8274 !important;
+}

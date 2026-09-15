@@ -1,7 +1,16 @@
+import { useEffect, useState } from 'react'
 import { COPY, WEATHER } from '../lib/copy'
 import { GROUP_CLOCK, clockLabel, formatDayParts, groupToday, nowBucket } from '../lib/todayGroups'
+import type { Priority } from '../lib/types'
 import { TaskRow } from './TaskRow'
 import { usePlanner } from '../store/plannerStore'
+
+function prioForNow(): Priority {
+  const b = nowBucket()
+  if (b === 'tide') return 1
+  if (b === 'later') return 2
+  return 3
+}
 
 export function TodayPanel() {
   const day = usePlanner((s) => s.day)
@@ -9,12 +18,20 @@ export function TodayPanel() {
   const habits = usePlanner((s) => s.habits)
   const journal = usePlanner((s) => s.journal)
   const toggleHabitToday = usePlanner((s) => s.toggleHabitToday)
+  const addTask = usePlanner((s) => s.addTask)
+  const [now, setNow] = useState(() => new Date())
+  const [draft, setDraft] = useState('')
+
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(new Date()), 15_000)
+    return () => window.clearInterval(id)
+  }, [])
 
   const groups = groupToday(tasks, habits, day)
   const mood = journal.find((j) => j.date === day)
   const parts = formatDayParts(day)
   const barren = groups.every((g) => g.tasks.length === 0 && g.habits.length === 0)
-  const here = nowBucket()
+  const here = nowBucket(now)
 
   return (
     <section className="today-ledger t-panel-reveal" data-state="in" data-testid="today-ledger">
@@ -25,7 +42,7 @@ export function TodayPanel() {
         </h2>
         <p className="today-weather">
           {mood ? WEATHER[mood.mood] : COPY.weatherEmpty}
-          <span className="today-clock">{clockLabel()}</span>
+          <span className="today-clock">{clockLabel(now)}</span>
         </p>
       </header>
 
@@ -79,6 +96,26 @@ export function TodayPanel() {
           )
         })}
       </div>
+
+      <form
+        className="today-add"
+        onSubmit={(e) => {
+          e.preventDefault()
+          if (addTask(draft, 'personal', prioForNow(), day)) setDraft('')
+        }}
+      >
+        <label className="sr-only" htmlFor="today-add">
+          {COPY.addToday}
+        </label>
+        <input
+          id="today-add"
+          data-testid="today-add"
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          placeholder={COPY.addToday}
+          autoComplete="off"
+        />
+      </form>
     </section>
   )
 }

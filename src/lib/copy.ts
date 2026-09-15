@@ -19,6 +19,7 @@ export const COPY = {
   taskPh: 'Add a task for today…',
   habitPh: 'Name a habit…',
   add: 'Add',
+  addToday: 'Add to today…',
   errorTask: 'Task needs a title',
 } as const
 
