@@ -109,11 +109,14 @@ function parsePlan(raw: string, provider: string, model: string): PlanOut | null
   if (text.startsWith('```')) {
     text = text.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '')
   }
+  const brace = text.indexOf('{')
+  const end = text.lastIndexOf('}')
+  if (brace >= 0 && end > brace) text = text.slice(brace, end + 1)
   try {
     const parsed = JSON.parse(text) as Partial<PlanOut>
-    if (!parsed.focus || !Array.isArray(parsed.orderedTasks)) return null
+    if (!Array.isArray(parsed.orderedTasks) || parsed.orderedTasks.length === 0) return null
     return {
-      focus: String(parsed.focus).slice(0, 240),
+      focus: String(parsed.focus || parsed.orderedTasks[0] || 'Today').slice(0, 240),
       orderedTasks: parsed.orderedTasks.map(String).slice(0, 8),
       habitSuggestions: (parsed.habitSuggestions || []).map(String).slice(0, 4),
       note: String(parsed.note || '').slice(0, 240),
@@ -168,7 +171,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           },
           body: JSON.stringify({
             model: p.model,
-            max_tokens: 900,
+            max_tokens: 1600,
             system: SYSTEM,
             messages: [{ role: 'user', content: user }],
           }),
