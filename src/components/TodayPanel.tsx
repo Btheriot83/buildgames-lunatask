@@ -21,6 +21,11 @@ export function TodayPanel() {
   const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
   const barren = dueTasks.length === 0 && dueHabits.length === 0 && !mood
   const habitPct = dueHabits.length ? Math.round((doneHabits / dueHabits.length) * 100) : 0
+  const weekDays = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(day + 'T12:00:00')
+    d.setDate(d.getDate() - (6 - i))
+    return d.toISOString().slice(0, 10)
+  })
 
   return (
     <section className="panel today-panel t-panel-reveal" data-state="in">
@@ -110,9 +115,19 @@ export function TodayPanel() {
                   </button>
                   <div className="habit-body">
                     <p className="habit-title">{h.title}</p>
-                    <p className="habit-meta">
-                      streak <NumberPop value={streak} />
-                    </p>
+                    <div className="habit-meta-row">
+                      <div className="heat-week heat-week-lg" aria-hidden="true">
+                        {weekDays.map((d) => (
+                          <span
+                            key={d}
+                            className={`heat-cell ${h.completions.includes(d) ? 'on' : ''} ${d === day && h.completions.includes(d) ? 'is-today' : ''}`}
+                          />
+                        ))}
+                      </div>
+                      <p className="habit-meta">
+                        streak <NumberPop value={streak} />
+                      </p>
+                    </div>
                   </div>
                 </li>
               )

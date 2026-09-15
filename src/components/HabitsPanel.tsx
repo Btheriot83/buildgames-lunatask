@@ -76,10 +76,16 @@ export function HabitsPanel() {
                 </p>
               </div>
 
-              <div className="heat-week" aria-hidden="true">
-                {weekDays.map((d) => (
-                  <span key={d} className={`heat-cell ${h.completions.includes(d) ? 'on' : ''}`} />
-                ))}
+              <div className="heat-block" aria-hidden="true">
+                <div className="heat-week heat-week-lg">
+                  {weekDays.map((d) => (
+                    <span
+                      key={d}
+                      className={`heat-cell ${h.completions.includes(d) ? 'on' : ''} ${d === day && h.completions.includes(d) ? 'is-today' : ''}`}
+                    />
+                  ))}
+                </div>
+                <p className="heat-caption">7-day tide</p>
               </div>
               <div className="habit-streak" title="Streak">
                 <span className="stat-label">Streak</span>
