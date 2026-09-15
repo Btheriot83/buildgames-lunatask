@@ -1,0 +1,55 @@
+{
+  "status": "beat_original_in_progress_shipped",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "identityBlocksWin": false,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "bar": "https://lunatask.app/",
+  "path": "/workspace/build-games/apps/lunatask",
+  "loopsCompleted": 22,
+  "loopsCap": 25,
+  "commitPrefix": "beatN:",
+  "shotsDir": "apps/lunatask/shots-beat",
+  "techniquesUsed": [
+    "critic-subagents",
+    "image-generation",
+    "cut-elements",
+    "remove-ai-tells",
+    "hand-rewrite-copy",
+    "ambitious-prompts",
+    "make-it-alive"
+  ],
+  "catalogSource": "https://design-catalog-three.vercel.app/data/prompts.json",
+  "criticRounds": [
+    {
+      "atLoop": 6,
+      "doc": "gauntlet/CRITIC_BEAT6.md",
+      "score": 6.9,
+      "winner": "ORIGINAL"
+    },
+    {
+      "atLoop": 22,
+      "doc": "gauntlet/CRITIC_BEAT22.md",
+      "score": 7.5,
+      "winner": "ORIGINAL"
+    }
+  ],
+  "earlyStopWin": false,
+  "honestNotes": [
+    "Harbor Desk locked; critic says identity does not block beating original.",
+    "22 meaningful beat loops with separate commits + shots-beat/ screenshots.",
+    "Cuts: chrome meters, hero band, job meter cards, AI chrome demotion, hover Remove.",
+    "Imagine: tideglass-mark.jpg cropped from empty-tide-desk (API keys stale).",
+    "Flat no-gradient bar held; Fraunces mark-only enforced.",
+    "Independent critic still awards overall craft to lunatask.app marketing composition.",
+    "No invented soft win."
+  ],
+  "finishedAtUtc": "2026-09-15T07:46:22Z",
+  "finishedAtPt": "2026-09-15 12:46 AM PT",
+  "branch": "beat-original-tideglass",
+  "pr": null,
+  "deploy": null
+}
