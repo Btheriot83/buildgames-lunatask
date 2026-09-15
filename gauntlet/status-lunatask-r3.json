@@ -76,12 +76,15 @@
     "no_pill_cta",
     "primary_contrast_aa"
   ],
-  "finishedAtUtc": "2026-09-15T04:38:11Z",
-  "finishedAtPt": "2026-09-14 9:38 PM PT",
+  "finishedAtUtc": "2026-09-15T04:39:19Z",
+  "finishedAtPt": "2026-09-14 9:39 PM PT",
   "notes": "Phase B3 20 rounds under locked Harbor Desk. Fonts: Fraunces mark-only, Plex 700 job. Contrast: primary 4.74:1. Buttons: 6px radius, secondary outline. Flat: 0 gradients. Close A/B vs lunatask.app CircularStd/coral 5px CTA craft.",
-  "pr": null,
-  "prState": "pending",
-  "deploy": null,
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/4",
+  "prState": "OPEN",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_5j6bS2vTWT34ZpBKZKejhTTL87xw"
+  },
   "flatMaterials": {
     "gradients": 0,
     "backdropFilter": false,
