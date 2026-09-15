@@ -20,28 +20,62 @@ export function TodayPanel() {
   const mood = journal.find((j) => j.date === day)
   const doneHabits = dueHabits.filter((h) => h.completions.includes(day)).length
   const barren = dueTasks.length === 0 && dueHabits.length === 0 && !mood
+  const habitPct = dueHabits.length ? Math.round((doneHabits / dueHabits.length) * 100) : 0
 
   return (
     <section className="panel today-panel t-panel-reveal" data-state="in">
-      <AiPlanCard />
+      <div className="job-banner" data-testid="job-banner">
+        <div className="job-banner-copy">
+          <p className="job-eyebrow">Today’s desk</p>
+          <h2 className="job-title">Tasks · Habits · Mood</h2>
+          <p className="job-sub">Check tasks, tick habits, log mood — then ask AI to order the rest.</p>
+        </div>
+        <div className="job-meters" aria-label="Today progress">
+          <div className="job-meter">
+            <span className="stat-label">Tasks open</span>
+            <NumberPop value={dueTasks.length} />
+          </div>
+          <div className="job-meter">
+            <span className="stat-label">Habits</span>
+            <span className="job-meter-frac">
+              <NumberPop value={doneHabits} />/{dueHabits.length}
+            </span>
+          </div>
+          <div className="job-meter">
+            <span className="stat-label">Mood</span>
+            {mood ? (
+              <span className={`mood-dot lg m${mood.mood}`}>{mood.mood}</span>
+            ) : (
+              <span className="job-meter-empty">—</span>
+            )}
+          </div>
+        </div>
+        {dueHabits.length > 0 && (
+          <div className="job-progress" aria-hidden="true">
+            <div className="job-progress-fill" style={{ width: `${habitPct}%` }} />
+          </div>
+        )}
+      </div>
+
       {barren && (
         <EmptyHarbor
           showVideo
           title="Quiet water"
-          body="No slips or habits due. Plan the day, or capture one task below the tide line."
+          body="No slips or habits due. Capture a task, start a habit, or log mood — the three things this desk is for."
         />
       )}
-      <div className="today-grid">
-        <article className="desk-card">
+
+      <div className="today-grid job-triad" data-testid="job-triad">
+        <article className="desk-card job-card">
           <header className="card-head">
-            <h3>Focus</h3>
+            <h3>Tasks</h3>
             <button type="button" className="btn tiny ghost" onClick={() => setTab('tasks')}>
               All tasks
             </button>
           </header>
           <ul className="task-list compact">
             {dueTasks.length === 0 && (
-              <li className="empty-line">No slips due. Capture one, or pull an AI plan.</li>
+              <li className="empty-line">No tasks due. Capture one on the Tasks tab.</li>
             )}
             {dueTasks.slice(0, 6).map((t) => (
               <TaskRow key={t.id} task={t} />
@@ -49,7 +83,7 @@ export function TodayPanel() {
           </ul>
         </article>
 
-        <article className="desk-card">
+        <article className="desk-card job-card">
           <header className="card-head">
             <h3>Habits</h3>
             <span className="inline-stat">
@@ -86,9 +120,9 @@ export function TodayPanel() {
           </ul>
         </article>
 
-        <article className="desk-card mood-glance">
+        <article className="desk-card mood-glance job-card">
           <header className="card-head">
-            <h3>Weather</h3>
+            <h3>Mood</h3>
             <button type="button" className="btn tiny ghost" onClick={() => setTab('mood')}>
               Check in
             </button>
@@ -96,13 +130,20 @@ export function TodayPanel() {
           {mood ? (
             <div className="mood-glance-body">
               <span className={`mood-dot lg m${mood.mood}`}>{mood.mood}</span>
-              <p>{mood.note || 'Logged without a note.'}</p>
+              <div>
+                <p className="mood-glance-label">
+                  {['', 'Rough', 'Low', 'Okay', 'Good', 'Bright'][mood.mood]}
+                </p>
+                <p>{mood.note || 'Logged without a note.'}</p>
+              </div>
             </div>
           ) : (
-            <p className="empty-line">No weather logged for this day yet.</p>
+            <p className="empty-line">No mood logged for this day yet. Tap Check in.</p>
           )}
         </article>
       </div>
+
+      <AiPlanCard />
     </section>
   )
 }

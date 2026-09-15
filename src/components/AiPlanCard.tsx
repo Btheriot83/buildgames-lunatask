@@ -62,7 +62,10 @@ export function AiPlanCard() {
   return (
     <article className={`desk-card ai-plan-card ${busy ? 'is-busy' : ''}`} data-testid="ai-plan-card">
       <header className="card-head">
-        <h3>AI daily plan</h3>
+        <div>
+          <p className="ai-kicker">Assist · after the triad</p>
+          <h3>AI daily plan</h3>
+        </div>
         <button
           type="button"
           className="btn tiny primary"
@@ -75,7 +78,7 @@ export function AiPlanCard() {
       </header>
       {!plan && (
         <p className="empty-line">
-          Reads today’s open slips, due habits, and weather — returns a real plan from the server API.
+          Optional assist: reads today’s open tasks, due habits, and mood — returns a real plan from the server API.
         </p>
       )}
       {plan && (

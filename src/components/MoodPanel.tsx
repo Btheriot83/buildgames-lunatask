@@ -20,7 +20,8 @@ export function MoodPanel() {
 
   return (
     <section className="panel mood-panel t-panel-reveal" data-state="in">
-      <p className="lead">Name the weather in one line.</p>
+      <p className="lead">How’s the day feel?</p>
+      <p className="mood-lead-sub">One tap, one short note — mood is the third leg of Today.</p>
       <div className="mood-row" role="radiogroup" aria-label="Mood">
         {MOODS.map((m) => (
           <button
@@ -54,10 +55,10 @@ export function MoodPanel() {
         data-testid="save-mood"
         onClick={() => saveMood(mood, note)}
       >
-        Save today’s weather
+        Save today’s mood
       </button>
 
-      <h3 className="section-label">Recent</h3>
+      <h3 className="section-label">Recent moods</h3>
       <ul className="journal-list">
         {journal.length === 0 && <li className="empty-line">No check-ins yet.</li>}
         {journal.slice(0, 8).map((j) => (

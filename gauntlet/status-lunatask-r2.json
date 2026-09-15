@@ -1,0 +1,65 @@
+{
+  "status": "phase_b2_complete",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "phase": "B2",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "baselineScore": 6.5,
+  "currentScore": 7.2,
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "bar": "https://lunatask.app/",
+  "path": "/workspace/build-games/apps/lunatask",
+  "job": "Today tasks + habits + mood (\u22643s)",
+  "phaseA": {
+    "done": true,
+    "techniquesDone": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "identityPath": "docs/IDENTITY.md"
+  },
+  "phaseB": {
+    "roundsCompleted": 5,
+    "roundsTarget": 5,
+    "workbench": "gauntlet/workbench.md"
+  },
+  "phaseB2": {
+    "roundsCompleted": 10,
+    "roundsTarget": 10,
+    "workbench": "gauntlet/workbench-r2.md",
+    "contaminatedBeforeFixed": true,
+    "beforeShot": "gauntlet/screens/r-before-visible.png",
+    "liveBefore": "gauntlet/screens/r2-before-live.png",
+    "afterShot": "gauntlet/screens/r-after-visible.png",
+    "focus": [
+      "fix_mistakes",
+      "job_clarity",
+      "real_daily_data",
+      "visibility"
+    ]
+  },
+  "ai": {
+    "endpoint": "/api/daily-plan",
+    "job": "AI daily plan / habit suggestions (secondary assist after triad)",
+    "clientSecrets": false
+  },
+  "antiSlop": [
+    "no_glass",
+    "fraunces_mark_only",
+    "no_vibe_purple",
+    "paper_desk_not_perma_grey_body",
+    "hand_copy",
+    "no_sample_lorem"
+  ],
+  "finishedAtUtc": "2026-09-15T04:18:56Z",
+  "finishedAtPt": "2026-09-14 9:18 PM PT",
+  "notes": "Phase B2 10 rounds under locked Harbor Desk. Fixed MileCue-contaminated before-shot. Job triad (tasks/habits/mood) above fold; real daily data; AI assist demoted."
+}
