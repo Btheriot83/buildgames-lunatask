@@ -34,7 +34,7 @@ export function TideBg() {
       ctx.fillStyle = '#0b1c24'
       ctx.fillRect(0, 0, w, h)
 
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 5; i++) {
         const y = h * (0.28 + i * 0.14) + Math.sin(t + i) * 14
         ctx.beginPath()
         ctx.moveTo(0, y)
@@ -45,7 +45,7 @@ export function TideBg() {
             Math.cos(x * 0.003 - t) * 4
           ctx.lineTo(x, yy)
         }
-        ctx.strokeStyle = `rgba(58, 158, 148, ${0.05 + i * 0.02})`
+        ctx.strokeStyle = `rgba(58, 158, 148, ${0.08 + i * 0.03})`
         ctx.lineWidth = 1
         ctx.stroke()
       }
