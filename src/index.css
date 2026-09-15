@@ -2217,3 +2217,28 @@ button, input, select, textarea {
   background: var(--seafoam-cta) !important;
   color: #ffffff !important;
 }
+
+/* ——— Phase B6 INTEGRITY r6 — Harbor Desk LOCKED; 10 craft rounds vs lunatask.app ——— */
+
+/* r1 fonts: meter digit optical weight + mono meta toward CircularStd chrome bite */
+.desk-meter .number-pop,
+.desk-meter-frac,
+.job-meter .number-pop,
+.job-meter-frac {
+  font-family: var(--font-mono) !important;
+  font-weight: 700 !important;
+  font-size: 1.35rem !important;
+  letter-spacing: -0.04em !important;
+  font-variant-numeric: tabular-nums !important;
+}
+.desk-meter .stat-label,
+.job-meter .stat-label {
+  font-size: 0.64rem !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 600 !important;
+}
+.brand-sub {
+  font-size: 0.98rem !important;
+  letter-spacing: -0.01em !important;
+  font-weight: 450 !important;
+}
