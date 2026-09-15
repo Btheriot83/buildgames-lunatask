@@ -2930,3 +2930,48 @@ button, input, select, textarea {
   font-size: 1.2rem !important;
   font-weight: 700 !important;
 }
+
+/* ——— beat17: ink selected tabs actually win cascade ——— */
+.desk-paper .tabs-glider {
+  display: block !important;
+  background: var(--ink-on-paper) !important;
+  border: 1px solid var(--ink-on-paper) !important;
+  height: auto !important;
+  border-radius: 10px !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"],
+.desk-paper .tabs-track .tab-btn[aria-current="page"] {
+  background: transparent !important;
+  color: #f4efe6 !important;
+  font-weight: 700 !important;
+  background-image: none !important;
+}
+.desk-paper .tab-btn {
+  background: transparent !important;
+  color: #6e675b !important;
+}
+
+/* ——— beat18: quieter remove + sans job title lock ——— */
+.job-title {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+}
+.task-row .btn.tiny.ghost {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.task-row:hover .btn.tiny.ghost,
+.task-row:focus-within .btn.tiny.ghost {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+.habit-card .btn.tiny.ghost {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.habit-card:hover .btn.tiny.ghost,
+.habit-card:focus-within .btn.tiny.ghost {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
