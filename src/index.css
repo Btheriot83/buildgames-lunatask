@@ -1850,3 +1850,17 @@ contrast
 .check.is-checked {
   background: var(--seafoam-cta) !important;
 }
+
+/* r14 bar gap: triad grid denser like dream */
+.today-grid.job-triad {
+  gap: 12px !important;
+}
+.desk-card.job-card {
+  padding: 12px !important;
+}
+.habit-list.compact, .task-list.compact {
+  gap: 6px !important;
+}
+.desk-hero-compact {
+  max-height: 72px !important;
+}

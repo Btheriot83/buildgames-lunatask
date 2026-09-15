@@ -113,3 +113,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Checkboxes punchier; Lunatask app rows still denser.
 - commit: TBD
 - dream-loop: task check control vs target
+
+## r14 — bar gap
+- files: src/index.css
+- shot: gauntlet/shots-r4/r14-bar-gap-density.png
+- verdict: Triad denser toward dream; bar product mock still richer.
+- commit: TBD
+- dream-loop: composition density vs target.png
