@@ -2042,3 +2042,24 @@ button, input, select, textarea {
   padding-top: 18px !important;
   padding-bottom: 64px !important;
 }
+
+/* r5 fonts: task/habit/day ladder toward CircularStd product chrome bite */
+.desk-paper .task-title,
+.desk-paper .habit-title {
+  font-size: 1.02rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.018em !important;
+  line-height: 1.25 !important;
+}
+.day-strip-head h2 {
+  font-size: 1.28rem !important;
+  letter-spacing: -0.028em !important;
+}
+.job-sub {
+  font-size: 0.98rem !important;
+  letter-spacing: -0.005em !important;
+}
+.desk-paper .tab-btn {
+  font-weight: 550 !important;
+  font-size: 0.94rem !important;
+}
