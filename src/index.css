@@ -2217,3 +2217,344 @@ button, input, select, textarea {
   background: var(--seafoam-cta) !important;
   color: #ffffff !important;
 }
+
+/* ——— Phase B6 INTEGRITY r6 — Harbor Desk LOCKED; 10 craft rounds vs lunatask.app ——— */
+
+/* r1 fonts: meter digit optical weight + mono meta toward CircularStd chrome bite */
+.desk-meter .number-pop,
+.desk-meter-frac,
+.job-meter .number-pop,
+.job-meter-frac {
+  font-family: var(--font-mono) !important;
+  font-weight: 700 !important;
+  font-size: 1.35rem !important;
+  letter-spacing: -0.04em !important;
+  font-variant-numeric: tabular-nums !important;
+}
+.desk-meter .stat-label,
+.job-meter .stat-label {
+  font-size: 0.64rem !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 600 !important;
+}
+.brand-sub {
+  font-size: 0.98rem !important;
+  letter-spacing: -0.01em !important;
+  font-weight: 450 !important;
+}
+
+/* r2 contrast: day-chip + tab active ink punch vs washed bone */
+.desk-paper .day-chip.is-selected {
+  background: #1a3540 !important;
+  border-color: var(--seafoam-cta) !important;
+  color: #f4efe6 !important;
+}
+.desk-paper .day-chip.is-selected .dow,
+.desk-paper .day-chip.is-selected .dom {
+  color: #f4efe6 !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  color: #0b1c24 !important;
+  font-weight: 700 !important;
+}
+.desk-paper .tabs-glider {
+  background: var(--seafoam-cta) !important;
+  height: 3px !important;
+  background-image: none !important;
+}
+.job-meter {
+  border-color: #b8a88e !important;
+  background: #fffaf2 !important;
+}
+
+/* r3 buttons: mood chip + secondary CTA rectangles (Lunatask coral-rect energy, seafoam locked) */
+.mood-chip {
+  min-height: 44px !important;
+  min-width: 52px !important;
+  border-radius: 6px !important;
+  border-width: 1.5px !important;
+  padding: 8px 10px !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.mood-chip.is-selected {
+  border-color: var(--seafoam-cta) !important;
+  background: #e7f4f1 !important;
+  font-weight: 700 !important;
+}
+.btn.tiny.primary,
+.desk-paper .btn.tiny.primary,
+.chrome-actions .btn.tiny.primary {
+  min-height: 32px !important;
+  border-radius: 5px !important;
+  padding: 6px 12px !important;
+  font-weight: 700 !important;
+  background: var(--seafoam-cta) !important;
+  color: #fff !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.desk-paper .btn.tiny.ghost {
+  border: 1px solid #c4b79e !important;
+  border-radius: 5px !important;
+  min-height: 28px !important;
+}
+
+/* r4 bar gap: denser chrome meters + action cluster like Lunatask product mock */
+.shell-chrome {
+  gap: 10px 14px !important;
+  margin-bottom: 12px !important;
+}
+.desk-meters {
+  gap: 6px !important;
+}
+.desk-meter {
+  min-width: 72px !important;
+  padding: 7px 9px !important;
+  border-radius: 7px !important;
+}
+.chrome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px !important;
+  justify-content: flex-end;
+}
+.chrome-actions .btn {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.brand-bottle {
+  width: 60px !important;
+  height: 60px !important;
+}
+.desk-paper {
+  padding: 14px 14px 18px !important;
+}
+.day-strip {
+  margin-bottom: 8px !important;
+}
+
+/* r5 fonts: card heads + tag/meta ladder toward product chrome bite */
+.card-head h3 {
+  font-size: 1.14rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+}
+.desk-paper .task-meta,
+.desk-paper .habit-meta,
+.desk-paper .tag,
+.desk-paper .prio {
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.02em !important;
+  font-weight: 600 !important;
+}
+.desk-paper .prio {
+  text-transform: uppercase;
+  letter-spacing: 0.06em !important;
+}
+.job-eyebrow,
+.desk-paper .section-label {
+  font-size: 0.68rem !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 650 !important;
+}
+.day-strip-head h2 {
+  font-weight: 700 !important;
+  letter-spacing: -0.032em !important;
+}
+
+/* r6 bar gap: Lunatask-like due badge + denser triad toward dream target */
+.desk-meter .t-badge {
+  top: -7px !important;
+  right: -7px !important;
+}
+.desk-meter .t-badge-dot {
+  min-width: 20px !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  border-radius: 10px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  background: var(--coral) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.today-grid.job-triad {
+  gap: 8px !important;
+}
+.desk-card.job-card {
+  padding: 8px 9px !important;
+}
+.task-list.compact .task-row,
+.habit-list.compact .habit-card.mini {
+  padding: 7px 8px !important;
+  gap: 8px !important;
+}
+.inline-stat {
+  font-family: var(--font-mono) !important;
+  font-size: 0.85rem !important;
+}
+
+/* r7 contrast: brass streak heat + ink-on-paper body punch (dream/bar gap) */
+.desk-meter.soft-meter .number-pop,
+.habit-streak .number-pop,
+.desk-paper .habit-meta .number-pop {
+  color: #c9a03a !important;
+  font-weight: 700 !important;
+}
+.desk-paper {
+  color: #14262e !important;
+}
+.desk-paper .task-title,
+.desk-paper .habit-title {
+  color: #0f222a !important;
+}
+.desk-paper .empty-line,
+.desk-paper .task-meta,
+.mood-lead-sub {
+  color: #4a453c !important;
+}
+.job-banner {
+  background: #fffaf2 !important;
+  border-color: #b9a888 !important;
+  background-image: none !important;
+}
+.mood-dot.lg {
+  border: 2px solid var(--seafoam-cta) !important;
+  font-weight: 700 !important;
+}
+
+/* r8 buttons: tab active pill + check/tick hard edges (Lunatask control punch) */
+.desk-paper .tabs-track {
+  border: 1px solid #c4b79e !important;
+  border-radius: 8px !important;
+  padding: 3px !important;
+  background: #efe6d6 !important;
+  background-image: none !important;
+}
+.desk-paper .tab-btn {
+  min-height: 36px !important;
+  border-radius: 6px !important;
+  padding: 6px 14px !important;
+}
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.desk-paper .tabs-glider {
+  display: none !important;
+}
+.check {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 6px !important;
+  border-width: 2px !important;
+}
+.habit-tick {
+  width: 32px !important;
+  height: 32px !important;
+}
+.habit-tick .tick-ring {
+  width: 28px !important;
+  height: 28px !important;
+  border-width: 2.5px !important;
+  border-color: var(--coral) !important;
+}
+.habit-tick.is-checked .tick-ring {
+  background: var(--coral) !important;
+  border-color: var(--coral) !important;
+  background-image: none !important;
+}
+
+/* r9 bar gap: dream-loop composition — equal triad, quieter hero, job first */
+.desk-hero-compact {
+  max-height: 40px !important;
+  margin-bottom: 6px !important;
+  opacity: 0.85;
+}
+.job-banner {
+  padding: 10px 12px !important;
+  margin-bottom: 10px !important;
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  gap: 10px !important;
+  align-items: center !important;
+}
+.job-title {
+  font-size: clamp(1.7rem, 3vw, 2.15rem) !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+}
+.job-sub {
+  margin-top: 2px !important;
+  max-width: 36rem;
+}
+.today-grid.job-triad {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+}
+.desk-card.job-card {
+  min-height: 100%;
+  border-color: #b9a888 !important;
+}
+.mood-lead {
+  gap: 6px !important;
+}
+.app-frame {
+  padding-top: 14px !important;
+  padding-bottom: 56px !important;
+}
+
+/* r10 bar gap / flat coherence final — hard materials, job ≤3s, Harbor Desk locked */
+.btn,
+.btn.primary,
+.btn.secondary,
+.btn.ghost,
+.btn.tiny,
+.job-banner,
+.desk-card,
+.job-progress-fill,
+.tabs-glider,
+.day-chip,
+.mood-chip,
+.ai-plan-card,
+.desk-meter,
+.job-meter,
+.t-badge-dot,
+.check,
+.habit-tick .tick-ring,
+.shell-chrome,
+.desk-paper {
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.chrome-actions .btn.primary,
+.desk-paper .tab-btn.is-active,
+.desk-paper .tabs-track .tab-btn[aria-selected="true"] {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
+}
+.habit-tick.is-checked .tick-ring,
+.desk-meter .t-badge-dot {
+  background: var(--coral) !important;
+  color: #fff !important;
+}
+.brand-title {
+  font-family: var(--font-display) !important;
+}
+.job-progress {
+  height: 5px !important;
+  border-radius: 3px !important;
+  background: #d8cebc !important;
+}
+.job-progress-fill {
+  background: var(--seafoam-cta) !important;
+  border-radius: 3px !important;
+}

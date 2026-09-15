@@ -1,0 +1,109 @@
+{
+  "status": "phase_b6_integrity_complete",
+  "product": "Tideglass",
+  "slug": "lunatask",
+  "phase": "B6",
+  "identity": "Harbor Desk",
+  "identityLocked": true,
+  "reseed": false,
+  "keepReason": "Brandon said Tideglass was OK; Harbor Desk stays (narrow/REASSESS.md)",
+  "demoUrl": "https://buildgames-lunatask.vercel.app",
+  "bar": "https://lunatask.app/",
+  "path": "/workspace/build-games/apps/lunatask",
+  "roundsCounted": 10,
+  "roundShas": [
+    "a8b8a00",
+    "5effcc2",
+    "7f019cd",
+    "87621c9",
+    "a1d861b",
+    "5bd1dd0",
+    "c636bd4",
+    "9c7f675",
+    "b612ab8",
+    "3d510cc"
+  ],
+  "shotCount": 20,
+  "barShotRounds": [
+    5,
+    10
+  ],
+  "honestNotes": [
+    "Lunatask still wins marketing CircularStd + coral CTA + product depth.",
+    "Harbor Desk locked \u2014 no Anshu reseed; seafoam primary retained; coral for habit tick + due badge only.",
+    "Dream-loop closed meters/badge/tabs/triad toward target.png; Fraunces mark-only held.",
+    "transitions.dev on real actions; notification-badge punched in r6.",
+    "Flat no-gradient chrome reinforced in r10.",
+    "No invented critic scores."
+  ],
+  "dreamLoop": {
+    "baseline": ".dream-loop/baseline.png",
+    "target": ".dream-loop/target.png",
+    "targetShotCopy": "gauntlet/shots-r6/dream-target.png",
+    "roundsTowardTarget": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "transitions": {
+    "success-check": [
+      "mood save",
+      "export",
+      "task done",
+      "habit tick"
+    ],
+    "toast": [
+      "add/fail task",
+      "habit",
+      "mood",
+      "import/export",
+      "demo/clear",
+      "task done/reopen",
+      "habit tick"
+    ],
+    "error-state-shake": [
+      "empty task title"
+    ],
+    "checkbox-check": [
+      "task toggle"
+    ],
+    "tabs-sliding": [
+      "tab change"
+    ],
+    "number-pop-in": [
+      "meter digits remount"
+    ],
+    "panel-reveal": [
+      "panel mount"
+    ],
+    "skeleton-reveal": [
+      "boot"
+    ],
+    "texts-reveal": [
+      "app frame"
+    ],
+    "notification-badge": [
+      "tasks due meter when dueToday > 0"
+    ]
+  },
+  "flatMaterials": {
+    "gradients": 0,
+    "backdropFilter": false,
+    "glowRings": false,
+    "proof": "gauntlet/shots-r6/r10-final.png",
+    "note": "B6 flat bar held; Harbor Desk locked"
+  },
+  "workbench": "apps/lunatask/gauntlet/workbench-r6.md",
+  "finishedAtUtc": "2026-09-15T07:16:30Z",
+  "finishedAtPt": "2026-09-15 12:16 AM PT",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/7",
+  "prState": "OPEN",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_3bGYbxR7HtJUUtwyD37hPhiGXriY",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/3bGYbxR7HtJUUtwyD37hPhiGXriY"
+  }
+}
