@@ -1864,3 +1864,13 @@ contrast
 .desk-hero-compact {
   max-height: 72px !important;
 }
+
+/* r15 fonts: card heads + brand sub sharpen */
+.card-head h3 {
+  font-size: 1.12rem !important;
+  font-weight: 700 !important;
+}
+.brand-sub {
+  font-size: 1.02rem !important;
+  color: #e4dccb !important;
+}

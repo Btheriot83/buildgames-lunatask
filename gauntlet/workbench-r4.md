@@ -120,3 +120,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Triad denser toward dream; bar product mock still richer.
 - commit: TBD
 - dream-loop: composition density vs target.png
+
+## r15 — fonts
+- files: src/index.css
+- shot: gauntlet/shots-r4/r15-fonts-heads.png; gauntlet/shots-r4/r15-bar.png; gauntlet/shots-r4/r15-ab-candidate.png
+- verdict: Card heads clearer; bar CircularStd H1 still dominates marketing polish.
+- commit: TBD
+- dream-loop: type ladder vs target
