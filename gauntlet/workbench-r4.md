@@ -21,4 +21,10 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/index.css
 - shot: gauntlet/shots-r4/r2-fonts-ui.png
 - verdict: Tab/card tracking tighter; still not CircularStd geometric bite.
+- commit: aab15da
+
+## r3 — contrast
+- files: src/index.css
+- shot: gauntlet/shots-r4/r3-contrast.png
+- verdict: Ink-on-paper deepened; triad text holds vs washed bone, still shy of Lunatask dark-app ink punch.
 - commit: TBD
