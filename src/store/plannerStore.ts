@@ -196,6 +196,10 @@ export const usePlanner = create<State>((set, get) => ({
       }),
     }))
     void get().persist()
+    const h = get().habits.find((x) => x.id === id)
+    const on = !!h?.completions.includes(day)
+    get().flashToast(on ? 'Habit ticked' : 'Habit unticked')
+    if (on) get().flashSuccess()
   },
 
   removeHabit: (id) => {

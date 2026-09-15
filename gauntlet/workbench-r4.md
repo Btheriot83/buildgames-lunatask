@@ -61,5 +61,13 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - files: src/store/plannerStore.ts, src/components/NumberPop.tsx, src/index.css
 - shot: gauntlet/shots-r4/r6-bar-gap-transitions.png
 - verdict: Denser rows + success/toast on complete; still behind Lunatask dark app chrome density.
-- commit: TBD
+- commit: c74c959
 - transitions: success-check+toast on task/habit tick; number-pop remount; shake/toast empty add unchanged
+
+## r7 — contrast
+- files: src/index.css, src/store/plannerStore.ts
+- shot: gauntlet/shots-r4/r7-contrast-muted.png
+- verdict: Meta darker on bone; still softer than Lunatask dark-UI ink hierarchy / dream target punch.
+- commit: TBD
+- dream-loop: closing muted wash toward target denser desk type
+- transitions: habit tick → toast + success-check

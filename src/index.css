@@ -1759,3 +1759,20 @@ contrast
   border-left-color: #ffffff !important;
   border-bottom-color: #ffffff !important;
 }
+
+/* r7 contrast: muted meta darker for denser desk (dream-loop) */
+:root {
+  --muted-paper: #3a3530;
+  --muted-paper-soft: #4e4840;
+}
+.desk-paper .task-meta,
+.desk-paper .habit-meta,
+.job-sub,
+.mood-lead-sub,
+.ai-note {
+  color: #3a3530 !important;
+}
+.desk-paper .section-label {
+  color: #276e68 !important;
+  font-weight: 600 !important;
+}
