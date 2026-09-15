@@ -2666,3 +2666,39 @@ button, input, select, textarea {
 .habit-card.mini .heat-week-lg {
   margin: 0;
 }
+
+/* ——— beat3: remove-ai-tells kill-list scrub (Harbor Desk) ——— */
+.brand-title {
+  text-shadow: none !important;
+}
+.brand-bottle {
+  box-shadow: none !important;
+  border-width: 1px !important;
+}
+.desk-paper {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22) !important;
+  border-width: 1px !important;
+}
+.desk-hero,
+.desk-hero-band {
+  border-bottom-width: 1px !important;
+  border-bottom-color: var(--brass) !important;
+}
+.job-banner {
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+  box-shadow: none !important;
+}
+.desk-card,
+.job-card,
+.ai-plan-card,
+.empty-harbor {
+  box-shadow: none !important;
+}
+.ai-plan-card {
+  border-color: #9bb8b2 !important;
+  background: #f3f7f5 !important;
+}
+.ledger-menu-panel {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28) !important;
+}
