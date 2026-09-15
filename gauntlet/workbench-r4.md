@@ -134,3 +134,9 @@ Identity locked: `docs/IDENTITY.md` (**Harbor Desk**). No reseed.
 - verdict: Mood selection clearer vs dream; bar journal charts still deeper.
 - commit: TBD
 - dream-loop: mood control vs target
+
+## r17 — buttons
+- files: src/index.css
+- shot: gauntlet/shots-r4/r17-buttons-cta.png
+- verdict: Primary CTA heavier; coral bar CTA still hotter.
+- commit: TBD

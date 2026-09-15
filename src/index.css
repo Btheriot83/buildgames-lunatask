@@ -1892,3 +1892,13 @@ contrast
   font-weight: 700 !important;
   font-size: 1.05rem !important;
 }
+
+/* r17 buttons: primary CTA weight like dream Open Today */
+.chrome-actions .btn.primary {
+  min-width: 8.5rem !important;
+  font-weight: 700 !important;
+  font-size: 0.98rem !important;
+}
+.desk-paper .btn.primary {
+  font-weight: 700 !important;
+}
