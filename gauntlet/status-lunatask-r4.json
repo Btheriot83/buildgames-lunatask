@@ -103,6 +103,13 @@
     ]
   },
   "workbench": "apps/lunatask/gauntlet/workbench-r4.md",
-  "finishedAtUtc": "2026-09-15T05:12:59Z",
-  "finishedAtPt": "2026-09-14 10:12 PM PT"
+  "finishedAtUtc": "2026-09-15T05:14:38Z",
+  "finishedAtPt": "2026-09-14 10:14 PM PT",
+  "pr": "https://github.com/Btheriot83/buildgames-lunatask/pull/5",
+  "prState": "OPEN",
+  "deploy": {
+    "url": "https://buildgames-lunatask.vercel.app",
+    "id": "dpl_Fmmc2frbcefSETD1CfVuVmkEdbyG",
+    "inspector": "https://vercel.com/brandon-theriots-projects/buildgames-lunatask/Fmmc2frbcefSETD1CfVuVmkEdbyG"
+  }
 }
