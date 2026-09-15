@@ -2975,3 +2975,19 @@ button, input, select, textarea {
   opacity: 1 !important;
   pointer-events: auto;
 }
+
+
+
+
+/* ——— beat19: Fraunces mark-only hard lock + brand sub quieter ——— */
+.brand-title {
+  font-family: var(--font-display) !important;
+}
+.job-title, .job-eyebrow, .day-strip-head h2, .card-head h3, .habit-title, .task-title, .lead, .mood-panel .lead {
+  font-family: var(--font-sans) !important;
+}
+.brand-sub {
+  max-width: 28rem !important;
+  color: #b9c2bc !important;
+  font-size: 0.95rem !important;
+}
