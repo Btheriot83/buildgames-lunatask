@@ -1706,7 +1706,6 @@ button, input, select, textarea {
   letter-spacing: -0.02em !important;
   font-size: 1.08rem !important;
 }
-contrast
 
 /* r3 contrast: deeper ink on paper */
 :root {
@@ -1942,4 +1941,279 @@ contrast
 }
 .app-frame {
   padding-top: 22px !important;
+}
+
+/* ——— Phase B5 INTEGRITY r5 — Harbor Desk LOCKED; 10 craft rounds vs lunatask.app ——— */
+
+/* r1 fonts: brand optical punch + mark row (CircularStd-like tracking, Fraunces mark-only) */
+.brand-mark-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-title {
+  font-size: clamp(2.55rem, 5.8vw, 3.85rem) !important;
+  letter-spacing: -0.038em !important;
+  line-height: 0.92 !important;
+}
+.eyebrow {
+  letter-spacing: 0.16em !important;
+  font-size: 0.7rem !important;
+}
+.brand-bottle {
+  width: 68px !important;
+  height: 68px !important;
+  border-radius: 10px !important;
+  object-fit: cover;
+  border: 1px solid #3a5560;
+}
+
+/* r2 contrast: chrome field bone + meter edges punchier vs washed B4 */
+.brand-sub {
+  color: #ebe3d4 !important;
+}
+.chrome-actions .btn.secondary {
+  color: #f2ebe0 !important;
+  border-color: #6a8490 !important;
+}
+.chrome-actions .btn.tiny.ghost {
+  color: #c9bfae !important;
+  opacity: 1 !important;
+}
+.desk-meter {
+  border-color: #4a6a76 !important;
+  background: #0f2430 !important;
+}
+.desk-meter .number-pop,
+.desk-meter-frac {
+  color: #e0c46a !important;
+}
+.stat-label {
+  color: #ddcba0 !important;
+}
+
+/* r3 buttons: Lunatask coral-CTA proportions — taller solid primary, 5px, no glow */
+.btn.primary,
+.chrome-actions .btn.primary,
+.desk-paper .btn.primary {
+  min-height: 44px !important;
+  padding: 12px 24px !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.005em !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.chrome-actions .btn.primary {
+  min-width: 9rem !important;
+}
+.btn.secondary {
+  min-height: 44px !important;
+  border-radius: 5px !important;
+}
+.btn.tiny {
+  min-height: 30px !important;
+}
+
+/* r4 bar gap: denser chrome meters + actions like Lunatask product mock density */
+.shell-chrome {
+  gap: 12px 18px !important;
+  margin-bottom: 16px !important;
+  align-items: center !important;
+}
+.desk-meters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+.desk-meter {
+  min-width: 78px !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+}
+.chrome-actions {
+  gap: 6px !important;
+}
+.brand-sub {
+  max-width: 34rem;
+  margin-top: 4px !important;
+}
+.app-frame {
+  padding-top: 18px !important;
+  padding-bottom: 64px !important;
+}
+
+/* r5 fonts: task/habit/day ladder toward CircularStd product chrome bite */
+.desk-paper .task-title,
+.desk-paper .habit-title {
+  font-size: 1.02rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.018em !important;
+  line-height: 1.25 !important;
+}
+.day-strip-head h2 {
+  font-size: 1.28rem !important;
+  letter-spacing: -0.028em !important;
+}
+.job-sub {
+  font-size: 0.98rem !important;
+  letter-spacing: -0.005em !important;
+}
+.desk-paper .tab-btn {
+  font-weight: 550 !important;
+  font-size: 0.94rem !important;
+}
+
+/* r6 bar gap: triad density + notification-badge on tasks-due meter */
+.desk-meter {
+  position: relative !important;
+}
+.desk-meter .t-badge-dot {
+  background: var(--coral) !important;
+  background-image: none !important;
+}
+.today-grid.job-triad {
+  gap: 10px !important;
+}
+.desk-card.job-card {
+  padding: 10px !important;
+}
+.task-list.compact, .habit-list.compact {
+  gap: 5px !important;
+}
+.habit-card.mini, .task-row {
+  padding: 8px 10px !important;
+}
+
+/* r7 contrast: habit streak coral heat + muted hierarchy (dream/bar gap) */
+.habit-meta .streak,
+.habit-card .streak,
+.inline-stat {
+  color: var(--coral) !important;
+  font-weight: 700 !important;
+}
+.desk-paper .habit-meta {
+  color: #3f3a34 !important;
+}
+.desk-paper .section-label {
+  color: #1f5f5a !important;
+  letter-spacing: 0.08em !important;
+}
+.job-meter-empty {
+  color: #5a544a !important;
+  font-weight: 600 !important;
+}
+.mood-lead-sub {
+  color: #3f3a34 !important;
+}
+
+/* r8 buttons: check/tick punch + quieter Remove; streak digits on habit meta */
+.check {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 5px !important;
+  border-width: 2px !important;
+  border-color: #9a8f7a !important;
+  background: #fffaf2 !important;
+}
+.check.is-checked {
+  border-color: var(--seafoam-cta) !important;
+  background: var(--seafoam-cta) !important;
+}
+.habit-tick {
+  width: 30px !important;
+  height: 30px !important;
+}
+.habit-tick .tick-ring {
+  width: 26px !important;
+  height: 26px !important;
+  border-width: 2.5px !important;
+}
+.task-row .btn.tiny.ghost,
+.habit-card .btn.tiny.ghost {
+  opacity: 0.72 !important;
+  font-size: 0.78rem !important;
+  padding: 4px 8px !important;
+  min-height: 26px !important;
+  color: #6a6358 !important;
+  border-color: transparent !important;
+  background: transparent !important;
+}
+.task-row .btn.tiny.ghost:hover,
+.habit-card .btn.tiny.ghost:hover {
+  opacity: 1 !important;
+  color: var(--coral) !important;
+}
+.desk-paper .habit-meta .number-pop,
+.habit-streak .number-pop {
+  color: var(--coral) !important;
+  font-weight: 700 !important;
+}
+
+/* r9 bar gap: equal triad columns + card-head density toward dream target */
+.today-grid.job-triad {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px !important;
+  padding-bottom: 6px !important;
+  border-bottom: 1px solid #d8cebc;
+}
+.card-head h3 {
+  margin: 0 !important;
+  font-size: 1.08rem !important;
+}
+.desk-card.job-card {
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  border-color: #c4b79e !important;
+}
+.job-banner {
+  border: 1px solid #c4b79e !important;
+  border-radius: 8px !important;
+  margin-bottom: 12px !important;
+}
+.day-strip {
+  margin-bottom: 10px !important;
+}
+
+/* r10 bar gap / contrast coherence: flat hard bar + above-fold job first */
+.btn,
+.btn.primary,
+.btn.secondary,
+.btn.ghost,
+.job-banner,
+.desk-card,
+.job-progress-fill,
+.tabs-glider,
+.day-chip,
+.mood-chip,
+.ai-plan-card,
+.desk-meter,
+.job-meter,
+.t-badge-dot,
+.check,
+.habit-tick .tick-ring {
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+.desk-hero-compact {
+  max-height: 48px !important;
+  margin-bottom: 8px !important;
+}
+.job-title {
+  font-size: clamp(1.85rem, 3.4vw, 2.4rem) !important;
+}
+.tabs-track {
+  margin-bottom: 12px !important;
+}
+.chrome-actions .btn.primary {
+  background: var(--seafoam-cta) !important;
+  color: #ffffff !important;
 }

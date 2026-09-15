@@ -40,9 +40,12 @@ export function ShellChrome() {
         <p className="brand-sub">Today’s water level — tasks, habits, mood. Stays on this device.</p>
       </div>
       <div className="desk-meters" aria-label="Day meters">
-        <div className="desk-meter">
+        <div className="desk-meter has-badge">
           <span className="stat-label">Tasks due</span>
           <NumberPop value={dueToday} label="tasks due" />
+          <span className="t-badge" data-open={dueToday > 0 ? 'true' : 'false'} aria-hidden="true">
+            <span className="t-badge-dot">{dueToday > 9 ? '9+' : dueToday}</span>
+          </span>
         </div>
         <div className="desk-meter">
           <span className="stat-label">Habits done</span>
