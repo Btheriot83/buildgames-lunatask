@@ -2396,3 +2396,32 @@ button, input, select, textarea {
   font-family: var(--font-mono) !important;
   font-size: 0.85rem !important;
 }
+
+/* r7 contrast: brass streak heat + ink-on-paper body punch (dream/bar gap) */
+.desk-meter.soft-meter .number-pop,
+.habit-streak .number-pop,
+.desk-paper .habit-meta .number-pop {
+  color: #c9a03a !important;
+  font-weight: 700 !important;
+}
+.desk-paper {
+  color: #14262e !important;
+}
+.desk-paper .task-title,
+.desk-paper .habit-title {
+  color: #0f222a !important;
+}
+.desk-paper .empty-line,
+.desk-paper .task-meta,
+.mood-lead-sub {
+  color: #4a453c !important;
+}
+.job-banner {
+  background: #fffaf2 !important;
+  border-color: #b9a888 !important;
+  background-image: none !important;
+}
+.mood-dot.lg {
+  border: 2px solid var(--seafoam-cta) !important;
+  font-weight: 700 !important;
+}
