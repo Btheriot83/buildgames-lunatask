@@ -1,8 +1,7 @@
+import { COPY, WEATHER } from '../lib/copy'
 import { GROUP_CLOCK, clockLabel, formatDayParts, groupToday, nowBucket } from '../lib/todayGroups'
 import { TaskRow } from './TaskRow'
 import { usePlanner } from '../store/plannerStore'
-
-const WEATHER = ['', 'Rough', 'Low', 'Okay', 'Good', 'Bright']
 
 export function TodayPanel() {
   const day = usePlanner((s) => s.day)
@@ -20,24 +19,17 @@ export function TodayPanel() {
   return (
     <section className="today-ledger t-panel-reveal" data-state="in" data-testid="today-ledger">
       <header className="today-mast">
-        <p className="today-kicker">Today</p>
+        <p className="today-kicker">{COPY.today}</p>
         <h2 className="today-date">
           {parts.weekday} {parts.dayNum}
         </h2>
         <p className="today-weather">
-          {mood ? (
-            <>
-              {WEATHER[mood.mood]}
-              {mood.note ? ` · ${mood.note}` : ''}
-            </>
-          ) : (
-            'No weather yet.'
-          )}
+          {mood ? WEATHER[mood.mood] : COPY.weatherEmpty}
           <span className="today-clock">{clockLabel()}</span>
         </p>
       </header>
 
-      {barren && <p className="empty-line today-empty">Still water.</p>}
+      {barren && <p className="empty-line today-empty">{COPY.empty}</p>}
 
       <div className="day-timeline">
         {groups.map((g) => {
@@ -51,7 +43,7 @@ export function TodayPanel() {
             >
               <div className="group-rail" aria-hidden="true">
                 <span className="group-time">{GROUP_CLOCK[g.id]}</span>
-                {isNow && <span className="now-flag">Now</span>}
+                {isNow && <span className="now-flag">{COPY.now}</span>}
               </div>
               <div className="group-body">
                 <h3 className="today-group-label">{g.label}</h3>

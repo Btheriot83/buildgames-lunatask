@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { AreaId, Priority } from '../lib/types'
 import { TaskRow } from './TaskRow'
+import { COPY } from '../lib/copy'
 import { usePlanner } from '../store/plannerStore'
 
 export function TasksPanel() {
@@ -32,7 +33,7 @@ export function TasksPanel() {
           data-testid="task-input"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Add a task for today…"
+          placeholder={COPY.taskPh}
           autoComplete="off"
         />
         <select value={area} onChange={(e) => setArea(e.target.value as AreaId)} aria-label="Area">

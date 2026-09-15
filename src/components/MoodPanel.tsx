@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Mood } from '../lib/types'
+import { COPY } from '../lib/copy'
 import { usePlanner } from '../store/plannerStore'
 
 const MOODS: { v: Mood; label: string }[] = [
@@ -20,8 +21,8 @@ export function MoodPanel() {
 
   return (
     <section className="panel mood-panel t-panel-reveal" data-state="in">
-      <p className="lead">Name the weather in one line.</p>
-      <p className="mood-lead-sub">Rough to bright. Keep the note short enough to reread tomorrow.</p>
+      <p className="lead">{COPY.moodLead}</p>
+      <p className="mood-lead-sub">{COPY.moodSub}</p>
       <div className="mood-row" role="radiogroup" aria-label="Mood">
         {MOODS.map((m) => (
           <button

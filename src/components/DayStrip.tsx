@@ -1,3 +1,4 @@
+import { COPY } from '../lib/copy'
 import { todayISO, weekStrip } from '../lib/dates'
 import { usePlanner } from '../store/plannerStore'
 
@@ -31,7 +32,7 @@ export function DayStrip() {
       </div>
       {day !== todayISO() && (
         <button type="button" className="btn tiny jump-today" onClick={() => setDay(todayISO())}>
-          Jump to today
+          {COPY.jump}
         </button>
       )}
     </section>
